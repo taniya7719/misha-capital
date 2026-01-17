@@ -134,8 +134,8 @@ export default function Businessspeedcards() {
           <button className="
             group flex items-center gap-3
             rounded-full px-10 py-4
-            bg-gradient-to-r from-[#7fbf3f] to-[#a8e063]
-            text-[#021B3A] font-semibold
+            bg-white hover:bg-gradient-to-r hover:from-[#7fbf3f] hover:to-[#a8e063]
+          text-[#021B3A] font-semibold
             transition hover:scale-105
           ">
             APPLY NOW
