@@ -44,10 +44,12 @@ export default function Navigationbar() {
         </Link>
 
         {/* Tablet + Desktop Nav */}
+          <Link href="/Join">
         <nav className="hidden sm:flex gap-8 lg:gap-12">
           {navLink("/", "Home")}
           {navLink("/Business", "Business")}
         </nav>
+        </Link>
 
         {/* Desktop CTA only */}
          <Link href="/Join">
@@ -57,6 +59,7 @@ export default function Navigationbar() {
         </Link>
 
         {/* Mobile Hamburger */}
+          
         <button
           onClick={() => setOpen(!open)}
           className="sm:hidden flex flex-col gap-1"
@@ -66,6 +69,7 @@ export default function Navigationbar() {
           <span className={`h-[2px] w-6 bg-white transition ${open && "opacity-0"}`} />
           <span className={`h-[2px] w-6 bg-white transition ${open && "-rotate-45 -translate-y-[6px]"}`} />
         </button>
+       
       </div>
 
       {/* Mobile Menu */}
@@ -79,10 +83,11 @@ export default function Navigationbar() {
         <div className="flex flex-col items-center gap-8 py-8 text-white">
           {navLink("/", "Home")}
           {navLink("/Business", "Business")}
-
+            <Link href="/Join">
           <button className="mt-4 rounded-full bg-white px-8 py-3 text-sm font-semibold text-black">
             GET STARTED →
           </button>
+          </Link>
         </div>
       </div>
     </header>

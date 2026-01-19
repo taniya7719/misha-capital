@@ -80,10 +80,11 @@ export default function Navigationbar() {
         <div className="flex flex-col items-center gap-8 py-8 text-white">
           {navLink("/", "Home")}
           {navLink("/Business", "Business")}
-
+           <Link href="/Join">
           <button className="mt-4 rounded-full bg-white px-8 py-3 text-sm font-semibold text-black">
             GET STARTED →
           </button>
+          </Link>
         </div>
       </div>
     </header>
