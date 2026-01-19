@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-b from-[#061a36] to-[#020f24] text-slate-300">
@@ -12,10 +14,12 @@ export default function Footer() {
               through Misha Capital
             </span>
           </h2>
-
+        
+         <Link href="/Join">
           <button className="w-fit rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#061a36] transition hover:scale-105">
             Get Started →
           </button>
+          </Link>
         </div>
       </div>
 

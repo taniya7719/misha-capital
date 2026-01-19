@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 /* DATA */
 const topCards = [
@@ -131,6 +132,7 @@ export default function Businessspeedcards() {
           transition={{ duration: 0.6 }}
           className="flex justify-center"
         >
+          <Link href="/Join">
           <button className="
             group flex items-center gap-3
             rounded-full px-10 py-4
@@ -141,6 +143,7 @@ export default function Businessspeedcards() {
             APPLY NOW
             <span className="transition group-hover:translate-x-1">→</span>
           </button>
+          </Link>
         </motion.div>
 
       </div>

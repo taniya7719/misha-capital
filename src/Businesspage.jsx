@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 
+
 export default function Navigationbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
@@ -50,9 +51,11 @@ export default function Navigationbar() {
         </nav>
 
         {/* Desktop CTA only */}
+        <Link href="/Join">
         <button className="hidden lg:block rounded-full bg-white px-6 py-3 text-sm font-semibold text-black shadow-md transition hover:scale-105">
           GET STARTED →
         </button>
+        </Link>
 
         {/* Mobile Hamburger */}
         <button

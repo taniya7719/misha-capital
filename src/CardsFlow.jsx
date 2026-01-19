@@ -2,6 +2,8 @@
 
 import { Users, Rocket, PiggyBank, TrendingUp } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+
 
 export default function CardsFlow() {
   const items = [
@@ -116,7 +118,7 @@ export default function CardsFlow() {
             Expert guidance at every step of your entrepreneurial journey —
             from idea validation to acceleration and capital.
           </p>
-
+          <Link href="/Join">
           <button className="
             mt-12 inline-flex items-center gap-3
             w-fit rounded-full
@@ -126,6 +128,7 @@ export default function CardsFlow() {
           ">
             LEARN MORE →
           </button>
+          </Link>
         </div>
       </div>
     </section>

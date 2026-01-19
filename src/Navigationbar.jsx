@@ -50,9 +50,11 @@ export default function Navigationbar() {
         </nav>
 
         {/* Desktop CTA only */}
+         <Link href="/Join">
         <button className="hidden lg:block rounded-full bg-white px-6 py-3 text-sm font-semibold text-black shadow-md transition hover:scale-105">
           GET STARTED →
         </button>
+        </Link>
 
         {/* Mobile Hamburger */}
         <button
