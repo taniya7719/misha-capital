@@ -2,44 +2,72 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+
 
 export default function Joinform() {
   const [step, setStep] = useState(1);
+  const router = useRouter();
+
 
   return (
     <section className="min-h-screen bg-gradient-to-b from-[#021B3A] to-[#042C5C] flex items-center justify-center px-4 py-8">
       <div className="w-full max-w-4xl text-white">
 
         {/* Header */}
-        <div className="mb-8 text-center">
+        <div className="mb-8 text-center relative">
 
-          <div className="flex items-center justify-center gap-2 mb-3">
-            <Image
-              src="/Mishacapital.png"
-              alt="Misha Capital Logo"
-              width={40}
-              height={40}
-              priority
-            />
-            <span className="text-base sm:text-lg font-semibold tracking-wide">
-              Misha Capital
-            </span>
-          </div>
+<button
+  onClick={() => router.back()}
+  aria-label="Close"
+  className="
+    absolute
+    top-3 right-3
+    sm:top-4 sm:right-4
+    md:top-6 md:right-6
+    flex items-center justify-center
+    h-9 w-9
+    sm:h-10 sm:w-10
+    rounded-full
+    text-white/70
+    hover:text-white
+    hover:bg-white/10
+    transition
+  "
+>
+  ✕
+</button>
 
-          <h1 className="text-3xl font-semibold tracking-wide">
-            Join Misha Capital Community
-          </h1>
 
-          <p className="mt-1 text-sm text-white/70">
-            Your one-stop platform for business success
-          </p>
 
-          <div className="mx-auto my-4 h-px w-20 bg-white/30" />
+  <div className="flex items-center justify-center gap-2 mb-3">
+    <Image
+      src="/Mishacapital.png"
+      alt="Misha Capital Logo"
+      width={40}
+      height={40}
+      priority
+    />
+    <span className="text-base sm:text-lg font-semibold tracking-wide">
+      Misha Capital
+    </span>
+  </div>
 
-          <h2 className="text-sm uppercase tracking-widest text-white/60">
-            {step === 1 ? "Personal Details" : "Business Details"}
-          </h2>
-        </div>
+  <h1 className="text-3xl font-semibold tracking-wide">
+    Join Misha Capital Community
+  </h1>
+
+  <p className="mt-1 text-sm text-white/70">
+    Your one-stop platform for business success
+  </p>
+
+  <div className="mx-auto my-4 h-px w-20 bg-white/30" />
+
+  <h2 className="text-sm uppercase tracking-widest text-white/60">
+    {step === 1 ? "Personal Details" : "Business Details"}
+  </h2>
+</div>
+
 
         {/* Form Card */}
         <div className="rounded-3xl border border-white/30 bg-white/5 p-8 backdrop-blur-xl">
