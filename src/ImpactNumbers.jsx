@@ -2,41 +2,32 @@
 
 import { useEffect, useRef, useState } from "react";
 
-function CountUp({ value, prefix = "", suffix = "", duration = 2000 }) {
+/* COUNT UP */
+function CountUp({ value, prefix = "", suffix = "", start }) {
   const [count, setCount] = useState(0);
-  const ref = useRef(null);
-  const hasAnimated = useRef(false);
 
   useEffect(() => {
-    const target = Number(value);
+    if (!start) return;
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && !hasAnimated.current) {
-          hasAnimated.current = true;
-          let start = 0;
-          const increment = target / (duration / 16);
+    let startVal = 0;
+    const duration = 1500;
+    const increment = value / (duration / 16);
 
-          const counter = setInterval(() => {
-            start += increment;
-            if (start >= target) {
-              setCount(target);
-              clearInterval(counter);
-            } else {
-              setCount(Math.floor(start));
-            }
-          }, 16);
-        }
-      },
-      { threshold: 0.4 }
-    );
+    const counter = setInterval(() => {
+      startVal += increment;
+      if (startVal >= value) {
+        setCount(value);
+        clearInterval(counter);
+      } else {
+        setCount(Math.floor(startVal));
+      }
+    }, 16);
 
-    if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, [value, duration]);
+    return () => clearInterval(counter);
+  }, [start, value]);
 
   return (
-    <span ref={ref}>
+    <span>
       {prefix}
       {count.toLocaleString()}
       {suffix}
@@ -46,53 +37,75 @@ function CountUp({ value, prefix = "", suffix = "", duration = 2000 }) {
 
 export default function ImpactNumbers() {
   const stats = [
-    { value: 400, suffix: "+", label: "Businesses Analysed" },
-    { value: 5, prefix: "$", suffix: " Billion", label: "Fund Raised" },
-    { value: 150, suffix: "+", label: "Deals Executed" },
+    { value: 550, suffix: "+", label: "Businesses Analysed" },
+    { value: 7, prefix: "$", suffix: " Billion", label: "Fund Raised" },
+    { value: 375, suffix: "+", label: "Deals Executed" },
     { value: 2000, suffix: "+", label: "VC Firms & Angel Investors" },
+    { value: 950, suffix: "+", label: "Lender / Banks / NBFC's" },
   ];
 
-  return (
-    <section className="relative bg-gradient-to-b from-[#021B3A] to-[#042C5C] py-24 overflow-hidden">
-      
-      {/* Heading */}
-      <div className="mx-auto max-w-6xl text-center px-6 text-white">
-        <h2 className="text-4xl md:text-5xl font-light">
-          Our Growth <span className="font-semibold">Power</span>
-        </h2>
-        <p className="mt-6 text-white/75 max-w-3xl mx-auto">
-          Behind every figure is a story of progress and meaningful financial impact.
-        </p>
-      </div>
+  const [animate, setAnimate] = useState(false);
+  const sectionRef = useRef(null);
 
-      {/* Cards */}
-      <div className="mx-auto mt-20 grid max-w-7xl grid-cols-1 gap-6 px-6 sm:grid-cols-2 lg:grid-cols-4">
-        {stats.map((item, index) => (
-          <div
-            key={index}
-            className="
-              group relative
-              rounded-2xl
-              bg-white
-              p-8
-              transition-all duration-500
-              hover:-translate-y-3 hover:shadow-2xl
-            "
-          >
-            {/* Bottom accent border */}
-            <span className="absolute bottom-0 left-0 h-[4px] w-0 bg-indigo-600 transition-all duration-500 group-hover:w-full rounded-b-2xl" />
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setAnimate(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <section ref={sectionRef} className="bg-gray-100 py-20 px-10">
+      {/* Heading */}
+      <h2 className="text-center text-4xl md:text-5xl font-light text-[#042C5C]">
+        Our Growth <span className="font-semibold">Power</span>
+      </h2>
+
+      {/* Circles */}
+      <div className="mx-auto mt-16 flex max-w-7xl items-center justify-center">
+  {stats.map((item, index) => (
+
+      <div
+  key={index}
+  className={`relative -ml-8 first:ml-0
+    w-[240px] h-[240px] rounded-full bg-white
+    flex flex-col items-center justify-center text-center
+    shadow-[0_0_40px_rgba(0,0,0,0.08)]
+    transition-all duration-500 ease-out
+    hover:z-10
+    hover:ring-4 hover:ring-[#9CFFB6]/40
+    hover:border-gradient-to-b
+    hover:from-[#8B0000]
+    hover:via-[#D00914]
+    hover:to-[#FF6A6A]
+    ${
+      animate ? "scale-100 opacity-100" : "scale-95 opacity-0"
+    }`}
+  style={{ transitionDelay: `${index * 120}ms` }}
+>
+
+
 
             {/* Number */}
-            <h3 className="text-5xl font-semibold text-[#021C3C] tracking-tight">
+            <h3 className="text-[42px]  group hover:[#9CFFB6] font-bold text-black">
               <CountUp
                 value={item.value}
                 prefix={item.prefix}
                 suffix={item.suffix}
+                start={animate}
               />
             </h3>
 
             {/* Label */}
-            <p className="mt-4 text-sm uppercase tracking-widest text-indigo-600">
+            <p className="mt-3 text-[15px] leading-[20px] font-medium text-black px-6">
               {item.label}
             </p>
           </div>

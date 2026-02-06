@@ -1,17 +1,14 @@
 "use client";
 
-
-import Businesspage from "./Businesspage";
+import Navigationbar from "./Navigationbar";
 
 export default function Herobusiness() {
   return (
-    <section className="relative h-screen w-full overflow-hidden bg-black">
-
-      <Businesspage/>
-
-      {/* Video */}
+     <section className="relative h-[75vh] w-full overflow-hidden rounded-b-[80px]">
+      
+      {/* Background Video */}
       <video
-        src="/Businessbackground.mp4"
+        src="/hero.mp4"
         autoPlay
         loop
         muted
@@ -19,11 +16,22 @@ export default function Herobusiness() {
         className="absolute inset-0 h-full w-full object-cover"
       />
 
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/30" />
+      {/* COLOR OVERLAY */}
+      <div className="absolute inset-0 bg-[#050023]/60" />
 
-      {/* Content */}
-     
+      {/* CENTER CONTENT */}
+      <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 text-center">
+        <h1
+          className="text-white font-bold
+          text-3xl sm:text-4xl md:text-5xl
+          leading-tight md:leading-[60px]"
+        >
+          About Us
+        </h1>
+      </div>
+
+      {/* Navbar */}
+      <Navigationbar />
     </section>
   );
 }

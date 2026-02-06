@@ -1,9 +1,14 @@
-import CardsFlow from "@/CardsFlow";
+
+import ContentSection from "@/Components/ContentSection";
+import FocusIndustries from "@/Components/FocusIndustries";
 import Features from "@/Features";
+
+
 import Footer from "@/Footer";
 import HeroVideo from "@/Herovideo";
-import Howtojoin from "@/Howtojoin";
+
 import ImpactNumbers from "@/ImpactNumbers";
+import MajorTransactions from "@/MajorTransactions";
 
 
 import Navigationbar from "@/Navigationbar";
@@ -14,12 +19,20 @@ export default function Frontpage() {
     <main className="relative h-screen">
     {/* <Navigationbar/> */}
     <HeroVideo/>
+    <section className="px-10  ">
+    <ContentSection/>
+    </section>
+    
+
     <ImpactNumbers/>
-    {/* <MajorTransactions/>
-    <IndustriesSection/> */}
-    <Features/>
-    <CardsFlow/>
-    <Howtojoin/>
+  
+    
+    <MajorTransactions/>
+    <section className="px-10  ">
+    <FocusIndustries/>
+    </section>
+   
+   
     <Footer/>
     </main>
   );
