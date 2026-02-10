@@ -284,10 +284,10 @@ export default function AboutUs() {
 
             <img
               src="/about-2.jpg"
-              className="rounded-3xl w-[286px] shadow-lg absolute top-1/2 -translate-y-[55%]  right-5"
+              className="rounded-3xl w-[286px] shadow-lg absolute top-1/2 -translate-y-[35%]  right-5"
             />
 
-            <div className="absolute top-8 right-8 bg-white rounded-2xl shadow-xl px-7 py-7">
+            <div className="absolute top-8 right-9 bg-white rounded-2xl shadow-xl px-7 py-8">
               <div className="text-[36px] font-bold text-[#0E78BE]">200+</div>
               <div className="text-[24px] text-[#0E78BE] mt-1">Transaction</div>
             </div>
@@ -359,6 +359,8 @@ export default function AboutUs() {
         text-[22px]
         leading-[38px]
         text-[#000000]
+        pb-7
+        
       ">
         Backed by a team with diverse experience in investment banking,
         corporate finance, entrepreneurship, and business consulting,
