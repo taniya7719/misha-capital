@@ -157,7 +157,8 @@ export default function Footer() {
             />
 
             {/* OVERLAY */}
-            <div className="absolute inset-0 bg-gradient-to-b from-[#8B0000] via-[#D00914] to-[#FF6A6A]
+            <div className="absolute inset-0 bg-gradient-to-b from-[#085A93] via-[#0A77BF] to-[#6BC4FF]
+
 
 " />
 

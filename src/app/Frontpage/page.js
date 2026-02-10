@@ -1,6 +1,7 @@
 
 import ContentSection from "@/Components/ContentSection";
 import FocusIndustries from "@/Components/FocusIndustries";
+import Service from "@/Components/Service";
 import Features from "@/Features";
 
 
@@ -28,7 +29,8 @@ export default function Frontpage() {
   
     
     <MajorTransactions/>
-    <section className="px-10  ">
+    <section className="px-17">
+      <Service/>
     <FocusIndustries/>
     </section>
    

@@ -28,70 +28,101 @@ export default function Majortransaction() {
   ];
 
   return (
-   <section className="relative py-20 overflow-hidden px-10 ">
-  {/* Background Image */}
+<section className="relative py-28 overflow-hidden px-10">
+  {/* Background */}
   <div
-    className="absolute inset-0 bg-cover bg-center mb-30 "
-    style={{ backgroundImage: "url('/Faq-img.webp')" }}
+    className="absolute inset-0 bg-cover bg-center"
+    style={{ backgroundImage: "url('/pattern.jpg')" }}
   />
+  <div className="absolute inset-0 bg-gradient-to-br from-[#032A58] to-[#043B73]" />
 
-  {/* Blue Overlay */}
-  <div className="absolute inset-0 bg-[black]/90" />
+  <div className="relative z-10 max-w-7xl mx-auto px-6">
 
-  <div className="relative max-w-7xl mx-auto px-6">
+    {/* TOP LABEL */}
+    <div className="flex items-center justify-center gap-4 mb-4 text-white/70 text-sm tracking-wide">
+      <span className="h-[1px] w-10 bg-white/40" />
+      <span>debt & equity</span>
+      <span className="h-[1px] w-10 bg-white/40" />
+    </div>
 
-    {/* Heading */}
-    <h2 className="text-4xl font-semibold text-center text-white mb-14">
-      Major <span className="font-normal">Transactions</span>
+    {/* HEADING */}
+   <h2 className="text-center text-4xl md:text-5xl mb-16">
+      <span className="font-serif italic text-white font-light">
+        Major
+      </span>{" "}
+      <span className="font-semibold text-[#1DA1F2]">
+        Transactions
+      </span>
     </h2>
 
-    {/* Grid */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+    {/* GRID */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
       {transactions.slice(0, 20).map((item, index) => (
         <div
-          key={index}
-          className="
-            group
-            rounded-2xl
-            border border-white/20
-            bg-white/5
-            backdrop-blur-lg
-            px-5 py-7
-            text-left
-            transition-all duration-300
-            hover:-translate-y-2
-            hover:scale-[1.03]
-            hover:border-[#7EC9FF]
-            hover:shadow-[0_0_30px_rgba(126,201,255,0.25)]
-          "
-        >
-          {/* ICON */}
-          <div className="mb-6 inline-flex rounded-xl border border-white/30 p-1">
-            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-b from-[#8B0000] via-[#D00914] to-[#FF6A6A]">
-              <img src={item.icon} className="h-6 w-6" />
-            </div>
-          </div>
+  key={index}
+  className="
+    relative
+    rounded-xl
+    bg-white/90
+    p-6
+    shadow-sm
+    overflow-hidden
+    transition
+    hover:-translate-y-1 
+  "
+  style={{
+    backgroundImage: "url('/fact counter.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundPosition: "center 35px"
+    
+    ,
+  }}
 
-          {/* TEXT */}
-          <h4 className="text-lg font-semibold text-white">
+>
+          {/* AMOUNT */}
+           <h4
+  className="
+    w-[208px]
+    h-[36px]
+    font-proxima
+    font-bold
+    font-lg
+    text-[28px]
+    leading-[36px]
+    tracking-[-0.01em]
+    text-[#00365A]
+  "
+>
+  {item.amount}
+</h4>
+
+          {/* SUBTEXT */}
+                        <p className="  w-[208px]  h-[40px]  font-proxima  font-medium  text-[16px] leading-[20px] tracking-[-0.01em] text-[#212121] "
+>
+            {item.subtitle || "Business Expansion"}
+          </p>
+
+          {/* PROGRESS LINE */}
+          <div className="mt-3 mb-5 h-[3px] w-12 rounded-full bg-gradient-to-r from-[#FF6A6A] to-[#6EC1FF]" />
+
+          {/* TITLE */}
+          <p className="text-sm font-semibold text-[#021C3C]">
             {item.title}
-          </h4>
-
-          <p className="text-sm text-white/60 mt-2">
-            {item.subtitle}
           </p>
 
-          <div className="h-[2px] w-10 bg-gradient-to-r from-transparent via-white/60 to-transparent my-4" />
-
-          <p className="text-base font-bold text-white/70">
-            {item.amount}
-          </p>
+          {/* BACK SHAPE */}
+          {/* <div className="absolute top-0 right-0 h-24 w-24 bg-white/60 rounded-bl-full pointer-events-none" /> */}
         </div>
       ))}
     </div>
 
   </div>
 </section>
+
+
+
+
 
   );
 }

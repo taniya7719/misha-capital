@@ -6,7 +6,7 @@ import Navigationbar from "@/Navigationbar";
 
 export default function HeroServices() {
   return (
-    <section className="relative h-[75vh] w-full overflow-hidden rounded-b-[80px]">
+    <section className="relative h-[60vh] w-full overflow-hidden rounded-b-[80px]">
       
       {/* Background Video */}
       <video

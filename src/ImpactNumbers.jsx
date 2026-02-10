@@ -63,29 +63,50 @@ export default function ImpactNumbers() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="bg-gray-100 py-20 px-10">
+    <section
+  ref={sectionRef}
+  className="bg-[url('/map-frame-2.png')] bg-no-repeat bg-cover pb-20 px-10"
+>
       {/* Heading */}
-      <h2 className="text-center text-4xl md:text-5xl font-light text-[#042C5C]">
-        Our Growth <span className="font-semibold">Power</span>
-      </h2>
+    <div className="flex flex-col items-center text-center">
+  {/* TOP STEP */}
+  <div className="flex items-center gap-1 px-[39px] opacity-70 mb-2">
+    <span className="h-px w-[62px] bg-[#000000]"></span>
+    <span className="text w-[120px] h-[28px]  text-[#000000]">
+      delivering impact
+    </span>
+    <span className="h-px w-[62px] bg-[#000000]"></span>
+  </div>
+
+  {/* MAIN HEADING */}
+  <h2
+  className={` text-center text-[48px] leading-[25px] tracking-[-0.01em] font-normaltext-[#042C5C]`}
+>
+  <span className={`  font-['Libre_Bodoni']  italic  text-[#0E78BE] mr-2 `} >
+    Our
+  </span>
+
+  <span className="font-['Proxima'] text-[#00365A] font-semibold">
+    Growth Power
+  </span>
+</h2>
+
+</div>
 
       {/* Circles */}
       <div className="mx-auto mt-16 flex max-w-7xl items-center justify-center">
   {stats.map((item, index) => (
 
       <div
-  key={index}
-  className={`relative -ml-8 first:ml-0
+   key={index}
+  className={`group relative -ml-8 first:ml-0
     w-[240px] h-[240px] rounded-full bg-white
     flex flex-col items-center justify-center text-center
     shadow-[0_0_40px_rgba(0,0,0,0.08)]
     transition-all duration-500 ease-out
     hover:z-10
-    hover:ring-4 hover:ring-[#9CFFB6]/40
-    hover:border-gradient-to-b
-    hover:from-[#8B0000]
-    hover:via-[#D00914]
-    hover:to-[#FF6A6A]
+    hover:ring-4 hover:ring-[#D9261E80]
+    
     ${
       animate ? "scale-100 opacity-100" : "scale-95 opacity-0"
     }`}
@@ -95,14 +116,17 @@ export default function ImpactNumbers() {
 
 
             {/* Number */}
-            <h3 className="text-[42px]  group hover:[#9CFFB6] font-bold text-black">
-              <CountUp
-                value={item.value}
-                prefix={item.prefix}
-                suffix={item.suffix}
-                start={animate}
-              />
-            </h3>
+            <div className="group cursor-pointer">
+           <h3 className="text-[42px] font-bold text-black group-hover:text-[#D9261E] transition-colors duration-300">
+  <CountUp
+    value={item.value}
+    prefix={item.prefix}
+    suffix={item.suffix}
+    start={animate}
+  />
+</h3>
+</div>
+
 
             {/* Label */}
             <p className="mt-3 text-[15px] leading-[20px] font-medium text-black px-6">

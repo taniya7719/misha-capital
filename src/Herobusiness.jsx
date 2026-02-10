@@ -4,7 +4,7 @@ import Navigationbar from "./Navigationbar";
 
 export default function Herobusiness() {
   return (
-     <section className="relative h-[75vh] w-full overflow-hidden rounded-b-[80px]">
+     <section className="relative h-[60vh] w-full overflow-hidden rounded-b-[80px]">
       
       {/* Background Video */}
       <video
@@ -20,7 +20,7 @@ export default function Herobusiness() {
       <div className="absolute inset-0 bg-[#050023]/60" />
 
       {/* CENTER CONTENT */}
-      <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 text-center">
+      <div className="relative z-20 flex flex-col items-center justify-center h-full  text-center">
         <h1
           className="text-white font-bold
           text-3xl sm:text-4xl md:text-5xl

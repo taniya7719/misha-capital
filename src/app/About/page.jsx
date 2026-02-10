@@ -38,7 +38,7 @@ export default function About() {
   <>
   <Navigationbar/>
   <Herobusiness/>
-  <section className="px-15  py-15">
+  <section className="">
   <AboutUs/>
   </section>
   <Footer/>

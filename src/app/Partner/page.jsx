@@ -10,7 +10,9 @@ export default function Partner() {
     <main className="relative h-screen ">
   
   <Navigationbar/>
-    <Heropartner/>
+    
+
+     <Heropartner/>
     <section className=" py-10">
     <PartnerWithUs/>
     </section>
