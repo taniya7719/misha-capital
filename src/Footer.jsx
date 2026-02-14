@@ -143,11 +143,12 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="relative bg-gradient-to-b from-[#061a36] to-[#020f24] text-slate-300 pt-40 mt-40">
+    <footer className="relative bg-gradient-to-b from-[#061a36] to-[#020f24] text-slate-300 pt-30 mt-30  ">
       
       {/* ===== CTA BOX (OVERLAPPING) ===== */}
-      <section className="absolute -top-32 left-0 right-0 z-20">
-        <div className="mx-auto max-w-7xl px-6">
+      <section className="relative lg:absolute lg:-top-52 left-0 right-0 z-20 px-4 lg:px-0">
+
+        <div className="mx-auto  px-6 box">
           <div className="relative overflow-hidden rounded-2xl">
             
             {/* BG IMAGE */}
@@ -169,11 +170,13 @@ export default function Footer() {
               <div className="max-w-2xl text-white">
                 
 
-                <h2 className="mt-4 text-4xl font-semibold leading-tight">
+                <h2 className="mt-4 text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight">
+
                   Get all the Guidance & Growth you need through Misha Capital
                 </h2>
 
-                <div className="mt-6 flex items-center gap-4">
+                <div className="mt-6 flex flex-col sm:flex-row gap-6">
+
                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white">
   <img
     src="/email.png"  
@@ -206,8 +209,9 @@ export default function Footer() {
           <button
             className="hidden lg:flex items-center justify-center
             h-[42px] px-7
-            rounded-full bg-white
-            text-sm font-semibold text-black
+            rounded-full
+            border border-white/30 p-[4px] bg-[#FB2C36]
+            text-sm font-semibold text-white
             transition hover:scale-105"
           >
             GET STARTED →
@@ -219,7 +223,7 @@ export default function Footer() {
       </section>
 
       {/* ===== MAIN FOOTER ===== */}
-      <div className="mx-auto max-w-7xl px-15 py-20 grid gap-14 md:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto grid gap-20 lg:grid-cols-1 box ">
 
   {/* 1️⃣ BRAND */}
   <div>
@@ -252,8 +256,9 @@ export default function Footer() {
   </div>
 
   {/* 2️⃣ QUICK LINKS */}
-  <div>
-    <h4 className="mb-4 text-sm font-semibold text-white">Quick Links</h4>
+  <div className="lg:col-2 flex justify-end gap-16 ">
+     <div className="flex flex-col">
+    <h4 className=" text-sm font-semibold text-white mb-4">Quick Links</h4>
     <ul className="space-y-2 text-sm text-gray-300">
       <li>
         <Link href="/" className="hover:text-white transition">
@@ -261,22 +266,22 @@ export default function Footer() {
         </Link>
       </li>
       <li>
-        <Link href="/about-us" className="hover:text-white transition">
+        <Link href="/About" className="hover:text-white transition">
           About Us
         </Link>
       </li>
       <li>
-        <Link href="/services" className="hover:text-white transition">
+        <Link href="/OurServices" className="hover:text-white transition">
           Our Services
         </Link>
       </li>
       <li>
-        <Link href="/partners" className="hover:text-white transition">
+        <Link href="/Partner" className="hover:text-white transition">
           Partner With Us
         </Link>
       </li>
       <li>
-        <Link href="/contact" className="hover:text-white transition">
+        <Link href="/Contact" className="hover:text-white transition">
           Contact Us
         </Link>
       </li>
@@ -304,6 +309,7 @@ export default function Footer() {
       </li>
     </ul>
   </div>
+  </div>
 
   {/* 4️⃣ CONTACT */}
   {/* <div>
@@ -321,6 +327,7 @@ export default function Footer() {
   </div> */}
 
 </div>
+
 
     </footer>
   );

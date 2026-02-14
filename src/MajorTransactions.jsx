@@ -321,10 +321,10 @@ export default function MajorTransactions() {
   return (
   //  <section className="relative overflow-hidden  bg-[url('/pattern.png')] bg-cover bg-center py-20">
 <section
-  className="
+  className=" box
     relative
     overflow-hidden
-    py-20
+    
     bg-[url('/pattern.png')]
     bg-cover
     bg-center
@@ -339,28 +339,26 @@ export default function MajorTransactions() {
 
 
   {/* CONTENT */}
-  <div className="relative z-10 px-12">
+  <div className="relative z-10 ">
 
     {/* TOP LABEL */}
-    <div className="flex items-center justify-center gap-1 mb-1 text-white/70 text-md">
-      <span className="h-px w-[62px] bg-white"></span>
+    <div className="text-center mb-8 ">
+      <div className="flex items-center justify-center gap-2 text-[white]/50 text-medium">
+        <span className="w-12 h-[1px] bg-[white]/50"></span>
+        <span>debt & equity</span>
+        <span className="w-12 h-[1px] bg-[white]/50"></span>
+      </div>
 
-      <span className="w-[136px] h-[28px] text-center text-white">
-        debt & equity
-      </span>
-
-      <span className="h-px w-[62px] bg-white"></span>
-    </div>
-
-    {/* TITLE */}
-    <h2 className="text-center text-4xl md:text-5xl mb-16">
-      <span className="font-serif italic text-white font-light">
+      <h2 className="text-center text-4xl md:text-5xl mb-16">
+      <span className="font-bold text-[white]">
         Major
       </span>{" "}
-      <span className="font-semibold text-[#1DA1F2]">
+      <span className="font-bold text-[white]">
         Transactions
       </span>
     </h2>
+    
+    </div>
 
         {/* CARDS */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
@@ -426,27 +424,39 @@ export default function MajorTransactions() {
 
         {/* CTA */}
 <div className="mt-20 flex justify-center">
-  <div className="inline-flex items-center justify-center rounded-full border border-white/30 p-[4px]">
-          <Link href="/Join">
-            <button
-              className="
-                bg-[#008BF9]
-                hover:bg-[#D9261E]
-                text-[white]
-                px-12 py-4
-                rounded-full
-                text-sm
-                font-semibold
-                transition
-                hover:scale-105
-                
-              "
-            >
-              VIEW ALL
-            </button>
-          </Link>
-        </div>
-        </div>
+  <div
+  className="
+    inline-flex
+    items-center
+    justify-center
+    rounded-full
+    border
+    border-white/30
+    p-[4px]
+    transition
+    duration-300
+    ease-out
+    hover:scale-105
+  "
+>
+  <Link href="/Join">
+    <button
+      className="
+        bg-[#008BF9]
+        hover:bg-[#D9261E]
+        text-white
+        px-12
+        py-4
+        rounded-full
+        text-sm
+        font-semibold
+      "
+    >
+      VIEW ALL
+    </button>
+  </Link>
+</div>
+</div>
 
       </div>
     </section>

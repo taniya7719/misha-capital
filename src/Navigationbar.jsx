@@ -52,7 +52,7 @@ export default function Navigationbar() {
   return (
     <header className="absolute top-0 z-50 w-full">
       {/* MAIN NAV */}
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 text-white">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-8 text-white">
         
         {/* LOGO */}
         <Link href="/" className="flex items-center gap-4">

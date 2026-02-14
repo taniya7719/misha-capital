@@ -272,28 +272,28 @@
 export default function ExecutionSteps() {
   const steps = [
     {
-      step: "01",
+      step: " STEP 01",
       title: " Partner Registration",
       desc: "Fill out our Partner form to initiate",
       icon: "/red1.png",
       image: "/H1.jpg",
     },
     {
-      step: "02",
+      step: "STEP 02",
       title: "Deal organisation",
       desc: "Introduce qualified business leading mandates.",
       icon: "/red2.png",
       image: "/H2.jpg",
     },
     {
-      step: "03",
+      step: "STEP 03",
       title: "Evalution & structuring",
       desc: "We structure the deal & aligh lenders.",
       icon: "/red3.png",
       image: "/H3.jpg",
     },
     {
-      step: "04",
+      step: "STEP 04",
       title: "Execution & Payout",
       desc: "We execute the mandate & process payouts.",
       icon: "/red4.png",
@@ -303,216 +303,361 @@ export default function ExecutionSteps() {
 
   return (
     <>
-    <section className="relative bg-white pb-12 overflow-hidden">
-  <div className="max-w-7xl mx-auto px-8">
+    <section className="relative box ">
+  <div className="mx-auto">
 
     {/* HEADER */}
-    <div className="flex justify-center mb-12">
-      <h2 className="text-[52px] leading-[30px] font-bold text-black">
-        How It Works
-      </h2>
+    <div className="flex items-center justify-center gap-8 mb-1">
+      <div className="w-12 lg:w-16 h-[1px] bg-[#000000]"></div>
+      <p className="text-[#000000] lowercase text-sm lg:text-base">
+        how it work
+      </p>
+      <div className="w-12 lg:w-16 h-[1px] bg-[#000000]"></div>
     </div>
 
-    {/* TIMELINE */}
-    <div className="relative grid grid-cols-4 gap-14">
+    <h2 className="text-center text-3xl sm:text-4xl lg:text-[48px] ">
+      <span className="font-bold text-[#00365A]">
+        Step by Step Guide
+      </span>
+    </h2>
 
-      {/* DOTTED LINE */}
-      <div className="absolute top-[70px] left-0 right-0 border-t border-dashed border-[#9CFFB6]" />
+    {/* STEPS */}
+    <div className="relative ">
 
-      {steps.map((item, i) => (
-        <div
-          key={i}
-          className="relative text-center group transition-all duration-500 hover:-translate-y-2"
-        >
+      {/* Desktop dashed line only */}
+      <div className="hidden lg:block absolute top-[52px] left-0 right-0 border-t-2 border-dashed border-[#1E88E5] z-0"></div>
 
-          {/* ICON / IMAGE BOX */}
-          <div className="relative mx-auto w-[130px] h-[130px] rounded-2xl bg-[#F6FFF8] flex items-center justify-center shadow-sm ">
+      <div className="flex flex-col lg:flex-row items-center justify-center relative z-10 gap-4 ">
 
-            {/* IMAGE + OVERLAY (ONLY ON HOVER) */}
-            <div className="absolute inset-0">
-              <img
-                src={item.image}
-                className="absolute inset-0 w-full h-full object-cover
-                  opacity-0 group-hover:opacity-100
-                  transition-all duration-500"
-              />
-
-              <div
-                className="absolute inset-0 bg-[#D00914]/40
-                  opacity-0 group-hover:opacity-100
-                  transition-all duration-500"
-              />
+        {steps.map((item, i) => (
+          <div
+            key={i}
+            className="flex flex-col items-center relative w-full max-w-[270px]"
+          >
+            <div className="bg-[#008BF9]/10 text-[#008BF9] text-[12px] font-semibold px-4 py-2 rounded-lg">
+              {item.step}
             </div>
 
-            {/* ICON — ALWAYS VISIBLE */}
-            <img
-              src={item.icon}
-              className="relative z-20 w-12 h-12"
-            />
+            <div className="h-3 border-l-2 border-dashed border-[#1E88E5]"></div>
+            <div className="w-4 h-4 rounded-full border-2 border-[#1E88E5] bg-white"></div>
+            <div className="h-7 border-l-2 border-dashed border-[#1E88E5]"></div>
 
-            {/* STEP NUMBER (BORDER KE BEECH) */}
-            <span
-              className="
-                absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2
-               bg-gradient-to-b from-[#0a77bf] via-[#0868a6] to-[#075c94]
-                text-black text-sm font-semibold
-                w-10 h-10 flex items-center justify-center
-                rounded-full shadow-md z-30
-              "
-            >
-              {item.step}
-            </span>
+           <div className="
+  bg-[#00365A]
+  rounded-2xl
+  px-6 lg:px-8
+  py-6
+  h-auto lg:h-[150px]
+  w-full lg:w-[260.75px]
+  mt-1
+  border-b-0
+  hover:border-b-8
+  hover:border-b-[#008BF9]
+  transition-all
+  duration-300
+">
+  <h4 className="text-[16px] lg:text-[18px] font-semibold text-white">
+    {item.title}
+  </h4>
+
+
+
+              <p className="text-sm text-white/80 mt-2">
+                {item.desc}
+              </p>
+            </div>
           </div>
+        ))}
 
-          {/* CONTENT */}
-          <h4 className="mt-12 text-xl font-semibold text-black">
-            {item.title}
-          </h4>
-
-          <p className="mt-4 text-gray-500 max-w-xs mx-auto">
-            {item.desc}
-          </p>
-        </div>
-      ))}
-
+      </div>
     </div>
   </div>
 </section>
 
-<section className="relative min-h-screen w-full overflow-hidden ">
-  {/* BACKGROUND IMAGE */}
-  <div
-    className="absolute inset-0 bg-cover bg-center"
-    style={{ backgroundImage: "url('/istock.jpg')" }}
-  />
+<div className="relative overflow-hidden w-full h-[100px] sm:h-[130px] lg:h-[160px] bg-white">
 
-  {/* DARK OVERLAY (OPTIONAL – adjust opacity) */}
-  <div className="absolute inset-0 bg-black/30 " />
+  <div className="flex whitespace-nowrap animate-moveLeft gap-5">
 
-  <div className="relative z-10 max-w-7xl mx-auto px-10 py-20 flex items-center justify-end ">
-    
-    {/* GLASS FORM CARD */}
-    <div
-      className="
-        w-full max-w-xl
-        rounded-3xl
-        bg-white/60
-        backdrop-blur-xl
-        shadow-2xl
-        border border-white/40
-        p-10
-      "
-    >
-      {/* TOP TAG */}
-      <div className="flex items-center gap-3 mb-4">
-        <span className="h-[2px] w-8 bg-black/60" />
-        <p className="text-sm font-medium text-black/70">Let’s Talk</p>
-        <span className="h-[2px] w-8 bg-black/60" />
+    <h1 className="text-5xl sm:text-7xl lg:text-9xl font-extrabold tracking-[-0.01em]">
+      <span className="misha-outline">Misha</span>{" "}
+      <span className="text-[#0E78BE]/10 ">Capital</span>
+    </h1>
+
+    <h1 className="text-5xl sm:text-7xl lg:text-9xl font-extrabold tracking-[-0.01em]">
+      <span className="misha-outline">Misha</span>{" "}
+      <span className="text-[#0E78BE]/10">Capital</span>
+    </h1>
+
+  </div>
+</div>
+
+
+
+
+
+<section className="mx-auto bg-[#E9F4F7] mt-10 mb-50 box">
+  <div className="grid grid-cols-1 lg:grid-cols-[40%_60%] gap-8 items-start">
+
+    {/* LEFT IMAGE */}
+    <div className="w-full flex justify-center lg:justify-start">
+      <div className="w-full max-w-[450px]">
+        <img
+          src="/registration-image.png"
+          alt="Partner Registration"
+          className="w-full h-auto object-cover rounded-3xl shadow-xl"
+        />
       </div>
+    </div>
 
-      {/* TITLE */}
-      <h2 className="text-4xl font-bold text-black mb-4">
+    {/* RIGHT CONTENT */}
+    <div className="w-full max-w-[850px]">
+
+      <h2 className="text-3xl sm:text-4xl lg:text-[48px] font-bold text-[#00365A] mb-2">
         Partner Registration
       </h2>
 
-      {/* SUBTEXT */}
-      <p className="text-black/60 text-sm mb-8 leading-relaxed">
-        Fill out the form below to join Misha Capital's<br></br> partner network. Fields marked with * are mandatery.
-        {/* <u>info@example.com</u>. We’ll contact you within 12 hours or sooner. */}
+      <p className="text-[15px] lg:text-[16px] text-[#4A4A4A] mb-4">
+        Fill out the form below to join Misha Capital's partner network.
+        Fields marked with * are mandatory.
       </p>
 
-      {/* FORM */}
-      <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <input
-          type="text"
-          placeholder="First Name*"
-          className="rounded-xl px-4 py-3 bg-white/80 outline-none focus:ring-2 focus:ring-black/20"
-        />
-        <input
-          type="tel"
-          placeholder="Contact Number*"
-          className="rounded-xl px-4 py-3 bg-white/80 outline-none"
-        />
-        <input
-          type="email"
-          placeholder="Email Address*"
-          className="rounded-xl px-4 py-3 bg-white/80 outline-none"
-        />
-       <select
-          className="rounded-xl px-4 py-3 bg-white/80 outline-none md:col-span-1"
-        >
+      <form className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+
+        <input type="text" placeholder="First Name*" className="border rounded-xl px-4 py-3 bg-white outline-none w-full" />
+        <input type="tel" placeholder="Contact Number*" className="border rounded-xl px-4 py-3 bg-white outline-none w-full" />
+        <input type="email" placeholder="Email Address*" className="border rounded-xl px-4 py-3 bg-white outline-none w-full" />
+
+        <select className="border rounded-xl px-4 py-3 bg-white outline-none w-full">
           <option>Location</option>
           <option>Gurugram</option>
           <option>Delhi</option>
           <option>Noida</option>
         </select>
+
+        <input type="text" placeholder="Company*" className="border rounded-xl px-4 py-3 bg-white outline-none w-full" />
+        <input type="text" placeholder="Type of Partnership*" className="border rounded-xl px-4 py-3 bg-white outline-none w-full" />
+
+        <input type="text" placeholder="Average Deal Size" className="border rounded-xl px-4 py-3 bg-white outline-none w-full" />
+        <input type="text" placeholder="Areas of Expertise*" className="border rounded-xl px-4 py-3 bg-white outline-none w-full" />
+
+        {/* TEXTAREA FULL WIDTH */}
+        <div className="xl:col-span-3">
+          <textarea
+            rows="4"
+            placeholder="Additional Message"
+            className="border rounded-xl px-5 py-4 bg-white outline-none w-full"
+          />
+        </div>
+
+        {/* BUTTON FULL WIDTH */}
+        <div className="xl:col-span-3">
+          <button
+            type="submit"
+            className="bg-[#008BF9] hover:bg-[#D9261E] transition text-white font-bold w-full py-4 px-4 rounded-xl"
+          >
+            Submit Application
+          </button>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+
+  {/* <div className="  grid md:grid-cols-2 gap-16 items-center"> */}
+
+    {/* LEFT IMAGE */}
+    {/* <div className="relative">
+      <img
+        src="/registration-image.png"
+        alt="Partner"
+        className="rounded-xl shadow-xl w-[569px] h-[540px] object-cover"
+      />
+    </div> */}
+
+    {/* RIGHT CONTENT */}
+    {/* <div> */}
+      {/* HEADING */}
+      {/* <h2 className="text-[48px]  font-Inter font-bold text-[#00365A] ">
+        Partner Registration
+      </h2> */}
+
+      {/* SUBTEXT */}
+      {/* <p className="text-[16px] text-[#4A4A4A] mb-4 leading-relaxed">
+        Fill out the form below to join Misha Capital's partner network.
+        Fields marked with * are mandatory.
+      </p> */}
+
+      {/* FORM */}
+      {/* <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <input
+          type="text"
+          placeholder="First Name*"
+          className="border rounded-xl px-4 py-3 bg-white outline-none focus:ring-2 focus:ring-[#123b5a]/20"
+        /> */}
+
+        {/* <input
+          type="tel"
+          placeholder="Contact Number*"
+          className="border rounded-xl px-4 py-3 bg-white outline-none"
+        />
+
+        <input
+          type="email"
+          placeholder="Email Address*"
+          className="border rounded-xl px-4 py-3 bg-white outline-none"
+        />
+
+        <select className="border rounded-xl px-4 py-3 bg-white outline-none">
+          <option>Location</option>
+          <option>Gurugram</option>
+          <option>Delhi</option>
+          <option>Noida</option>
+        </select>
+
         <input
           type="text"
           placeholder="Company*"
-          className="rounded-xl px-4 py-3 bg-white/80 outline-none md:col-span-1"
+          className="border rounded-xl px-4 py-3 bg-white outline-none"
         />
-        {/* <input
-          type="text"
-          placeholder="First Name*"
-          className="rounded-xl px-4 py-3 bg-white/80 outline-none focus:ring-2 focus:ring-black/20"
-        /> */}
+
         <input
           type="text"
-          placeholder="Type of partnership*"
-          className="rounded-xl px-4 py-3 bg-white/80 outline-none"
+          placeholder="Type of Partnership*"
+          className="border rounded-xl px-4 py-3 bg-white outline-none"
         />
+
         <input
-          type="text"
-          placeholder="Type of partnership*"
-          className="rounded-xl px-4 py-3 bg-white/80 outline-none"
-        />
-        {/* <select
-          className="rounded-xl px-4 py-3 bg-white/80 outline-none md:col-span-1"
-        >
-          <option>Choose Service</option>
-          <option>Advisory</option>
-          <option>Funding</option>
-          <option>Consulting</option>
-        </select> */}
-         <input
           type="text"
           placeholder="Average Deal Size"
-          className="rounded-xl px-4 py-3 bg-white/80 outline-none"
+          className="border rounded-xl px-4 py-3 bg-white outline-none"
         />
-         <input
+
+        <input
           type="text"
           placeholder="Areas of Expertise*"
-          className="rounded-xl px-4 py-3 bg-white/80 outline-none"
+          className="border rounded-xl px-4 py-3 bg-white outline-none"
         />
 
         <textarea
           rows="4"
           placeholder="Additional Message"
-          className="rounded-xl px-4 py-3 bg-white/80 outline-none md:col-span-2"
-        />
+          className="border rounded-xl px-4 py-3 bg-white outline-none md:col-span-2"
+        /> */}
 
-        {/* BUTTON */}
-        <button
+        {/* BUTTON FULL WIDTH */}
+        {/* <button
           type="submit"
-          className="
-            mt-4
-            w-fit
-            px-8 py-3
-            rounded-full
-            bg-gradient-to-b from-[#8B0000] via-[#D00914] to-[#FF6A6A]
-            font-medium
-            text-white
-            flex items-center gap-2
-            hover:scale-105
-            transition
-          "
+          className="md:col-span-2 bg-[#008BF9] hover:bg-[#008BF9] transition text-white font-bold py-4 rounded-xl"
         >
-          Submit →
+          Confirm Amount
         </button>
+
       </form>
     </div>
-  </div>
-</section>
+  </div> */}
+   {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start"> */}
+
+    {/* LEFT IMAGE */}
+    {/* <div className="relative w-full h-full">
+      <img
+        src="/registration-image.png"  
+        alt="Partner Registration"
+        className="rounded-3xl shadow-xl   w-[569px] h-[540px] object-cover"
+      />
+    </div>
+  <div className=" mx-auto px-6"> */}
+  {/* HEADING */}
+  {/* <h2 className="text-[48px] font-Inter font-bold text-[#00365A] mb-4">
+    Partner Registration
+  </h2>
+
+  {/* SUBTEXT */}
+  {/* <p className="text-[16px] text-[#4A4A4A] mb-8 leading-relaxed max-w-2xl">
+    Fill out the form below to join Misha Capital's partner network.
+    Fields marked with * are mandatory.
+  </p>  */}
+
+  {/* FORM */}
+  {/* <form className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <input
+      type="text"
+      placeholder="First Name*"
+      className="border rounded-xl px-4 py-3 bg-white outline-none focus:ring-2 focus:ring-[#123b5a]/20"
+    />
+
+    <input
+      type="tel"
+      placeholder="Contact Number*"
+      className="border rounded-xl px-4 py-3 bg-white outline-none"
+    />
+
+    <input
+      type="email"
+      placeholder="Email Address*"
+      className="border rounded-xl px-4 py-3 bg-white outline-none"
+    />
+
+    <select className="border rounded-xl px-4 py-3 bg-white outline-none">
+      <option>Location</option>
+      <option>Gurugram</option>
+      <option>Delhi</option>
+      <option>Noida</option>
+    </select>
+
+    <input
+      type="text"
+      placeholder="Company*"
+      className="border rounded-xl px-4 py-3 bg-white outline-none"
+    />
+
+    <input
+      type="text"
+      placeholder="Type of Partnership*"
+      className="border rounded-xl px-4 py-3 bg-white outline-none"
+    />
+
+    <input
+      type="text"
+      placeholder="Average Deal Size"
+      className="border rounded-xl px-4 py-3 bg-white outline-none"
+    />
+
+    <input
+      type="text"
+      placeholder="Areas of Expertise*"
+      className="border rounded-xl px-4 py-3 bg-white outline-none"
+    /> */}
+
+    {/* CENTERED TEXTAREA */}
+    {/* <div className="lg:col-span-3 flex justify-center">
+      <textarea
+        rows="4"
+        placeholder="Additional Message"
+        className="border rounded-xl px-4 py-3 bg-white outline-none w-full "
+      />
+    </div> */}
+
+    {/* CENTERED BUTTON */}
+    {/* <div className="lg:col-span-3 flex justify-center">
+      <button
+        type="submit"
+        className="bg-[#008BF9] hover:bg-[#0075d4] transition text-white font-bold py-4 px-48 rounded-xl"
+      >
+        Confirm Amount
+      </button>
+    </div>
+
+  </form>
+</div>
+</div>
+</section> */}
+
 </>
 
   );

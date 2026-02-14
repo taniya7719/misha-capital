@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Herovideo() {
   return (
-   <section className="relative min-h-screen w-full ">
+   <section className="relative min-h-screen w-full box overflow-hidden">
   {/* Background Video */}
   <video
     src="/hero.mp4"
@@ -20,28 +20,34 @@ export default function Herovideo() {
   <div className="absolute inset-0 bg-[#050023]/60" />
 
   {/* CONTENT */}
-  <div className="relative z-10 px-20 md:px-30 pt-40 ">
+  <div className="relative z-10 pt-20 ">
 
     
     {/* HEADING */}
     <h1
-  className="
+  className=" font-extrabold
     text-white
     font-bold
-    text-[56px]
-    leading-[62.7px]
+    text-3xl sm:text-4xl md:text-5xl lg:text-[56px]
+leading-tight md:leading-snug lg:leading-[62px]
+
     tracking-[-0.01em]
   "
 >
       Your Investment <br />
 
       <span
-        className="
-          block
-          text-transparent
-          [-webkit-text-stroke:1.0px_white]
-        "
-      >
+  className="
+    block
+    font-inter
+    text-6xl
+    font-medium
+    text-transparent
+    [-webkit-text-stroke:1.5px_white]
+    tracking-tight
+  "
+>
+      
         banking Partner
       </span>
 
@@ -66,7 +72,8 @@ export default function Herovideo() {
     <Link href="/Contact">
       <div
   className="
-    mt-20
+    mt-20 md:mt-16 lg:mt-20
+
     inline-flex
     items-center
     justify-center
@@ -97,18 +104,20 @@ export default function Herovideo() {
   </div>
 
   {/* RIGHT FLOATING TEXT */}
-  <div className="absolute right-30 bottom-20 z-20 hidden lg:block">
+  <div className="absolute right-6 md:right-16 bottom-10 md:bottom-20 z-20 hidden lg:block">
+
     <div className="flex items-start gap-3">
       {/* ICON */}
       <div className="flex flex-col items-start gap-3">
   {/* ICON */}
- <div className="flex h-8 w-12 items-center ">
+ <div className=" flex h-20 w-12 items-center ">
   <img src="/Frame 57.svg" alt="" className="h-14 w-14" />
 </div>
 
 
   {/* TEXT */}
-  <p className=" font-ProximaSansRegular w-[455px]  h-[48px] leading-[24px] text-[#FFFFFF]">
+  <p className="font-ProximaSansRegular text-white leading-2">
+
     Your One-Stop Shop for Business Success
   </p>
 
@@ -120,7 +129,7 @@ export default function Herovideo() {
 
 
       {/* Navbar */}
-      <Navigationbar />
+     
       
     </section>
   );

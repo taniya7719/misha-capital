@@ -18,9 +18,11 @@ import Navigationbar from "@/Navigationbar";
 export default function Frontpage() {
   return (
     <main className="relative h-screen">
-    {/* <Navigationbar/> */}
+    <Navigationbar/>
+    <section className="relative min-h-screen w-full ">
     <HeroVideo/>
-    <section className="px-10  ">
+    </section>
+    <section className="  ">
     <ContentSection/>
     </section>
     
@@ -29,10 +31,11 @@ export default function Frontpage() {
   
     
     <MajorTransactions/>
-    <section className="px-17">
+    <section className="px-10">
       <Service/>
+       </section>
     <FocusIndustries/>
-    </section>
+   
    
    
     <Footer/>

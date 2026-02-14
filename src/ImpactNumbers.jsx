@@ -65,42 +65,43 @@ export default function ImpactNumbers() {
   return (
     <section
   ref={sectionRef}
-  className="bg-[url('/map-frame-2.png')] bg-no-repeat bg-cover pb-20 px-10"
+  className="bg-[url('/map-frame-2.png')] bg-no-repeat bg-cover box"
 >
       {/* Heading */}
-    <div className="flex flex-col items-center text-center">
-  {/* TOP STEP */}
-  <div className="flex items-center gap-1 px-[39px] opacity-70 mb-2">
-    <span className="h-px w-[62px] bg-[#000000]"></span>
-    <span className="text w-[120px] h-[28px]  text-[#000000]">
-      delivering impact
-    </span>
-    <span className="h-px w-[62px] bg-[#000000]"></span>
-  </div>
+   <div className="text-center mb-8 ">
+      <div className="flex items-center justify-center gap-2 text-[#000000] text-medium">
+        <span className="w-12 h-[1px] bg-[#000000]"></span>
+        <span>delivery impact</span>
+        <span className="w-12 h-[1px] bg-[#000000]"></span>
+      </div>
 
-  {/* MAIN HEADING */}
-  <h2
-  className={` text-center text-[48px] leading-[25px] tracking-[-0.01em] font-normaltext-[#042C5C]`}
->
-  <span className={`  font-['Libre_Bodoni']  italic  text-[#0E78BE] mr-2 `} >
-    Our
-  </span>
+      <h2 className="text-center text-4xl md:text-5xl mb-16">
+      <span className="font-bold text-[#032F60]">
+        Our
+      </span>{" "}
+      <span className="font-bold text-[#032F60]">
+        Growth Power
+      </span>
+    </h2>
+    
+    </div>
 
-  <span className="font-['Proxima'] text-[#00365A] font-semibold">
-    Growth Power
-  </span>
-</h2>
 
-</div>
+
 
       {/* Circles */}
-      <div className="mx-auto mt-16 flex max-w-7xl items-center justify-center">
+      <div className="mx-auto mt-10 md:mt-16  flex flex-wrap justify-center items-center">
+
   {stats.map((item, index) => (
 
       <div
    key={index}
-  className={`group relative -ml-8 first:ml-0
-    w-[240px] h-[240px] rounded-full bg-white
+  className={`group relative  lg:-ml-8 first:ml-0
+
+   w-[160px] h-[160px] 
+sm:w-[200px] sm:h-[200px] 
+lg:w-[240px] lg:h-[240px]
+ rounded-full bg-white
     flex flex-col items-center justify-center text-center
     shadow-[0_0_40px_rgba(0,0,0,0.08)]
     transition-all duration-500 ease-out
@@ -117,7 +118,8 @@ export default function ImpactNumbers() {
 
             {/* Number */}
             <div className="group cursor-pointer">
-           <h3 className="text-[42px] font-bold text-black group-hover:text-[#D9261E] transition-colors duration-300">
+           <h3 className="text-2xl sm:text-3xl lg:text-[42px]
+ font-bold text-black group-hover:text-[#D9261E] transition-colors duration-300">
   <CountUp
     value={item.value}
     prefix={item.prefix}
@@ -129,7 +131,9 @@ export default function ImpactNumbers() {
 
 
             {/* Label */}
-            <p className="mt-3 text-[15px] leading-[20px] font-medium text-black px-6">
+            <p className="mt-3 text-xs sm:text-sm lg:text-[15px] 
+leading-tight lg:leading-[20px]
+ font-medium text-black px-6">
               {item.label}
             </p>
           </div>

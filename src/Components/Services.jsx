@@ -65,87 +65,83 @@ export default function Services() {
   return (
     <>
       {/* ================= CORPORATE DEBT ================= */}
-      <section className="max-w-7xl mx-auto px-10 py-16 bg-white">
-        <div className="grid grid-cols-1 lg:grid-cols-2 bg-[#E5E7EB] gap-px">
+      <section className="mx-auto bg-white box">
+  <div className="grid grid-cols-1 lg:grid-cols-2 bg-[#E5E7EB] gap-px">
 
-          {/* LEFT – HEADING */}
-          <div className="bg-white p-10 flex items-center">
-            <h2
-              className='
-                font-["italic"]
-                text-[52px]
-                leading-[65.2px]
-                font-bold
-                text-[rgb(11,12,12)]
-              '
-            >
-              Corporate <br></br>
-              Debt
-            </h2>
-          </div>
-
-          {/* RIGHT – 2 CARDS */}
-          <div className="grid grid-cols-2 bg-[#E5E7EB] gap-px">
-            {services.slice(0, 2).map((item, index) => (
-              <Card key={index} item={item} />
-            ))}
-          </div>
-
-          {/* ROW 2 – LEFT */}
-          <div className="grid grid-cols-2 bg-[#E5E7EB] gap-px">
-            {services.slice(2, 4).map((item, index) => (
-              <Card key={index} item={item} />
-            ))}
-          </div>
-
-          {/* ROW 2 – RIGHT */}
-          <div className="grid grid-cols-2 bg-[#E5E7EB] gap-px">
-            {services.slice(4, 6).map((item, index) => (
-              <Card key={index} item={item} />
-            ))}
-          </div>
-
-          {/* ROW 3 – LEFT */}
-          <div className="grid grid-cols-2 bg-[#E5E7EB] gap-px">
-            {services.slice(6, 8).map((item, index) => (
-              <Card key={index} item={item} />
-            ))}
-          </div>
-
-          {/* ROW 3 – RIGHT */}
-          <div className="grid grid-cols-2 bg-[#E5E7EB] gap-px">
-            {services.slice(8, 10).map((item, index) => (
-              <Card key={index} item={item} />
-            ))}
-          </div>
+    {/* LEFT – HEADING */}
+    <div className="bg-white flex items-center">
+      <div className="text-center mb-8 px-4 sm:px-0">
+        <div className="flex items-center justify-center gap-2 text-[#000000] text-medium mt-1">
+          <span className="w-12 h-[1px] bg-[#000000]"></span>
+          <span>our services</span>
+          <span className="w-12 h-[1px] bg-[#000000]"></span>
         </div>
-      </section>
+
+        <h2 className="text-center text-3xl sm:text-4xl md:text-5xl mb-10 sm:mb-16">
+          <span className="font-bold text-[#032F60]">Corporate</span>{" "}
+          <span className="font-bold text-[#032F60]">Debt</span>
+        </h2>
+      </div>
+    </div>
+
+    {/* RIGHT – 2 CARDS */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 bg-[#E5E7EB] gap-px">
+      {services.slice(0, 2).map((item, index) => (
+        <Card key={index} item={item} />
+      ))}
+    </div>
+
+    {/* ROW 2 – LEFT */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 bg-[#E5E7EB] gap-px">
+      {services.slice(2, 4).map((item, index) => (
+        <Card key={index} item={item} />
+      ))}
+    </div>
+
+    {/* ROW 2 – RIGHT */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 bg-[#E5E7EB] gap-px">
+      {services.slice(4, 6).map((item, index) => (
+        <Card key={index} item={item} />
+      ))}
+    </div>
+
+    {/* ROW 3 – LEFT */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 bg-[#E5E7EB] gap-px">
+      {services.slice(6, 8).map((item, index) => (
+        <Card key={index} item={item} />
+      ))}
+    </div>
+
+    {/* ROW 3 – RIGHT */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 bg-[#E5E7EB] gap-px">
+      {services.slice(8, 10).map((item, index) => (
+        <Card key={index} item={item} />
+      ))}
+    </div>
+
+  </div>
+</section>
 
       {/* ================= PRIVATE EQUITY ================= */}
     
-{/* ================= PRIVATE EQUITY ================= */}
-<section className="w-full bg-[#F3F4F6] py-24">
-  <div className="max-w-7xl mx-auto px-8">
 
-    {/* HEADING */}
-    <div className="mb-16 text-center">
-      <h2
-              className='
-                font-["italic"]
-                text-[52px]
-                leading-[65.2px]
-                font-bold
-                text-[rgb(11,12,12)]
-              '
-            >
-        Private Equity
-      </h2>
+<section className="w-full bg-[#F3F4F6] box ">
+  <div className="text-center mb-8  sm:px-0 ">
+    <div className="flex items-center justify-center gap-2 text-[#000000] text-medium">
+      <span className="w-12 h-[1px] bg-[#000000]"></span>
+      <span>our services</span>
+      <span className="w-12 h-[1px] bg-[#000000]"></span>
     </div>
 
-    {/* CARDS – SAME AS UPPER */}
-    <div className="flex justify-center">
-      <div className="grid grid-cols-1 md:grid-cols-3 bg-[#E5E7EB] gap-px max-w-5xl w-full">
+    <h2 className="text-3xl sm:text-4xl md:text-5xl mb-10 sm:mb-16">
+      <span className="font-bold text-[#032F60]">Private</span>{" "}
+      <span className="font-bold text-[#032F60]">Equity</span>
+    </h2>
+
+    <div className="flex justify-center ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 bg-[#E5E7EB] gap-px max-w-5xl w-full ">
         <Card
+        center
           item={{
             title: "Series A Funding",
             icon: "/Business-icon.png",
@@ -155,6 +151,7 @@ export default function Services() {
         />
 
         <Card
+        center
           item={{
             title: "Growth Equity & Pre-IPO Capital",
             icon: "/Business-icon.png",
@@ -164,6 +161,7 @@ export default function Services() {
         />
 
         <Card
+        center
           item={{
             title: "Mergers & Acquisitions",
             icon: "/Business-icon.png",
@@ -173,10 +171,8 @@ export default function Services() {
         />
       </div>
     </div>
-
   </div>
 </section>
-
 
 
     </>
@@ -184,18 +180,39 @@ export default function Services() {
 }
 
 /* ================= CARD COMPONENT ================= */
-function Card({ item }) {
+function Card({ item, center }) {
   return (
-    <div className="bg-white px-8 py-8 min-h-[260px] hover:bg-[#FAFAFA] transition">
-      <div className="mb-5">
-        <img src={item.icon} alt="" className="h-9 w-9" />
+    <div
+      className={`
+        bg-white
+        px-6 sm:px-8
+        py-8
+        min-h-[220px] sm:min-h-[260px]
+        hover:bg-[#FAFAFA]
+        transition
+        ${center ? "flex flex-col items-center justify-center text-center" : ""}
+      `}
+    >
+      <div className={`mb-5 ${center ? "flex justify-center" : ""}`}>
+        <img
+          src={item.icon}
+          alt="alt"
+          className="h-8 w-8 sm:h-9 sm:w-9"
+        />
       </div>
 
-      <h3 className="text-[16px] font-semibold text-[#0B0C0C] mb-4">
+      <h3 className="text-[16px] sm:text-[16px] font-semibold text-[#0B0C0C] mb-2">
         {item.title}
       </h3>
 
-      <p className="text-[14px] text-[#555] leading-[26px]">
+      <p
+        className={`
+          text-[13px] sm:text-[14px] 
+          text-[#555]
+          leading-[26px] sm:leading-[26px]
+          ${center ? "max-w-[260px]" : ""}
+        `}
+      >
         {item.desc}
       </p>
     </div>

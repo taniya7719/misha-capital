@@ -109,23 +109,26 @@ export default function FocusIndustries() {
     { name: "Electric Vehicles", icon: "/Electronic-vehicle.png" },
   ];
  return (
-    <section className="py-12 bg-white ">
-      <div className=" mx-auto px-17">
+    <section className=" bg-white box">
+      <div className=" mx-auto ">
         
-        <div className="text-center mb-16">
-          <div className="flex items-center justify-center gap-6 mb-4">
-            <span className="h-[1px] w-20 bg-[#000000]" />
-            <span className=" tracking-[0.15em] text-md text-[#000000]">
-              industry associations
-            </span>
-            <span className="h-[1px] w-20 bg-[#000000]" />
-          </div>
+       <div className="text-center mb-8 ">
+      <div className="flex items-center justify-center gap-2 text-[#000000] text-medium">
+        <span className="w-12 h-[1px] bg-[#000000]"></span>
+        <span>industry associations</span>
+        <span className="w-12 h-[1px] bg-[#000000]"></span>
+      </div>
 
-          <h2 className="text-5xl font-serif">
-            <span className="italic text-[#1E73BE]">Focus</span>{" "}
-            <span className="font-semibold text-[#021C3C]">Industries</span>
-          </h2>
-        </div>
+      <h2 className="text-center text-4xl md:text-5xl mb-16">
+      <span className="font-bold text-[#032F60]">
+        Focus
+      </span>{" "}
+      <span className="font-bold text-[#032F60]">
+        Industries
+      </span>
+    </h2>
+    
+    </div>
 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
   {industries.map((item, index) => {
     const row = Math.floor(index / 4);

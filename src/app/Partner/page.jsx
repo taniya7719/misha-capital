@@ -13,10 +13,10 @@ export default function Partner() {
     
 
      <Heropartner/>
-    <section className=" py-10">
+    <section className=" ">
     <PartnerWithUs/>
     </section>
-    <section className=" py-10">
+    <section className="">
     <StepCards/>
     </section>
   
