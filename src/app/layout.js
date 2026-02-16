@@ -1,13 +1,8 @@
 import "./globals.css";
-import { Libre_Bodoni } from "next/font/google";
+
 import { Inter } from "next/font/google";
 
-export const libreBodoni = Libre_Bodoni({
-  subsets: ["latin"],
-  weight: ["400"],
-  style: ["italic", "normal"],
-  
-});
+
 
 export const inter = Inter({
   subsets: ["latin"],

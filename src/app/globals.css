@@ -143,7 +143,7 @@ body {
 }
 @font-face {
   font-family: "Inter";
-  src: url("/fonts/fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap") format("stylesheet");
+  src: url("/fonts/fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap") format("stylesheet");
   font-weight: 800;
 }
 
@@ -190,7 +190,7 @@ body {
 }
  */
  .misha-outline {
-  font-family: 'Inter', sans-serif;
+  font-family: 'inter', sans-serif;
   color: transparent;
   -webkit-text-stroke: 1px rgba(0, 54, 90, 0.15);
   text-rendering: geometricPrecision;
