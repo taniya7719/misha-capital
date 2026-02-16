@@ -70,7 +70,7 @@ export default function Services() {
 
     {/* LEFT – HEADING */}
     <div className="bg-white flex items-center">
-      <div className="text-center mb-8 px-4 sm:px-0">
+      <div className="text-center mb-4 px-4 sm:px-0">
         <div className="flex items-center justify-center gap-2 text-[#000000] text-medium mt-1">
           <span className="w-12 h-[1px] bg-[#000000]"></span>
           <span>our services</span>
@@ -125,7 +125,7 @@ export default function Services() {
       {/* ================= PRIVATE EQUITY ================= */}
     
 
-<section className="w-full bg-[#F3F4F6] box ">
+<section className=" bg-[#F3F4F6] box lg:mb-55 ">
   <div className="text-center mb-8  sm:px-0 ">
     <div className="flex items-center justify-center gap-2 text-[#000000] text-medium">
       <span className="w-12 h-[1px] bg-[#000000]"></span>

@@ -34,27 +34,26 @@ export default function Majortransaction() {
     className="absolute inset-0 bg-cover bg-center"
     style={{ backgroundImage: "url('/pattern.jpg')" }}
   />
-  <div className="absolute inset-0 bg-gradient-to-br from-[#032A58] to-[#043B73]" />
+  <div className="absolute inset-0  bg-gradient-to-br from-[#032A58] to-[#043B73]" />
 
-  <div className="relative z-10 max-w-7xl mx-auto px-6">
+  <div className="relative z-10 max-w-7xl mx-auto px-6 ">
 
     {/* TOP LABEL */}
     <div className="flex items-center justify-center gap-4 mb-4 text-white/70 text-sm tracking-wide">
-      <span className="h-[1px] w-10 bg-white/40" />
-      <span>debt & equity</span>
-      <span className="h-[1px] w-10 bg-white/40" />
-    </div>
+     
+        <span className="w-12 h-[1px] bg-[white]/50"></span>
+        <span>debt & equity</span>
+        <span className="w-12 h-[1px] bg-[white]/50"></span>
+      </div>
 
-    {/* HEADING */}
-   <h2 className="text-center text-4xl md:text-5xl mb-16">
-      <span className="font-serif italic text-white font-light">
+      <h2 className="text-center text-4xl md:text-5xl mb-16">
+      <span className="font-bold text-[white]">
         Major
       </span>{" "}
-      <span className="font-semibold text-[#1DA1F2]">
+      <span className="font-bold text-[white]">
         Transactions
       </span>
     </h2>
-
     {/* GRID */}
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
       {transactions.slice(0, 20).map((item, index) => (

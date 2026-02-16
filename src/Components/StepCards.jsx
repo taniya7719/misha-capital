@@ -315,7 +315,7 @@ export default function ExecutionSteps() {
       <div className="w-12 lg:w-16 h-[1px] bg-[#000000]"></div>
     </div>
 
-    <h2 className="text-center text-3xl sm:text-4xl lg:text-[48px] ">
+    <h2 className="text-center text-3xl sm:text-4xl lg:text-[48px] mb-10 ">
       <span className="font-bold text-[#00365A]">
         Step by Step Guide
       </span>

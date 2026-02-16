@@ -62,7 +62,7 @@ mb-10 md:mb-16
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="flex flex-col sm:flex-row gap-6 items-center justify-center">
+        <div className="flex flex-col sm:flex-row lg:flex-row items-center justify-center">
 
   {/* Investment Banking */}
   <div

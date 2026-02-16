@@ -126,7 +126,7 @@ export default function PartnerWithUs() {
                 <img
                   src={item.img}
                   alt={item.title}
-                  className="w-full h-[260px] sm:h-[300px] lg:w-[311.75px] lg:h-[360px] object-cover"
+                  className="w-full h-[260px] sm:h-[300px] lg:w-[311.75px] lg:h-[311px] object-cover"
                 />
 
                 <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition duration-300"></div>

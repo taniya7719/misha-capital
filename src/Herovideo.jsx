@@ -20,7 +20,7 @@ export default function Herovideo() {
   <div className="absolute inset-0 bg-[#050023]/60" />
 
   {/* CONTENT */}
-  <div className="relative z-10 pt-20 ">
+  <div className="relative z-10 pt-10 ">
 
     
     {/* HEADING */}
@@ -36,14 +36,14 @@ leading-tight md:leading-snug lg:leading-[62px]
 >
       Your Investment <br />
 
-      <span
+  <span
+  style={{WebkitTextStrok: "1px #4d4d4d", fontFamily: "Lato, Sans-sarif"}}
   className="
     block
-    font-inter
-    text-6xl
-    font-medium
-    text-transparent
-    [-webkit-text-stroke:1.5px_white]
+      text-transparent
+     text-6xl
+    [-webkit-text-stroke:1px_white]
+   
     tracking-tight
   "
 >
@@ -72,7 +72,7 @@ leading-tight md:leading-snug lg:leading-[62px]
     <Link href="/Contact">
       <div
   className="
-    mt-20 md:mt-16 lg:mt-20
+    mt-20 md:mt-16 lg:mt-24
 
     inline-flex
     items-center
@@ -110,7 +110,7 @@ leading-tight md:leading-snug lg:leading-[62px]
       {/* ICON */}
       <div className="flex flex-col items-start gap-3">
   {/* ICON */}
- <div className=" flex h-20 w-12 items-center ">
+ <div className=" flex h-15 w-12 items-center ">
   <img src="/Frame 57.svg" alt="" className="h-14 w-14" />
 </div>
 
