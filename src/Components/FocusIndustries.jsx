@@ -104,7 +104,7 @@ export default function FocusIndustries() {
     { name: "Electronics", icon: "/Electronics.png" },
     { name: "Manufacturing", icon: "/Manufacturing.png" },
     { name: "Thermal Power Plants", icon: "/thermal-power.png" },
-    { name: "Infrastructure Projects", icon: "/infrastructure.png" },
+    { name: "Infrastructure Projects", icon: "/architecture.png" },
     { name: "Technology", icon: "/Technology.png" },
     { name: "Electric Vehicles", icon: "/Electronic-vehicle.png" },
   ];

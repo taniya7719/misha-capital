@@ -22,7 +22,7 @@ export default function PartnerWithUs() {
     <>
       {/* WHY PARTNER */}
       <section className="box">
-        <div className="mx-auto flex flex-col lg:flex-row gap-5">
+        <div className="mx-auto flex flex-col lg:flex-row gap-3">
 
           {/* LEFT SIDE */}
           <div className=" lg:w-1/2 flex flex-col items-center lg:items-start">
@@ -122,19 +122,33 @@ export default function PartnerWithUs() {
               { img: "/Third3.jpg", title: "Chartered\nAccountants" },
               { img: "/Fourth4.jpg", title: "Deal\nIntroducers" },
             ].map((item, i) => (
-              <div key={i} className="relative group overflow-hidden">
-                <img
-                  src={item.img}
-                  alt={item.title}
-                  className="w-full h-[260px] sm:h-[300px] lg:w-[311.75px] lg:h-[311px] object-cover"
-                />
+             <div key={i} className="relative group overflow-hidden">
+  
+  {/* Image */}
+  <img
+    src={item.img}
+    alt={item.title}
+    className="w-full h-[260px] sm:h-[300px] lg:w-[311.75px] lg:h-[311px] object-cover"
+  />
 
-                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition duration-300"></div>
+  {/* Vertical Strips (Hidden Initially) */}
+  <div className="absolute inset-0 flex pointer-events-none">
+    {[0, 1, 2, 3].map((_, index) => (
+      <div
+        key={index}
+        className="w-1/4 h-full bg-[#0E78BE]/40 translate-y-full group-hover:translate-y-0 transition-transform duration-700 ease-in-out"
+        style={{ transitionDelay: `${index * 120}ms` }}
+      />
+    ))}
+  </div>
 
-                <div className="absolute bottom-6 left-6 text-white text-lg lg:text-xl font-semibold whitespace-pre-line">
-                  {item.title}
-                </div>
-              </div>
+  {/* Title */}
+  <div className="absolute bottom-6 left-6 text-white text-lg lg:text-xl font-bold whitespace-pre-line z-10">
+    {item.title}
+  </div>
+
+</div>
+
             ))}
           </div>
 
