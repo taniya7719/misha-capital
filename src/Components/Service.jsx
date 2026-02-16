@@ -65,20 +65,23 @@ mb-10 md:mb-16
         <div className="flex flex-col sm:flex-row lg:flex-row items-center justify-center">
 
   {/* Investment Banking */}
+  
   <div
     className="
-      relative
-     
-      sm:max-w-[360px]
-      lg:max-w-[360px]
-      min-h-[380px]
-      lg:h-[420px]
-      bg-white
-      rounded-[28px]
-      shadow-[0_30px_80px_rgba(0,0,0,0.15)]
-      p-6
-      z-20
-    "
+  relative
+  sm:max-w-[360px]
+  lg:max-w-[360px]
+  min-h-[380px]
+  lg:h-[420px]
+  bg-white
+  rounded-[28px]
+  shadow-[0_30px_80px_rgba(0,0,0,0.15)]
+  p-14
+  border border-[#E5E7EB]
+  border-2
+  ring-4 ring-[#0A6ED1]/10
+"
+
   >
 
     <h3
