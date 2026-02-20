@@ -69,7 +69,7 @@ leading-tight md:leading-snug lg:leading-[62px]
     </p> */}
 
     {/* BUTTON */}
-    <Link href="/Contact">
+    <Link href="/contact-us">
       <div
   className="
     mt-18 md:mt-16 lg:mt-18
