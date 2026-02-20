@@ -72,7 +72,7 @@ leading-tight md:leading-snug lg:leading-[62px]
     <Link href="/contact-us">
       <div
   className="
-    mt-18 md:mt-16 lg:mt-18
+    mt-16 md:mt-16 lg:mt-25
 
     inline-flex
     items-center
@@ -104,7 +104,7 @@ leading-tight md:leading-snug lg:leading-[62px]
   </div>
 
   {/* RIGHT FLOATING TEXT */}
-  <div className="absolute right-6 md:right-16 bottom-10 md:bottom-25 z-20 hidden lg:block">
+  <div className="absolute right-6 md:right-16 bottom-10 md:bottom-20 z-20 hidden lg:block">
 
     <div className="flex items-start gap-3">
       {/* ICON */}

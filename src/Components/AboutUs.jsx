@@ -266,6 +266,7 @@ export default function AboutUs() {
   const teamMembers = [
     {
       name: "Mr. Manish Gupta",
+      image: "/manish-gupta.png",
       role: "Finance Professional",
       desc: "Mr. Manish Gupta, IIM Calcutta Alumnus, is a Finance professional with 30 years of experience in investment banking, debt syndication & business advisory services. His experience is in various sectors & is skilled in raising funds through Equity, Project Finance,Working capital, Promoter funding, ECB, IPO, and rights issue.", 
 
@@ -273,28 +274,29 @@ export default function AboutUs() {
     },
     {
       name: "Mr. Manan Kedia",
+       image: "/manan-kedia.png",
       role: "Investor and Finance Professional",
       desc: "Mr. Manan Kedia is an active investor and finance professional, 2x tech founder, 6+ years running diverse businesses, experience in handling equity transactions in diverse industries like Blockchain, Web3, FMCG, Tech etc. MSc from ESADE, MIM from UCD and B.Tech from VIT",
     },
-    {
-      name: "Mr. Anil Chowdhary",
-      role: "Investment Advisor",
-      desc: "20+ years of experience in capital markets & structured finance.",
-    },
+  
     {
       name: "Ms. Medha Gupta",
-      role: "Business Strategist",
-      desc: "Expert in M&A advisory & growth strategy for mid-sized enterprises.",
+        image: "/medha-gupta.png",
+       role: "Vice President",
+      desc: "Ms. Medha Gupta is an active investor and comes with an international relations background with experience in equity transactions across industries like Power, Steel, Real Estate, FMCG, EV etc.",
     },
-     {
-      name: "Mr. Shanshank Parihar",
-      role: "Business Strategist",
-      desc: "Expert in M&A advisory & growth strategy for mid-sized enterprises.",
-    },
+   
      {
       name: "Mr. Sumit Chatterjee ",
-      role: "Business Strategist",
-      desc: "Expert in M&A advisory & growth strategy for mid-sized enterprises.",
+      image: "/sumit-chatterjee.png",
+      role: "Senior Partner",
+      desc: "Mr. Sumit Chatterjee is a seasoned C-suite executive and entrepreneur with over two decades of global and local experience in finance and business operations across FMCG, financial and IT services, real estate, and professional services. His expertise spans strategic planning, financial analysis, corporate finance, fund raising, IPOs (NASDAQ & NSE), P&L management, compliance & M&A.",
+    },
+      {
+      name: "Mr. Shanshank Parihar",
+        image: "/shashank-parihar.png",
+      role: "Partner",
+      desc: "Mr. Shashank Parihar is a professional supporting cross border entities, from various sectors, with growth strategy and financial advisory. He has strong relationships with VC's, PE's and has successfully raised funds for different tech, real estate, defence and deep tech companies.",
     },
   ];
 
@@ -565,10 +567,10 @@ Tech from VIT
       className="bg-[#0E78BE1A]   lg:w-[519.5px] h-auto lg:h-[769px] rounded-3xl p-7 flex-shrink-0"
     >
       <img
-        src="/about-1.png"
-        alt={member.name}
-        className="rounded-2xl object-cover mb-6 w-[531.5px] h-[468px]"
-      />
+  src={member.image}
+  alt={member.name}
+  className="rounded-2xl object-cover mb-6 w-full h-[468px]"
+/>
 
       <h3 className="text-[26px] leading-[28px] font-semibold text-[#00365A]">
         {member.name}
