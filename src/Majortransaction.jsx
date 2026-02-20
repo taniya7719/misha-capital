@@ -28,13 +28,13 @@ export default function Majortransaction() {
   ];
 
   return (
-<section className="relative py-20 overflow-hidden px-10">
+<section className="relative py-20 overflow-hidden px-10 mb-50">
   {/* Background */}
   <div
     className="absolute inset-0 bg-cover bg-center"
     style={{ backgroundImage: "url('/pattern.jpg')" }}
   />
-  <div className="absolute inset-0  bg-gradient-to-br from-[#032A58] to-[#043B73]" />
+  <div className="absolute inset-0  bg-gradient-to-br from-[#032A58] to-[#043B73] " />
 
   <div className="relative z-10 max-w-7xl mx-auto px-6 ">
 
@@ -42,7 +42,7 @@ export default function Majortransaction() {
     <div className="flex items-center justify-center gap-4 mb-4 text-white/70 text-sm tracking-wide">
      
         <span className="w-12 h-[1px] bg-[white]/50"></span>
-        <span>debt & equity</span>
+        <span> Debt & Equity Capital Raising</span>
         <span className="w-12 h-[1px] bg-[white]/50"></span>
       </div>
 

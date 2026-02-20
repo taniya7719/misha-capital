@@ -6,15 +6,15 @@ export default function PartnerWithUs() {
     },
     {
       icon: "/debt.png",
-      text: "Strong focus on large-ticket and structured debt mandates",
+      text: " Expertise in large-ticket and structured debt mandates",
     },
     {
       icon: "/partnership.png",
-      text: "Long-term, outcome-driven partnerships",
+      text: " Long-term, outcome-driven partnerships",
     },
     {
       icon: "/referral.png",
-      text: "Transparent referral engagement & economics",
+      text: " Transparent referral process with clear engagement terms",
     },
   ];
 

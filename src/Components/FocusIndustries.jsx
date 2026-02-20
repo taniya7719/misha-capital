@@ -105,8 +105,9 @@ export default function FocusIndustries() {
     { name: "Manufacturing", icon: "/Manufacturing.png" },
     { name: "Thermal Power Plants", icon: "/thermal-power.png" },
     { name: "Infrastructure Projects", icon: "/architecture.png" },
-    { name: "Technology", icon: "/Technology.png" },
+    { name: " Information Technology", icon: "/Technology.png" },
     { name: "Electric Vehicles", icon: "/Electronic-vehicle.png" },
+    { name: "Health-Care", icon: "/health-insurance.png" },
   ];
  return (
     <section className=" bg-white box">

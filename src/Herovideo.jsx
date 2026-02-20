@@ -28,30 +28,30 @@ export default function Herovideo() {
   className=" font-extrabold
     text-white
     font-bold
-    text-3xl sm:text-4xl md:text-5xl lg:text-[56px]
+    text-3xl sm:text-3xl md:text-4xl lg:text-[48px]
 leading-tight md:leading-snug lg:leading-[62px]
 
-    tracking-[-0.01em]
+    tracking-[-0.01em] mt-20 animate-fadeUp
   "
 >
-      Your Investment <br />
+      Your Investment Banking Partner<br />
 
-  <span
+  {/* <span
   style={{WebkitTextStrok: "1px #4d4d4d", fontFamily: "Lato, Sans-sarif"}}
   className="
     block
       text-transparent
-     text-6xl
+     text-[48px]
     [-webkit-text-stroke:1px_white]
    
     tracking-tight
   "
->
+> */}
       
-        Banking Partner
-      </span>
+        {/* Banking Partner-
+      </span> */}
 
-      from Seed to <br />
+      from Seed to 
       Success
     </h1>
 
@@ -72,7 +72,7 @@ leading-tight md:leading-snug lg:leading-[62px]
     <Link href="/Contact">
       <div
   className="
-    mt-20 md:mt-16 lg:mt-24
+    mt-18 md:mt-16 lg:mt-18
 
     inline-flex
     items-center

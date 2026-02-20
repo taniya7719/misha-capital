@@ -2,197 +2,162 @@ import Image from "next/image";
 
 export default function Service() {
   return (
-    <section className="">
+    <section>
       {/* TOP HEADING */}
-      <div className="text-center mb-8 mt-20 ">
-      <div className="flex items-center justify-center gap-2 text-[#000000] text-medium">
-        <span className="w-12 h-[1px] bg-[#000000]"></span>
-        <span>bespoke</span>
-        <span className="w-12 h-[1px] bg-[#000000]"></span>
+      <div className="text-center mb-4 mt-12">
+        <div className="flex items-center justify-center gap-2 text-[#000000] text-medium">
+          <span className="w-12 h-[1px] bg-[#000000]"></span>
+          <span>Bespoke</span>
+          <span className="w-12 h-[1px] bg-[#000000]"></span>
+        </div>
+
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl mb-10 md:mb-16">
+          <span className="font-bold text-[#032F60]">Service</span>{" "}
+          <span className="font-bold text-[#032F60]">Offerings</span>
+        </h2>
       </div>
 
-      <h2 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl
-mb-10 md:mb-16
-">
-      <span className="font-bold text-[#032F60]">
-        Service
-      </span>{" "}
-      <span className="font-bold text-[#032F60]">
-       Offering
-      </span>
-    </h2>
-    
-    </div>
       {/* MAIN CONTENT */}
-      <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16
- item-center  ">
+      <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
 
         {/* LEFT IMAGE */}
-        <div className="relative  px-10">
+        <div className="relative px-6 lg:px-6">
           {/* CURVE BACKGROUND */}
-         <div
-  className="
-    absolute
-    -left-56
-    top-1/2
-    -translate-y-1/2
-    w-[400px]
-    h-[400px]
-    sm:w-[560px]
-    sm:h-[500px]
-    lg:w-[900px]
-    lg:h-[600px]
-    bg-[url('/Curve.png')]
-    bg-no-repeat
-    bg-contain
-    bg-center
-    z-0
-  "
-/>
+          <div
+            className="
+              absolute
+              -left-32
+              lg:-left-56
+              top-1/2
+              -translate-y-1/2
+              w-[300px]
+              h-[300px]
+              sm:w-[500px]
+              sm:h-[450px]
+              lg:w-[900px]
+              lg:h-[600px]
+              bg-[url('/Curve.png')]
+              bg-no-repeat
+              bg-contain
+              bg-center
+              z-0
+            "
+          />
 
-
-          {/* PERSON */}
+          {/* PERSON IMAGE */}
           <Image
             src="/man-1.png"
             alt="Advisor"
             width={480}
             height={700}
-            className="relative z-10"
+            className="relative z-10 mx-auto"
           />
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="flex flex-col sm:flex-row lg:flex-row items-center justify-center">
+        <div className="flex justify-center lg:justify-start px-4">
 
-  {/* Investment Banking */}
+          <div
+            className="
+              relative
+              w-full
+              max-w-[520px]
+              min-h-[420px]
+              bg-white
+              rounded-[28px]
+              shadow-[0_25px_70px_rgba(0,0,0,0.14)]
+              p-8 sm:p-10
+              border border-[#E5E7EB]
+              ring-4 ring-[#0A6ED1]/10
+            "
+          >
+            {/* Heading */}
+            <h3
+              className="
+                font-semibold
+                text-[22px]
+                lg:text-[28px]
+                leading-[34px]
+                text-[#0A6ED1]
+                mb-2
+              "
+            >
+              Investment Banking
+            </h3>
+
+            {/* Description */}
+            <p
+              className="
+                text-[14px]
+                sm:text-[14px]
+                leading-[22px]
+                text-black
+                mb-4
+              "
+            >
+              Misha Capital offers integrated Investment Banking solutions across domestic and
+              international markets. We structure and execute capital raising strategies for businesses
+              ranging from nascent stages to mature enterprises, encompassing Debt Advisory,
+              Private Equity, strategic M&A, and tailored growth financing solutions.
+            </p>
+
+            {/* Bullet Points */}
+          <ul
+  className="
+    grid grid-cols-1 sm:grid-cols-2
+    border-t border-l border-gray-200
+    text-[14px] sm:text-[14px]
+    text-[#212121]
+  "
+>
+  <li className="flex items-start gap-3 p-4 border-r border-b border-gray-200">
+    <span className="mt-[6px] w-1.5 h-1.5 bg-[#0A6ED1] rounded-full flex-shrink-0"></span>
+    <span>Corporate Debt: Structured business loans and working capital solutions.</span>
+    
+  </li>
+
+  <li className="flex items-start gap-3 p-4 border-r border-b border-gray-200">
+   <span className="mt-[6px] w-1.5 h-1.5 bg-[#0A6ED1] rounded-full flex-shrink-0"></span>
+   <span>M&A Advisory: End-to-end buy-side and sell-side strategic deals.</span>
   
-  <div
-    className="
-  relative
-  sm:max-w-[360px]
-  lg:max-w-[360px]
-  min-h-[380px]
-  lg:h-[420px]
-  bg-white
-  rounded-[28px]
-  shadow-[0_30px_80px_rgba(0,0,0,0.15)]
-  p-14
-  border border-[#E5E7EB]
-  border-2
-  ring-4 ring-[#0A6ED1]/10
-"
+    
+  </li>
 
-  >
+  <li className="flex items-start gap-3 p-4 border-r border-b border-gray-200">
+   <span className="mt-[6px] w-1.5 h-1.5 bg-[#0A6ED1] rounded-full flex-shrink-0"></span>
+    <span>Project & Global Capital: Project finance and cross-border offshore solutions.</span>
+    
+  </li>
 
-    <h3
-      className="
-        
-        w-full
-        lg:max-w-[275px]
-        font-proxima
-        font-medium
-        text-[22px]
-        lg:text-[24px]
-        leading-[32px]
-        tracking-[-0.01em]
-        text-[#0A6ED1]
-      "
-    >
-      Investment Banking
-    </h3>
+  <li className="flex items-start gap-3 p-4 border-r border-b border-gray-200">
+    <span className="mt-[6px] w-1.5 h-1.5 bg-[#0A6ED1] rounded-full flex-shrink-0"></span>
+    <span>Real Estate Finance: Funding for residential and commercial developments.</span>
+    
+  </li>
 
-    <ul
-      className="
-       mt-4
-        w-full
-        
-        lg:w-[275px]
-        font-proxima
-        font-medium
-        text-[15px]
-        lg:text-[16px]
-        leading-[25px]
-        tracking-[-0.01em]
-        text-[#212121]
-        list-disc
-        pl-5
-        
-        space-y-2
-      "
-    >
-      <li>Mergers & Acquisitions</li>
-      <li>Capital Raising – Domestic & International</li>
-      <li>Private Credit Solutions</li>
-      <li>Real Estate Financing & Advisory</li>
-      <li>Transaction Support</li>
-    </ul>
+  <li className="flex items-start gap-3 p-4 border-r border-b border-gray-200">
+    <span className="mt-[6px] w-1.5 h-1.5 bg-[#0A6ED1] rounded-full flex-shrink-0"></span>
+    <span>Structured Finance: Mezzanine, LBO, and Bridge financing.</span>
+    
+    
+  </li>
 
-  </div>
+  <li className="flex items-start gap-3 p-4 border-r border-b border-gray-200">
+    <span className="mt-[6px] w-1.5 h-1.5 bg-[#0A6ED1] rounded-full flex-shrink-0"></span>
+    <span>Supply Chain Finance: Invoice discounting and liquidity management.</span>
+  </li>
 
+  <li className="flex items-start gap-3 p-4 border-r border-b border-gray-200">
+    <span className="mt-[6px] w-1.5 h-1.5 bg-[#0A6ED1] rounded-full flex-shrink-0"></span>
+    
+     <span>Equity Capital: Series A, Growth Equity, and Pre-IPO funding.</span>
+  </li>
+</ul>
 
-  {/* Advisory Services */}
-  {/* <div
-    className="
-      relative
-      w-full
-      sm:max-w-[300px]
-      lg:max-w-[300px]
-      min-h-[380px]
-      lg:h-[420px]
-      bg-white
-      rounded-[28px]
-      shadow-[0_25px_70px_rgba(0,0,0,0.14)]
-      p-8
-      z-10
-    "
-  >
+          </div>
+        </div>
 
-    <h3
-      className="
-        mt-4
-        w-full
-        lg:w-[275px]
-        font-proxima
-        font-medium
-        text-[22px]
-        lg:text-[24px]
-        leading-[32px]
-        tracking-[-0.01em]
-        text-[#0A6ED1]
-      "
-    >
-      Advisory Services
-    </h3>
-
-    <ul
-      className="
-        mt-12
-        w-full
-        lg:w-[275px]
-        font-proxima
-        font-medium
-        text-[15px]
-        lg:text-[16px]
-        leading-[24px]
-        tracking-[-0.01em]
-        text-[#212121]
-        list-disc
-        pl-5
-        space-y-2
-      "
-    >
-      <li>Valuation Advisory</li>
-      <li>Financial & Regulatory Advisory</li>
-      <li>Growth Advisory</li>
-      <li>Corporate Structuring</li>
-      <li>Joint Venture Advisory</li>
-      <li>Business Sales Growth</li>
-    </ul>
-
-  </div> */}
-
-</div>
-</div>
+      </div>
     </section>
   );
 }

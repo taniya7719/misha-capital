@@ -71,16 +71,16 @@ export default function ImpactNumbers() {
    <div className="text-center mb-8 ">
       <div className="flex items-center justify-center gap-2 text-[#000000] text-medium">
         <span className="w-12 h-[1px] bg-[#000000]"></span>
-        <span>delivery impact</span>
+        <span>Delivery Impact</span>
         <span className="w-12 h-[1px] bg-[#000000]"></span>
       </div>
 
-      <h2 className="text-center text-4xl md:text-5xl mb-16">
+      <h2 className="text-center text-4xl md:text-4xl mb-16">
       <span className="font-bold text-[#032F60]">
-        Our
+        Our Growth
       </span>{" "}
       <span className="font-bold text-[#032F60]">
-        Growth Power
+      Track Record
       </span>
     </h2>
     

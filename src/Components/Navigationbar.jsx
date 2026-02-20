@@ -74,14 +74,14 @@ export default function Navigationbar() {
         {/* DESKTOP NAV */}
         <nav className="hidden md:flex gap-6 lg:gap-10">
           {navLink("/", "HOME")}
-          {navLink("/About", "ABOUT US")}
-          {navLink("/OurServices", "OUR SERVICES")}
-          {navLink("/Partner", "PARTNER WITH US")}
-          {navLink("/Contact", "CONTACT US")}
+          {navLink("/about-us", "About Us")}
+          {navLink("/our-services", "OUR SERVICES")}
+          {navLink("/partner-with-us", "PARTNER WITH US")}
+          {navLink("/contact-us", "CONTACT US")}
         </nav>
 
         {/* DESKTOP CTA */}
-        <Link href="/Contact">
+        <Link href="/contact-us">
           <button
             className="hidden lg:flex items-center justify-center
             h-[42px] px-7
@@ -118,10 +118,10 @@ export default function Navigationbar() {
       >
         <div className="flex flex-col items-center gap-6 py-8 text-white">
           {navLink("/", "Home")}
-          {navLink("/About", "About")}
-          {navLink("/OurServices", "Our Services")}
-          {navLink("/Partner", "Partner With Us")}
-          {navLink("/Contact", "Contact Us")}
+          {navLink("/About", "About Us")}
+          {navLink("/our-services", "Our Services")}
+          {navLink("/partner-with-us", "Partner With Us")}
+          {navLink("/contact-us", "Contact Us")}
         </div>
       </div>
     </header>

@@ -274,28 +274,28 @@ export default function ExecutionSteps() {
     {
       step: " STEP 01",
       title: " Partner Registration",
-      desc: "Fill out our Partner form to initiate",
+      desc: "Fill out our partner form to join Misha Capital’s network. ",
       icon: "/red1.png",
       image: "/H1.jpg",
     },
     {
       step: "STEP 02",
-      title: "Deal organisation",
-      desc: "Introduce qualified business leading mandates.",
+      title: " Deal Introduction",
+      desc: "Introduce qualified businesses with high-value mandates.",
       icon: "/red2.png",
       image: "/H2.jpg",
     },
     {
       step: "STEP 03",
       title: "Evalution & structuring",
-      desc: "We structure the deal & aligh lenders.",
+      desc: "We evaluate, structure the deal, and align the right lenders.",
       icon: "/red3.png",
       image: "/H3.jpg",
     },
     {
       step: "STEP 04",
       title: "Execution & Payout",
-      desc: "We execute the mandate & process payouts.",
+      desc: "We execute the mandate efficiently & process payouts seamlessly.",
       icon: "/red4.png",
       image: "/H4.jpg",
     },
@@ -307,7 +307,7 @@ export default function ExecutionSteps() {
   <div className="mx-auto">
 
     {/* HEADER */}
-    <div className="flex items-center justify-center gap-8 mb-1">
+    <div className="flex items-center justify-center gap-6 mb-1">
       <div className="w-12 lg:w-16 h-[1px] bg-[#000000]"></div>
       <p className="text-[#000000] lowercase text-sm lg:text-base">
         how it work
@@ -317,7 +317,7 @@ export default function ExecutionSteps() {
 
     <h2 className="text-center text-3xl sm:text-4xl lg:text-[48px] mb-10 ">
       <span className="font-bold text-[#00365A]">
-        Step by Step Guide
+         Our Partnership Process
       </span>
     </h2>
 
@@ -332,7 +332,7 @@ export default function ExecutionSteps() {
         {steps.map((item, i) => (
           <div
             key={i}
-            className="flex flex-col items-center relative w-full max-w-[270px]"
+            className="flex flex-col items-center relative w-full"
           >
             <div className="bg-[#008BF9]/10 text-[#008BF9] text-[12px] font-semibold px-4 py-2 rounded-lg">
               {item.step}
@@ -345,7 +345,7 @@ export default function ExecutionSteps() {
            <div className="
   bg-[#00365A]
   rounded-2xl
-  px-6 lg:px-8
+  px-4 lg:px-6
   py-6
   h-auto lg:h-[150px]
   w-full lg:w-[260.75px]

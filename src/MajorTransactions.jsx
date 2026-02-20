@@ -344,12 +344,12 @@ export default function MajorTransactions() {
     {/* TOP LABEL */}
     <div className="text-center mb-8 ">
       <div className="flex items-center justify-center gap-2 text-[white]/50 text-medium">
-        <span className="w-12 h-[1px] bg-[white]/50"></span>
-        <span>debt & equity</span>
-        <span className="w-12 h-[1px] bg-[white]/50"></span>
+        <span className="w-8 h-[1px] bg-[white]/50"></span>
+        <span> Debt & Equity Capital Raising</span>
+        <span className="w-8 h-[1px] bg-[white]/50"></span>
       </div>
 
-      <h2 className="text-center text-4xl md:text-5xl mb-16">
+      <h2 className="text-center text-4xl md:text-4xl mb-16">
       <span className="font-bold text-[white]">
         Major
       </span>{" "}

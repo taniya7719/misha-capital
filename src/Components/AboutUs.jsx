@@ -250,21 +250,80 @@
 //       ))}
 //     </div>
 //   </div>
+"use client";
+import { useRef } from "react";
 export default function AboutUs() {
+  const sliderRef = useRef(null);
+
+  const scrollLeft = () => {
+    sliderRef.current.scrollBy({ left: -620, behavior: "smooth" });
+  };
+
+  const scrollRight = () => {
+    sliderRef.current.scrollBy({ left: 620, behavior: "smooth" });
+  };
+
+  const teamMembers = [
+    {
+      name: "Mr. Manish Gupta",
+      role: "Finance Professional",
+      desc: "Mr. Manish Gupta, IIM Calcutta Alumnus, is a Finance professional with 30 years of experience in investment banking, debt syndication & business advisory services. His experience is in various sectors & is skilled in raising funds through Equity, Project Finance,Working capital, Promoter funding, ECB, IPO, and rights issue.", 
+
+
+    },
+    {
+      name: "Mr. Manan Kedia",
+      role: "Investor and Finance Professional",
+      desc: "Mr. Manan Kedia is an active investor and finance professional, 2x tech founder, 6+ years running diverse businesses, experience in handling equity transactions in diverse industries like Blockchain, Web3, FMCG, Tech etc. MSc from ESADE, MIM from UCD and B.Tech from VIT",
+    },
+    {
+      name: "Mr. Anil Chowdhary",
+      role: "Investment Advisor",
+      desc: "20+ years of experience in capital markets & structured finance.",
+    },
+    {
+      name: "Ms. Medha Gupta",
+      role: "Business Strategist",
+      desc: "Expert in M&A advisory & growth strategy for mid-sized enterprises.",
+    },
+     {
+      name: "Mr. Shanshank Parihar",
+      role: "Business Strategist",
+      desc: "Expert in M&A advisory & growth strategy for mid-sized enterprises.",
+    },
+     {
+      name: "Mr. Sumit Chatterjee ",
+      role: "Business Strategist",
+      desc: "Expert in M&A advisory & growth strategy for mid-sized enterprises.",
+    },
+  ];
+
   return (
     <section className="w-full overflow-hidden">
       <div className="mx-auto">
 
         {/* TOP ROW */}
+        {/* Small Top Heading */}
+<div className="flex items-center justify-inline gap-4  pt-8 sm:pt-16 lg:pt-[82px] px-25">
+  <span className="w-12 h-[1px] bg-[#1E1E1E]"></span>
+  <span className="text-[14px] sm:text-[16px]  text-[#1E1E1E] ">
+   Our Advisory Expertise
+  </span>
+  <span className="w-12 h-[1px] bg-[#1E1E1E]"></span>
+</div>
+
         <div className="
           grid grid-cols-1 lg:grid-cols-2
-          gap-10 lg:gap-16
+          gap-10 lg:gap-24
           items-start
           px-6 sm:px-10 lg:px-25
-          pt-10 sm:pt-14 lg:pt-[72px]
+         
           pb-7
         ">
-          <h2 className="text-[28px] sm:text-[34px] lg:text-[40px] leading-[36px] sm:leading-[46px] lg:leading-[52px] text-[#00365A]">
+          
+          
+          <h2 className="text-[28px] sm:text-[34px] lg:text-[40px] leading-[36px] sm:leading-[46px] lg:leading-[52px] text-[#00365A] mt-2">
+            
             <span className="font-bold text-[#032F60]">
               Trusted partner
             </span>{" "}
@@ -274,8 +333,9 @@ export default function AboutUs() {
             </span>
           </h2>
 
-          <p className="text-[16px] leading-[24px] text-[#000000]">
-            Misha Capital is a sector-agnostic financial advisory firm specializing in debt advisory, structured finance, and capital raising solutions for businesses across India. We work closely with promoters, founders, and management teams to design and execute tailored debt strategies, ensuring optimal capital structure, competitive pricing, and timely fund closure.
+          <p className="text-[16px] leading-[22px] text-[#000000]">
+           <span className="font-semibold text-black"> Misha Capital</span> is a sector-agnostic financial advisory firm specializing in <span className="font-semibold text-black"> debt advisory, structured finance, and capital raising solutions </span> for businesses across domestic and international markets.<br></br>
+            We work closely with promoters, founders, and management teams to design and execute tailored debt strategies, ensuring optimal capital structure, competitive pricing, and timely fund closure.
           </p>
         </div>
 
@@ -292,7 +352,7 @@ export default function AboutUs() {
   className="
     relative
     min-h-[520px]
-    lg:min-h-screen
+  
     flex justify-center
     lg:block
   "
@@ -306,13 +366,13 @@ export default function AboutUs() {
   {/* Second Image - Hide on Mobile */}
   <img
     src="/about-2.jpg"
-    className="hidden lg:block rounded-3xl w-[200px] sm:w-[240px] lg:w-[286px] shadow-lg absolute top-1/2 -translate-y-[40%] right-0 sm:right-5"
+    className="hidden lg:block rounded-3xl w-[200px] sm:w-[240px] lg:w-[286px] shadow-lg absolute top-1/2 -translate-y-[20%] right-0 sm:right-[-12]"
   />
 
   {/* Transaction Box - Hide on Mobile */}
-  <div className="hidden lg:block absolute top-8 right-8 sm:right-9 bg-white rounded-2xl shadow-xl px-4 py-6">
-    <div className="text-[36px] font-bold text-[#0E78BE]">200+</div>
-    <div className="text-[24px] text-[#0E78BE] mt-1">Transaction</div>
+  <div className="hidden lg:block absolute top-10 right-8 sm:right-[-3] bg-white rounded-2xl shadow-xl px-3 py-7">
+    <div className="text-[30px]  text-center font-bold text-[#0E78BE]">200+</div>
+    <div className="text-[24px] font-bold text-[#0E78BE] mt-1">Transaction</div>
   </div>
 
 </div>
@@ -320,68 +380,118 @@ export default function AboutUs() {
 
           {/* RIGHT INFO */}
           <div className="space-y-5">
-            <div className="bg-[#D9261E26] rounded-3xl p-6 sm:p-7 lg:p-8 relative">
-              <span className="absolute top-3 left-6 text-5xl"></span>
-              <p className="text-[16px] leading-relaxed font-inter">
-                “ Our core strength lies in debt syndication and advisory, where we assist clients in raising funds through banks, NBFCs, AIFs, private credit funds, and institutional lenders. From working capital finance and project loans to structured debt, green financing, and growth capital, Our team is experienced in executing complex, large-ticket institutional mandates with precision, speed, and strong lender alignment..
-              </p>
-            </div>
+  <div className="bg-[#D9261E26] rounded-3xl p-4 sm:p-6 lg:p-8 relative">
+
+    {/* Centered Sub Heading */}
+    <div className="flex items-center justify-inline gap-4 mb-2">
+      <span className="w-10 sm:w-14 h-[1px] bg-[#1E1E1E]"></span>
+      <span className="text-[14px] sm:text-[16px] text-[#1E1E1E] tracking-wide">
+         Debt Syndication Expertise
+      </span>
+      <span className="w-10 sm:w-14 h-[1px] bg-[#1E1E1E]"></span>
+    </div>
+
+    {/* Content */}
+    <p className="text-[16px] leading-relaxed font-inter text-inline">
+     With over 200 transactions executed, our core strength lies in debt syndication and 
+advisory. We assist clients in raising funds through banks, NBFCs, AIFs, private credit 
+funds, and institutional lenders. From working capital finance and project loans to 
+structured debt, green financing, and growth capital, our team has extensive experience in 
+executing complex, large-ticket institutional mandates with precision, speed, and strong 
+lender alignment.
+</p>
+
+  </div>
+
+
 
             <div className="bg-[#0E78BE26] rounded-3xl p-6 sm:p-7 lg:p-8 ">
-              <p className="text-[16px] leading-relaxed font-inter">
-               Complementing our debt practice, we also provide equity advisory and strategic fundraising support for select growth-stage companies. Our team has advised on 200+ transactions across sectors, delivering solutions spanning investment banking, valuations, corporate finance, and strategic capital allocation, with deal sizes historically ranging from $5M to $500M.
-              </p>
-            </div>
+             <div className="flex items-center justify-center gap-2 mb-2">
+      <span className="w-10 sm:w-14 h-[1px] bg-[#1E1E1E]"></span>
+      <span className="text-[12px] sm:text-[16px] text-[#1E1E1E] ">
+         Equity Advisory & Strategic Fundraising
+      </span>
+      <span className="w-10 sm:w-14 h-[1px] bg-[#1E1E1E]"></span>
+    </div>
+
+    {/* Content */}
+    <p className="text-[16px] leading-relaxed font-inter text-inline">
+   Complementing our debt practice, we also provide equity advisory and strategic 
+fundraising support for select growth-stage companies. Our team has advised on more 
+than 200 transactions across sectors, delivering solutions spanning investment banking, 
+valuations, corporate finance, and strategic capital allocation. Our deal sizes have 
+historically ranged from $5 million to $500 million, reflecting our ability to structure and 
+close transactions across varying scales and complexities.
+
+</p>
+</div>
           </div>
         </div>
 
         {/* OBJECTIVE */}
         <section className="relative  lg:mt-0">
-          <div className="absolute inset-x-0 bottom-0 h-[75%] bg-[#F4F2FB]">
+           <div className="flex items-center justify-center  gap-4 mb-8  mt-20">
+      <span className="w-10 sm:w-14 h-[1px] bg-[#1E1E1E]"></span>
+      <span className="text-[16px] sm:text-[16px] text-[#1E1E1E] ">
+         Our Objective
+      </span>
+      <span className="w-10 sm:w-14 h-[1px] bg-[#1E1E1E]"></span>
+    </div>
+          <div className="absolute inset-x-0 bottom-[-40] h-[75%] bg-[#F4F2FB] ">
             <div className="absolute inset-0 bg-[url('/bg-blue.webp')] bg-cover opacity-10"></div>
           </div>
 
-          <div className="relative mx-auto text-center px-4 sm:px-8 box">
-            <div className="relative z-10 mb-8">
+          <div className="relative mx-auto text-center px-4 sm:px-8 ">
+            <div className="relative z-3 mb-8">
               <img
                 src="/banner.jpg"
                 alt="Team Discussion"
-                className="mx-auto w-full sm:w-[90%] lg:w-[720px] max-w-4xl h-[300px] sm:h-[280px] lg:h-[320px] object-cover rounded-[32px] grayscale shadow-xl"
+                className="mx-auto w-full sm:w-[90%] lg:w-[720px] max-w-4xl h-[300px] sm:h-[280px] lg:h-[300px] object-cover rounded-[32px] grayscale shadow-xl"
               />
             </div>
 
-            <div className="relative z-10 max-w-4xl mx-auto space-y-3">
+            <div className="relative z-10 max-w-4xl mx-auto space-y-2 ">
               <p className="text-[#00365A] italic font-inter font-semibold text-[18px] sm:text-[20px] lg:text-[24px] leading-[28px] lg:leading-[32px]">
-                At Misha Capital, our objective is simple:
+                At Misha Capital, our objective is clear and focused:
                 <br />
-                to provide the right capital at the right terms.
+                 to structure and deliver the right capital, on the right terms, at the right time.
               </p>
 
               <p className="text-[18px] leading-[32px] text-[#000000] ">
-                Backed by a team with diverse experience in investment banking,
-                corporate finance, entrepreneurship, and business consulting,
-                we leverage deep lender relationships and cross-industry insights
-                to deliver efficient, transparent, and outcome-driven advisory
-                services.
+               Backed by a team with diverse experience across investment banking, corporate finance, 
+entrepreneurship, and strategic consulting, we leverage deep lender relationships and 
+cross-industry expertise to provide advisory solutions that are efficient, transparent, and 
+execution-driven.
+<br/>
+Our approach combines strategic insight with disciplined transaction management, 
+ensuring optimal outcomes for every mandate we undertake.
               </p>
             </div>
           </div>
         </section>
 
         {/* TEAM */}
-        <section className="box">
+        {/* <section className="box">
           <div className="mx-auto">
-             <h2 className="text-center text-4xl md:text-5xl mb-10">
+               <div className="flex items-center justify-center  gap-4 mb-2  ">
+      <span className="w-10 sm:w-14 h-[1px] bg-[#1E1E1E]"></span>
+      <span className="text-[14px] sm:text-[16px] text-[#1E1E1E] tracking-wide">
+         Our Leadership
+      </span>
+      <span className="w-10 sm:w-14 h-[1px] bg-[#1E1E1E]"></span>
+    </div>
+             <h2 className="text-center text-4xl md:text-4xl mb-10">
       <span className="font-bold text-[#032F60]">
-        Our 
+        The Foundation of 
+
       </span>{" "}
       <span className="font-bold text-[#032F60]">
-        Team
+        Our Advisory Excellence
       </span>
-    </h2>
+    </h2> */}
             
 
-            <div className="flex flex-col lg:flex-row justify-center gap-20 lg:gap-10">
+            {/* <div className="flex flex-col lg:flex-row justify-center gap-20 lg:gap-10">
               
 
               <div className="bg-[#0E78BE1A]   lg:w-[595.5px] h-auto lg:h-[769px] rounded-3xl p-7">
@@ -393,7 +503,11 @@ export default function AboutUs() {
                   Finance Professional
                 </p>
                 <p className="text-[16px] leading-[25px] text-[#212121]">
-                  Mr. Manish is an active investor and finance professional; 2x tech founder, 6+ years running diverse businesses, experience in handling equity transactions in diverse industries like Blockchain, Web3, FMCG, Tech etc. MSc from ESADE, MIM from UCD and B. Tech from VIT.
+                 Mr. Manish Gupta, IIM Calcutta Alumnus, is a finance professional with 30 years of 
+experience in investment banking, debt syndication & business advisory services. His 
+experience is in various sectors & is skilled in raising funds through Equity, Project Finance, 
+Working capital, Promoter funding, ECB, IPO, and rights issue.
+
                 </p>
               </div>
 
@@ -406,13 +520,84 @@ export default function AboutUs() {
                   Investor and Finance Professional
                 </p>
                 <p className="text-[16px] leading-[25px] text-[#212121]">
-                  Mr. Manan is an active investor and finance professional; 2x tech founder, 6+ years running diverse businesses, experience in handling equity transactions in diverse industries like Blockchain, Web3, FMCG, Tech etc. MSc from ESADE, MIM from UCD and B. Tech from VIT.
-                </p>
-              </div>
+              Mr. Manan Kedia is an active investor and finance professional, 2x tech founder, 6+ years 
+running diverse businesses, experience in handling equity transactions in diverse 
+industries like Blockchain, Web3, FMCG, Tech etc. MSc from ESADE, MIM from UCD and B. 
+Tech from VIT
 
-            </div>
-          </div>
-        </section>
+                </p>
+              </div> */}
+
+            {/* </div> */}
+           <section className="box py-20 relative">
+      <div className="mx-auto">
+
+        {/* Top Label */}
+        <div className="flex items-center justify-center gap-4 mb-2">
+          <span className="w-10 sm:w-14 h-[1px] bg-[#1E1E1E]"></span>
+          <span className="text-[14px] sm:text-[16px] text-[#1E1E1E] tracking-wide">
+            Our Leadership
+          </span>
+          <span className="w-10 sm:w-14 h-[1px] bg-[#1E1E1E]"></span>
+        </div>
+
+        {/* Heading */}
+        <h2 className="text-center text-4xl md:text-4xl mb-14 font-bold text-[#032F60]">
+          The Foundation of Our Advisory Excellence
+        </h2>
+
+        {/* Left Arrow */}
+        <button
+          onClick={scrollLeft}
+          className="absolute left-4 top-[60%] -translate-y-1/2 z-10 bg-white shadow-md rounded-full w-12 h-12 flex items-center justify-center hover:bg-gray-100"
+        >
+          ◀
+        </button>
+
+        {/* Slider */}
+       <div
+  ref={sliderRef}
+  className="flex gap-20 lg:gap-10 overflow-x-auto scroll-smooth no-scrollbar"
+>
+  {teamMembers.map((member, index) => (
+    <div
+      key={index}
+      className="bg-[#0E78BE1A]   lg:w-[519.5px] h-auto lg:h-[769px] rounded-3xl p-7 flex-shrink-0"
+    >
+      <img
+        src="/about-1.png"
+        alt={member.name}
+        className="rounded-2xl object-cover mb-6 w-[531.5px] h-[468px]"
+      />
+
+      <h3 className="text-[26px] leading-[28px] font-semibold text-[#00365A]">
+        {member.name}
+      </h3>
+
+      <p className="text-[16px] leading-[25px] text-[#555555] mb-4">
+        {member.role}
+      </p>
+
+      <p className="text-[16px] leading-[25px] text-[#212121]">
+        {member.desc}
+      </p>
+    </div>
+  ))}
+</div>
+
+
+        {/* Right Arrow */}
+        <button
+          onClick={scrollRight}
+          className="absolute right-4 top-[60%] -translate-y-1/2 z-10 bg-white shadow-md rounded-full w-12 h-12 flex items-center justify-center hover:bg-gray-100"
+        >
+          ▶
+        </button>
+
+      </div>
+    </section>
+  
+
 
         {/* CLIENTS */}
         <section className="relative overflow-hidden box">
@@ -424,37 +609,63 @@ export default function AboutUs() {
           <div className="relative z-10 max-w-7xl mx-auto">
             <div className="flex flex-col lg:flex-row items-start gap-10 lg:gap-14">
 
-              <div className="w-full lg:w-[60%]">
+              <div className="w-full lg:w-[70%]">
+                                <div className="flex items-center justify-inline  gap-4 mb-2 ">
+      <span className="w-10 sm:w-14 h-[1px] bg-[#1E1E1E]"></span>
+      <span className="text-[14px] sm:text-[16px] text-[#1E1E1E] tracking-wide">
+         Our Clients
+      </span>
+      <span className="w-10 sm:w-14 h-[1px] bg-[#1E1E1E]"></span>
+    </div>
+       
                 <h2 className="text-[28px] sm:text-[34px] lg:text-[44px] leading-[38px] lg:leading-[48px] font-bold text-[#00365A]">
-                  Trusted by brands shaping <br />
-                  the future of finance
+                  Trusted by Leading <br />
+                   Businesses Across Sectors
+
                 </h2>
               </div>
 
-              <div className="w-full lg:w-[40%] rounded-[28px] bg-[#EEF5FA]/80 backdrop-blur-sm p-8 shadow-xl">
-                <div className="grid grid-cols-2 divide-x divide-y divide-gray-200 border border-gray-200 rounded-2xl overflow-hidden">
-  {[
-    "atriya.png",
-    "jupiter.png",
-    "webel.png",
-    "suzlon.png",
-    "alt-download.png",
-  ].map((logo, i, arr) => (
-    <div
-      key={i}
-      className={`flex items-center justify-center p-6 ${
-        i === arr.length - 1 ? "col-span-2" : ""
-      }`}
-    >
-      <img
-        src={`/${logo}`}
-        alt="client logo"
-        className="h-16 object-contain opacity-80 mx-auto"
-      />
-    </div>
-  ))}
+              <div className="w-full lg:w-[45%] rounded-[28px] bg-[#EEF5FA]/80 backdrop-blur-sm p-8 shadow-xl">
+  <div className="grid grid-cols-3 divide-x divide-y divide-gray-200 border border-gray-200 rounded-2xl overflow-hidden">
+    {[
+      "atriya.png",
+      "jupiter.png",
+      "webel.png",
+      "suzlon.png",
+      "alt-download.png",
+      "orient-green-power.png",
+      "shapurji-palanji.webp",
+      "Trinasolar-solar.png",
+      "winnerspitch.jpg",
+      "Ewa-solar.jpg",
+      "Adhunic-group.jpg",
+      "more" // 
+    ].map((logo, i) => (
+      <div
+        key={i}
+        className="flex items-center justify-center p-6 bg-[#EEF5FA]/80  transition duration-300"
+      >
+        {logo === "more" ? (
+          <div className="text-center">
+            <p className="text-[#00365A] font-semibold text-sm">
+              +  Mini-More
+            </p>
+            <p className="text-xs text-gray-500 mt-1">
+              Trusted Partners
+            </p>
+          </div>
+        ) : (
+          <img
+            src={`/${logo}`}
+            alt="client logo"
+            className="h-16 object-contain opacity-80 hover:opacity-100 transition duration-300 mx-auto"
+          />
+        )}
+      </div>
+    ))}
+  </div>
 </div>
-</div>
+
             </div>
           </div>
         </section>

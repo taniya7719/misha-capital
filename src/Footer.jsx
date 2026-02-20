@@ -205,7 +205,7 @@ export default function Footer() {
               </div>
 
               {/* RIGHT BUTTON */}
-           <Link href="/Join">
+           <Link href="/contact-us">
           <button
             className="hidden lg:flex items-center justify-center
             h-[42px] px-7
@@ -245,7 +245,7 @@ export default function Footer() {
       <li>One-stop platform for all your business needs.</li>
       <li>
         <Link
-          href="https://www.linkedin.com"
+          href="https://www.linkedin.com/company/misha-capital/"
           target="_blank"
           className="inline-flex items-center gap-2 hover:text-white transition"
         >
@@ -266,22 +266,22 @@ export default function Footer() {
         </Link>
       </li>
       <li>
-        <Link href="/About" className="hover:text-white transition">
+        <Link href="/about-us" className="hover:text-white transition">
           About Us
         </Link>
       </li>
       <li>
-        <Link href="/OurServices" className="hover:text-white transition">
+        <Link href="/our-services" className="hover:text-white transition">
           Our Services
         </Link>
       </li>
       <li>
-        <Link href="/Partner" className="hover:text-white transition">
+        <Link href="/partner-with-us" className="hover:text-white transition">
           Partner With Us
         </Link>
       </li>
       <li>
-        <Link href="/Contact" className="hover:text-white transition">
+        <Link href="/contact-us" className="hover:text-white transition">
           Contact Us
         </Link>
       </li>
@@ -293,12 +293,12 @@ export default function Footer() {
     <h4 className="mb-4 text-sm font-semibold text-white">Company</h4>
     <ul className="space-y-2 text-sm text-gray-300">
       <li>
-        <Link href="/terms" className="hover:text-white transition">
+        <Link href="/terms-conditions" className="hover:text-white transition">
           Terms & Conditions
         </Link>
       </li>
       <li>
-        <Link href="/privacy" className="hover:text-white transition">
+        <Link href="/privacy-policy" className="hover:text-white transition">
           Privacy Policy
         </Link>
       </li>

@@ -17,14 +17,14 @@ export default function ContactUs() {
           <div className="w-10 lg:w-16 h-[1px] bg-black"></div>
         </div>
 
-        <h2 className="text-3xl sm:text-4xl lg:text-[45px] mb-4">
+        <h2 className="text-3xl sm:text-4xl lg:text-[45px] mb-2">
           <span className="font-bold text-[#00365A]">
             Send Us Your Query
           </span>
         </h2>
 
-        <p className="text-gray-600 mb-10 text-[15px] lg:text-base">
-          Your Investment Banking Partner, From Seed to Success.
+        <p className="text-gray-600 mb-6 text-[15px] lg:text-base">
+         Your trusted investment banking partner — from Seed to Series E and beyond.
         </p>
 
         {/* INFO GRID */}
@@ -40,6 +40,8 @@ export default function ContactUs() {
                 Company Address
               </h4>
               <p className="text-gray-600 text-sm mt-2 leading-relaxed">
+                Misha Capital Advisors LLP 
+              <br/>
                 L-42, Lajpat Nagar II, New Delhi, Delhi 110024
               </p>
             </div>
@@ -86,7 +88,7 @@ export default function ContactUs() {
                 Email Us
               </h4>
               <p className="text-gray-600 text-sm mt-2">
-                customercare@finsbee.com
+                info@mishacaps.com
               </p>
             </div>
           </div>
@@ -100,13 +102,15 @@ export default function ContactUs() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="bg-white rounded-[28px] p-6 sm:p-8 lg:p-10 shadow-xl w-full max-w-[520px] lg:ml-auto"
+        className="bg-white rounded-[28px] p-6 sm:p-8 lg:p-10 shadow-xl w-full max-w-[480px] lg:ml-auto"
       >
-        <h3 className="text-2xl sm:text-3xl font-bold text-black mb-8 text-center">
+        <h3 className="text-2xl sm:text-4xl font-bold text-black mb-2 text-center">
           Contact Us
         </h3>
+        <p className="mb-4 text-[12px] text-center">Whether you're exploring debt advisory, capital raising, or equity fundraising, our 
+investment banking advisory team is ready to assist.</p>
 
-        <form className="space-y-6">
+        <form className="space-y-4">
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <input type="text" placeholder="First Name*" className="input" />

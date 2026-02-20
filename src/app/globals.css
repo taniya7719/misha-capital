@@ -121,8 +121,8 @@ body {
 }
 @keyframes fadeUp {
   0% {
-    opacity: 0;
-    transform: translateY(30px);
+    opacity: 1;
+    transform: translateY(40px);
   }
   100% {
     opacity: 1;
@@ -131,7 +131,7 @@ body {
 }
 
 .animate-fadeUp {
-  animation: fadeUp 0.7s ease forwards;
+  animation: fadeUp 1s ease forwards;
 }
 @font-face {
   font-family: "Inter";
@@ -187,4 +187,15 @@ body {
   -webkit-text-stroke: 1px rgba(0, 54, 90, 0.15);
   text-rendering: geometricPrecision;
 }
+ /* BLOG COMMENT -------------------------------------------------------------------*/
+ /* Hide scrollbar but allow scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
 
