@@ -1,7 +1,21 @@
 import Navigationbar from "@/Components/Navigationbar";
 import TermsandConditions from "@/Components/TermsandConditions";
 import Footer from "@/Footer";
-
+export const metadata = {
+  title: "Terms & Conditions | Misha Capital",
+  description:
+    "Review the Terms & Conditions governing Misha Capital’s investment banking, debt advisory and corporate finance services.",
+ keywords: [
+    "transaction advisory services",
+    "investment banking advisory firm",
+    "debt advisory",
+    "mergers & acquisitions advisory",
+    "corporate finance advisory",
+  ],
+ url: "https://www.mishacapital.com/terms-conditions/",
+    siteName: "Misha Capital",
+    type: "website",
+};
 
 export default function Terms() {
   return (
@@ -32,7 +46,7 @@ export default function Terms() {
 
       {/* White Content Section with Overlap */}
      <div className="-mt-24 relative z-20">
-        <div className="max-w-6xl mx-auto bg-[#f4f4f4] rounded-[30px] shadow-xl px-8 sm:px-8 lg:px-8 py-6">
+        <div className="max-w-6xl mx-auto bg-[white] rounded-[30px] shadow-xl px-8 sm:px-8 lg:px-8 py-6">
         <TermsandConditions />
       </div>
       </div>

@@ -5,9 +5,12 @@ import Footer from "@/Footer";
 
 
 export const metadata = {
-  title: "Privacy Policy | Misha Capital Advisors LLP",
+  title: "Privacy Policy | Misha Capital",
   description:
-    "Read the Privacy Policy of Misha Capital Advisors LLP outlining how we collect, use, disclose and protect personal data.",
+    "Misha Capital’s Privacy Policy explains how we collect, use and protect your personal information in accordance with applicable laws.",
+ url: "https://www.mishacapital.com/privacy-policy/",
+    siteName: "Misha Capital",
+    type: "website",
 };
 
 export default function Policy() {
@@ -42,7 +45,7 @@ export default function Policy() {
 
       {/* Overlap Card */}
       <div className="-mt-24 relative z-20">
-        <div className="max-w-6xl mx-auto bg-[#f4f4f4] rounded-[30px] shadow-xl px-8 sm:px-12 lg:px-16 py-14">
+        <div className="max-w-6xl mx-auto bg-[white] rounded-[30px] shadow-xl px-8 sm:px-12 lg:px-16 py-14">
         <Privacy/>
         </div>
       </div>

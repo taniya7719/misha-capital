@@ -60,8 +60,8 @@ export default function Service() {
           <div
             className="
               relative
-              w-full
-              max-w-[520px]
+           
+              w-[560px]
               min-h-[420px]
               bg-white
               rounded-[28px]

@@ -1,6 +1,8 @@
 "use client";
+import { useState } from "react";
 import { motion } from "framer-motion";
 export default function ContactUs() {
+  
   return (
    <section className="">
   <div className="mx-auto max-w-[1200px] box">
@@ -110,17 +112,49 @@ export default function ContactUs() {
         <p className="mb-4 text-[12px] text-center">Whether you're exploring debt advisory, capital raising, or equity fundraising, our 
 investment banking advisory team is ready to assist.</p>
 
-        <form className="space-y-4">
+       
+          <form 
+  action="https://sheetdb.io/api/v1/rvzwat1za59zy" 
+  method="post" 
+  className="space-y-4"
+>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <input type="text" placeholder="First Name*" className="input" />
-            <input type="text" placeholder="Last Name*" className="input" />
-          </div>
+         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+  <input 
+    type="text"  
+    name="data[Name]" 
+    placeholder="First Name*" 
+    className="input" 
+    required
+  />
+  
+  <input 
+    type="text"  
+    
+    placeholder="Last Name*" 
+    className="input" 
+    required
+  />
+</div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <input type="email" placeholder="Email Address*" className="input" />
-            <input type="tel" placeholder="Phone Number*" className="input" />
-          </div>
+<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+  <input 
+    type="email"  
+    name="data[Email]"  
+    placeholder="Email Address*" 
+    className="input" 
+    required
+  />
+  
+  <input 
+    type="tel"   
+    name="data[Phone]" 
+    placeholder="Phone Number*" 
+    className="input" 
+    required
+  />
+</div>
+
 
           <select defaultValue="" className="input text-gray-500">
             <option value="" disabled>
@@ -140,12 +174,15 @@ investment banking advisory team is ready to assist.</p>
 
           <button
             type="submit"
+          
+            method="post"
             className="w-full mt-1 rounded-xl bg-[#1DA1F2] hover:bg-[#D9261E] py-4 font-medium text-white transition hover:scale-[1.02]"
           >
             Submit →
           </button>
 
         </form>
+       
       </motion.div>
 
     </div>
