@@ -37,6 +37,12 @@ export default function Majortransaction() {
   <div className="absolute inset-0  bg-gradient-to-br from-[#032A58] to-[#043B73] " />
 
   <div className="relative z-10 max-w-7xl mx-auto px-6 ">
+     <button
+    onClick={() => window.history.back()}
+    className="absolute left-0  -translate-y-1/2 text-white hover:text-gray-300 border border-b-blue-400 transition"
+  >
+    ← Back
+  </button>
 
     {/* TOP LABEL */}
     <div className="flex items-center justify-center gap-4 mb-4 text-white/70 text-sm tracking-wide">
@@ -45,6 +51,8 @@ export default function Majortransaction() {
         <span> Debt & Equity Capital Raising</span>
         <span className="w-12 h-[1px] bg-[white]/50"></span>
       </div>
+      
+
 
       <h2 className="text-center text-4xl md:text-5xl mb-16">
       <span className="font-bold text-[white]">

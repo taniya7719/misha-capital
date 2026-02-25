@@ -91,7 +91,8 @@ import { useEffect, useState } from "react";
 
 export default function FocusIndustries() {
   const industries = [
-    { name: "Renewable Energy", icon: "/renewable-energy.png" },
+    { name: "Renewable Energy", icon: "/renewable-energy.png", hoverIcon: "/renewable-1.png",
+},
     { name: "Steel", icon: "/steel.png" },
     { name: "Cement", icon: "/cement.png" },
     { name: "FMCG", icon: "/FMG.png" },
@@ -116,7 +117,7 @@ export default function FocusIndustries() {
        <div className="text-center mb-8 ">
       <div className="flex items-center justify-center gap-2 text-[#000000] text-medium">
         <span className="w-12 h-[1px] bg-[#000000]"></span>
-        <span>industry associations</span>
+        <span>Industry Associations</span>
         <span className="w-12 h-[1px] bg-[#000000]"></span>
       </div>
 

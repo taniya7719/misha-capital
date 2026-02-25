@@ -81,7 +81,7 @@ export default function Services() {
       <div className="text-inline mb-4 px-4 sm:px-0">
         <div className="flex items-center justify-inline gap-2 text-[#000000] text-medium ">
           <span className="w-12 h-[1px] bg-[#000000]"></span>
-          <span>our services</span>
+          <span>Our Services</span>
           <span className="w-12 h-[1px] bg-[#000000]"></span>
         </div>
 
@@ -141,7 +141,7 @@ capital efficiency.
   <div className="text-center mb-8  sm:px-0 ">
     <div className="flex items-center justify-center gap-2 text-[#000000] text-medium">
       <span className="w-12 h-[1px] bg-[#000000]"></span>
-      <span>our services</span>
+      <span>Our Services</span>
       <span className="w-12 h-[1px] bg-[#000000]"></span>
     </div>
 

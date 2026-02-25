@@ -172,7 +172,7 @@ export default function Footer() {
 
                 <h2 className="mt-4 text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight">
 
-                  Get all the Guidance & Growth you need through Misha Capital
+                  Get all the guidance & growth you need through Misha Capital
                 </h2>
 
                 <div className="mt-6 flex flex-col sm:flex-row gap-6">

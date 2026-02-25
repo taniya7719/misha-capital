@@ -74,7 +74,7 @@ export default function Navigationbar() {
         {/* DESKTOP NAV */}
         <nav className="hidden md:flex gap-6 lg:gap-10">
           {navLink("/", "HOME")}
-          {navLink("/about-us", "About Us")}
+          {navLink("/about-us", "ABOUT US")}
           {navLink("/our-services", "OUR SERVICES")}
           {navLink("/partner-with-us", "PARTNER WITH US")}
           {navLink("/contact-us", "CONTACT US")}

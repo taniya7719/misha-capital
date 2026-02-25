@@ -266,7 +266,7 @@ export default function AboutUs() {
   const teamMembers = [
     {
       name: "Mr. Manish Gupta",
-      image: "/mr-Manish.png",
+      image: "/manishhh-sir.jpeg",
       role: "Finance Professional",
       desc: "Mr. Manish Gupta, IIM Calcutta Alumnus, is a Finance professional with 30 years of experience in investment banking, debt syndication & business advisory services. His experience is in various sectors & is skilled in raising funds through Equity, Project Finance,Working capital, Promoter funding, ECB, IPO, and rights issue.", 
 
@@ -274,27 +274,27 @@ export default function AboutUs() {
     },
     {
       name: "Mr. Manan Kedia",
-       image: "/mr-Manan.png",
+       image: "/Mr-manan-kedia.png",
       role: "Investor and Finance Professional",
       desc: "Mr. Manan Kedia is an active investor and finance professional, 2x tech founder, 6+ years running diverse businesses, experience in handling equity transactions in diverse industries like Blockchain, Web3, FMCG, Tech etc. MSc from ESADE, MIM from UCD and B.Tech from VIT",
     },
   
     {
       name: "Ms. Medha Gupta",
-        image: "/ms-Medha.png",
+        image: "/Ms-medha-gupta.png",
        role: "Vice President",
       desc: "Ms. Medha Gupta is an active investor and comes with an international relations background with experience in equity transactions across industries like Power, Steel, Real Estate, FMCG, EV etc.",
     },
    
      {
       name: "Mr. Sumit Chatterjee ",
-      image: "/mr-Sumit.png",
+      image: "/Mr-sumit-chatterjee.png",
       role: "Senior Partner",
       desc: "Mr. Sumit Chatterjee is a seasoned C-suite executive and entrepreneur with over two decades of global and local experience in finance and business operations across FMCG, financial and IT services, real estate, and professional services. His expertise spans strategic planning, financial analysis, corporate finance, fund raising, IPOs (NASDAQ & NSE), P&L management, compliance & M&A.",
     },
       {
       name: "Mr. Shanshank Parihar",
-        image: "/mr-Shashank.png",
+        image: "/Mr-shanshank-parihar.png",
       role: "Partner",
       desc: "Mr. Shashank Parihar is a professional supporting cross border entities, from various sectors, with growth strategy and financial advisory. He has strong relationships with VC's, PE's and has successfully raised funds for different tech, real estate, defence and deep tech companies.",
     },
@@ -354,6 +354,7 @@ export default function AboutUs() {
   className="
     relative
     min-h-[520px]
+    min-w-[351px]
   
     flex justify-center
     lg:block
@@ -569,7 +570,7 @@ Tech from VIT
       <img
   src={member.image}
   alt={member.name}
-  className="rounded-2xl object-cover mb-6 w-full h-[468px]"
+  className="rounded-2xl object-cover mb-6 w-full h-[468px] bg-white"
 />
 
       <h3 className="text-[26px] leading-[28px] font-semibold text-[#00365A]">
@@ -650,7 +651,7 @@ Tech from VIT
         {logo === "more" ? (
           <div className="text-center">
             <p className="text-[#00365A] font-semibold text-sm">
-              +  Mini-More
+              +  Many-More
             </p>
             <p className="text-xs text-gray-500 mt-1">
               Trusted Partners

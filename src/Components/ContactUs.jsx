@@ -113,75 +113,78 @@ export default function ContactUs() {
 investment banking advisory team is ready to assist.</p>
 
        
-          <form 
-  action="https://sheetdb.io/api/v1/rvzwat1za59zy" 
-  method="post" 
+        <form 
+  action="https://sheetdb.io/api/v1/rvzwat1za59zy"
+  method="post"
   className="space-y-4"
 >
 
-         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-  <input 
-    type="text"  
-    name="data[Name]" 
-    placeholder="First Name*" 
-    className="input" 
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    <input 
+      type="text"
+      name="Name"
+      placeholder="First Name*"
+      className="input"
+      required
+    />
+
+    <input 
+      type="text"
+      name="Last Name"
+      placeholder="Last Name*"
+      className="input"
+      required
+    />
+  </div>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    <input 
+      type="email"
+      name="Email"
+      placeholder="Email Address*"
+      className="input"
+      required
+    />
+
+    <input 
+      type="tel"
+      name="Phone"
+      placeholder="Phone Number*"
+      className="input"
+      required
+    />
+  </div>
+
+  <select 
+    name="Reason"
+    defaultValue=""
+    className="input text-gray-500"
     required
+  >
+    <option value="" disabled>
+      Why are you reaching out*
+    </option>
+    <option value="Funding Requirement">Funding Requirement</option>
+    <option value="Partnership">Partnership</option>
+    <option value="Investment Opportunity">Investment Opportunity</option>
+    <option value="Other">Other</option>
+  </select>
+
+  <textarea
+    name="Message"
+    placeholder="Additional Message"
+    rows={4}
+    className="input resize-none"
   />
-  
-  <input 
-    type="text"  
-    
-    placeholder="Last Name*" 
-    className="input" 
-    required
-  />
-</div>
 
-<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-  <input 
-    type="email"  
-    name="data[Email]"  
-    placeholder="Email Address*" 
-    className="input" 
-    required
-  />
-  
-  <input 
-    type="tel"   
-    name="data[Phone]" 
-    placeholder="Phone Number*" 
-    className="input" 
-    required
-  />
-</div>
+  <button
+    type="submit"
+    className="w-full mt-1 rounded-xl bg-[#1DA1F2] hover:bg-[#D9261E] py-4 font-medium text-white transition hover:scale-[1.02]"
+  >
+    Submit →
+  </button>
 
-
-          <select defaultValue="" className="input text-gray-500">
-            <option value="" disabled>
-              Why are you reaching out*
-            </option>
-            <option value="funding">Funding Requirement</option>
-            <option value="partnership">Partnership</option>
-            <option value="investment">Investment Opportunity</option>
-            <option value="other">Other</option>
-          </select>
-
-          <textarea
-            placeholder="Additional Message"
-            rows={4}
-            className="input resize-none"
-          />
-
-          <button
-            type="submit"
-          
-            method="post"
-            className="w-full mt-1 rounded-xl bg-[#1DA1F2] hover:bg-[#D9261E] py-4 font-medium text-white transition hover:scale-[1.02]"
-          >
-            Submit →
-          </button>
-
-        </form>
+</form>
        
       </motion.div>
 
