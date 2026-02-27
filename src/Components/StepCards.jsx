@@ -268,8 +268,83 @@
 //     </section>
 //   );
 // }
+"use client";
+import { useState } from "react";
 
 export default function ExecutionSteps() {
+
+  const initialFormState = {
+    FirstName: "",
+    ContactNumber: "",
+    Email: "",
+    Location: "",
+    Company: "",
+    PartnershipType: "",
+    DealSize: "",
+    Expertise: "",
+    Message: "",
+  };
+
+  const [formData, setFormData] = useState(initialFormState);
+  const [errors, setErrors] = useState({});
+
+  const validateForm = () => {
+    const newErrors = {};
+
+    if (!formData.FirstName.trim()) {
+      newErrors.FirstName = "First Name is required";
+    }
+
+    if (!formData.ContactNumber) {
+      newErrors.ContactNumber = "Contact Number is required";
+    } else if (!/^[0-9]{10}$/.test(formData.ContactNumber)) {
+      newErrors.ContactNumber = "Phone number must be 10 digits";
+    }
+
+    if (!formData.Email) {
+      newErrors.Email = "Email is required";
+    } else if (
+      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.Email)
+    ) {
+      newErrors.Email = "Invalid email address";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!validateForm()) return;
+
+    try {
+      await fetch("https://sheetdb.io/api/v1/lygkncrjmuv2n", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          data: [formData],
+        }),
+      });
+
+      alert("Submitted Successfully!");
+      setFormData(initialFormState);
+      setErrors({});
+    } catch (error) {
+      console.error(error);
+    }
+  };
   const steps = [
     {
       step: " STEP 01",
@@ -309,8 +384,8 @@ export default function ExecutionSteps() {
     {/* HEADER */}
     <div className="flex items-center justify-center gap-6 mb-1">
       <div className="w-12 lg:w-16 h-[1px] bg-[#000000]"></div>
-      <p className="text-[#000000] lowercase text-sm lg:text-base">
-        how it work
+      <p className="text-[#000000]  text-sm lg:text-base">
+        How It Work
       </p>
       <div className="w-12 lg:w-16 h-[1px] bg-[#000000]"></div>
     </div>
@@ -421,45 +496,127 @@ export default function ExecutionSteps() {
         Fields marked with * are mandatory.
       </p>
 
-      <form className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+    <form
+  onSubmit={handleSubmit}
+  className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4"
+>
 
-        <input type="text" placeholder="First Name*" className="border rounded-xl px-4 py-3 bg-white outline-none w-full" />
-        <input type="tel" placeholder="Contact Number*" className="border rounded-xl px-4 py-3 bg-white outline-none w-full" />
-        <input type="email" placeholder="Email Address*" className="border rounded-xl px-4 py-3 bg-white outline-none w-full" />
+  <div>
+  <input
+    name="FirstName"
+    value={formData.FirstName}
+    onChange={handleChange}
+    placeholder="First Name*"
+    className={`border rounded-xl px-4 py-3 w-full ${
+      errors.FirstName ? "border-red-500" : "border rounded-xl px-4 py-3 w-full"
+    }`}
+  />
+  {errors.FirstName && (
+    <p className="text-red-500 text-sm mt-1">
+      {errors.FirstName}
+    </p>
+  )}
+</div>
 
-        <select className="border rounded-xl px-4 py-3 bg-white outline-none w-full">
-          <option>Location</option>
-          <option>Gurugram</option>
-          <option>Delhi</option>
-          <option>Noida</option>
-        </select>
+ <div>
+  <input
+    name="ContactNumber"
+    value={formData.ContactNumber}
+    onChange={handleChange}
+    placeholder="Contact Number*"
+    className={`border rounded-xl px-4 py-3 w-full ${
+      errors.ContactNumber ? "border-red-500" : "border rounded-xl px-4 py-3 w-full"
+    }`}
+  />
+  {errors.ContactNumber && (
+    <p className="text-red-500 text-sm mt-1">
+      {errors.ContactNumber}
+    </p>
+  )}
+</div>
 
-        <input type="text" placeholder="Company*" className="border rounded-xl px-4 py-3 bg-white outline-none w-full" />
-        <input type="text" placeholder="Type of Partnership*" className="border rounded-xl px-4 py-3 bg-white outline-none w-full" />
+ <div>
+  <input
+    name="Email"
+    value={formData.Email}
+    onChange={handleChange}
+    placeholder="Email Address*"
+    className={`border rounded-xl px-4 py-3 w-full ${
+      errors.Email ? "border-red-500" : "border rounded-xl px-4 py-3 w-full"
+    }`}
+  />
+  {errors.Email && (
+    <p className="text-red-500 text-sm mt-1">
+      {errors.Email}
+    </p>
+  )}
+</div>
 
-        <input type="text" placeholder="Average Deal Size" className="border rounded-xl px-4 py-3 bg-white outline-none w-full" />
-        <input type="text" placeholder="Areas of Expertise*" className="border rounded-xl px-4 py-3 bg-white outline-none w-full" />
+  <select
+    name="Location"
+    value={formData.Location}
+    onChange={handleChange}
+    className="border rounded-xl px-4 py-3 w-full"
+  >
+    <option value="">Location</option>
+    <option value="Gurugram">Gurugram</option>
+    <option value="Delhi">Delhi</option>
+    <option value="Noida">Noida</option>
+  </select>
 
-        {/* TEXTAREA FULL WIDTH */}
-        <div className="xl:col-span-3">
-          <textarea
-            rows="4"
-            placeholder="Additional Message"
-            className="border rounded-xl px-5 py-4 bg-white outline-none w-full"
-          />
-        </div>
+  <input
+    name="Company"
+    value={formData.Company}
+    onChange={handleChange}
+    placeholder="Company*"
+    className="border rounded-xl px-4 py-3 w-full"
+  />
 
-        {/* BUTTON FULL WIDTH */}
-        <div className="xl:col-span-3">
-          <button
-            type="submit"
-            className="bg-[#008BF9] hover:bg-[#D9261E] transition text-white font-bold w-full py-4 px-4 rounded-xl"
-          >
-            Submit Application
-          </button>
-        </div>
+  <input
+    name="PartnershipType"
+    value={formData.PartnershipType}
+    onChange={handleChange}
+    placeholder="Type of Partnership*"
+    className="border rounded-xl px-4 py-3 w-full"
+  />
 
-      </form>
+  <input
+    name="DealSize"
+    value={formData.DealSize}
+    onChange={handleChange}
+    placeholder="Average Deal Size"
+    className="border rounded-xl px-4 py-3 w-full"
+  />
+
+  <input
+    name="Expertise"
+    value={formData.Expertise}
+    onChange={handleChange}
+    placeholder="Areas of Expertise*"
+    className="border rounded-xl px-4 py-3 w-full"
+  />
+
+  <div className="xl:col-span-3">
+    <textarea
+      name="Message"
+      value={formData.Message}
+      onChange={handleChange}
+      rows="4"
+      placeholder="Additional Message"
+      className="border rounded-xl px-5 py-4 w-full"
+    />
+  </div>
+
+  <div className="xl:col-span-3">
+    <button
+      type="submit"
+      className="bg-[#008BF9] hover:bg-[#D9261E] text-white font-bold w-full py-4 rounded-xl"
+    >
+      Submit Application
+    </button>
+  </div>
+
+</form>
     </div>
 
   </div>

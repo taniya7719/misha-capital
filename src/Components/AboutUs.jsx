@@ -267,7 +267,7 @@ export default function AboutUs() {
     {
       name: "Mr. Manish Gupta",
       image: "/manishhh-sir.jpeg",
-      role: "Finance Professional",
+      role: "Senior Partner",
       desc: "Mr. Manish Gupta, IIM Calcutta Alumnus, is a Finance professional with 30 years of experience in investment banking, debt syndication & business advisory services. His experience is in various sectors & is skilled in raising funds through Equity, Project Finance,Working capital, Promoter funding, ECB, IPO, and rights issue.", 
 
 
@@ -275,14 +275,14 @@ export default function AboutUs() {
     {
       name: "Mr. Manan Kedia",
        image: "/Mr-manan-kedia.png",
-      role: "Investor and Finance Professional",
+      role: "Partner",
       desc: "Mr. Manan Kedia is an active investor and finance professional, 2x tech founder, 6+ years running diverse businesses, experience in handling equity transactions in diverse industries like Blockchain, Web3, FMCG, Tech etc. MSc from ESADE, MIM from UCD and B.Tech from VIT",
     },
   
     {
       name: "Ms. Medha Gupta",
         image: "/Ms-medha-gupta.png",
-       role: "Vice President",
+       role: "Partner",
       desc: "Ms. Medha Gupta is an active investor and comes with an international relations background with experience in equity transactions across industries like Power, Steel, Real Estate, FMCG, EV etc.",
     },
    
@@ -433,7 +433,7 @@ close transactions across varying scales and complexities.
 
         {/* OBJECTIVE */}
         <section className="relative  lg:mt-0">
-           <div className="flex items-center justify-center  gap-4 mb-8  mt-20">
+           <div className="flex items-center justify-center  gap-4 mb-4  mt-20">
       <span className="w-10 sm:w-14 h-[1px] bg-[#1E1E1E]"></span>
       <span className="text-[16px] sm:text-[16px] text-[#1E1E1E] ">
          Our Objective
@@ -642,7 +642,7 @@ Tech from VIT
       "winnerspitch.jpg",
       "Ewa-solar.jpg",
       "Adhunic-group.jpg",
-      "more" // 
+      "more"  
     ].map((logo, i) => (
       <div
         key={i}
@@ -651,10 +651,10 @@ Tech from VIT
         {logo === "more" ? (
           <div className="text-center">
             <p className="text-[#00365A] font-semibold text-sm">
-              +  Many-More
+              + Many-More
             </p>
             <p className="text-xs text-gray-500 mt-1">
-              Trusted Partners
+            Trusted Partners
             </p>
           </div>
         ) : (

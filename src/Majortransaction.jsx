@@ -39,7 +39,7 @@ export default function Majortransaction() {
   <div className="relative z-10 max-w-7xl mx-auto px-6 ">
      <button
     onClick={() => window.history.back()}
-    className="absolute left-0  -translate-y-1/2 text-white hover:text-gray-300 border border-b-blue-400 transition"
+    className="absolute left-0 -translate-y-1/2 text-white hover:text-gray-300 border border-b-blue-400 border-p-3 transition"
   >
     ← Back
   </button>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Service() {
   return (
@@ -152,6 +153,22 @@ export default function Service() {
     
      <span>Equity Capital: Series A, Growth Equity, and Pre-IPO funding.</span>
   </li>
+   <Link
+    href="/our-services"
+    className="
+       items-center justify-center gap-2
+      px-7 py-7
+      bg-[white]
+      text-[#0A6ED1]
+      text-sm font-medium
+      rounded-xl
+      
+      transition-all duration-300
+      shadow-md
+    "
+  >
+    View More →
+  </Link>
 </ul>
 
           </div>

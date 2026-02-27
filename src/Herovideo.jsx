@@ -104,7 +104,7 @@ leading-tight md:leading-snug lg:leading-[62px]
   </div>
 
   {/* RIGHT FLOATING TEXT */}
-  <div className="absolute right-6 md:right-16 bottom-10 md:bottom-20 z-20 hidden lg:block">
+  <div className="absolute right-6 md:right-16 bottom-10 md:bottom-40 z-20 hidden lg:block">
 
     <div className="flex items-start gap-3">
       {/* ICON */}
@@ -118,7 +118,7 @@ leading-tight md:leading-snug lg:leading-[62px]
   {/* TEXT */}
   <p className="font-ProximaSansRegular text-white leading-2">
 
-    Your One-Stop Shop for Business Success
+   One-stop platform for all your business needs.
   </p>
 
   </div>

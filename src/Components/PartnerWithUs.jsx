@@ -29,7 +29,7 @@ export default function PartnerWithUs() {
             <div className="">
               <div className="flex items-center justify-inline gap-2 text-[#000000] text-medium">
       <span className="w-12 h-[1px] bg-[#000000]"></span>
-      <span>why</span>
+      <span>Why</span>
       <span className="w-12 h-[1px] bg-[#000000]"></span>
     </div>
               <h2 className="text-left text-3xl sm:text-4xl lg:text-[48px] leading-tight lg:leading-[52px] mb-10 lg:mb-16">
@@ -104,8 +104,8 @@ export default function PartnerWithUs() {
 
           <div className="flex items-center justify-center gap-3 mb-2">
             <div className="w-12 lg:w-16 h-[1px] bg-[#000000]"></div>
-            <p className="text-[#000000] lowercase text-sm lg:text-base">
-              grow with us
+            <p className="text-[#000000] text-sm lg:text-base">
+              Grow With Us
             </p>
             <div className="w-12 lg:w-16 h-[1px] bg-[#000000]"></div>
           </div>

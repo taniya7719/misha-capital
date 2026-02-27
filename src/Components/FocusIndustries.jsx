@@ -91,24 +91,24 @@ import { useEffect, useState } from "react";
 
 export default function FocusIndustries() {
   const industries = [
-    { name: "Renewable Energy", icon: "/renewable-energy.png", hoverIcon: "/renewable-1.png",
+    { name: "Renewable Energy", icon: "/rene-1.png", hoverIcon: "/renew-1.png",
 },
-    { name: "Steel", icon: "/steel.png" },
-    { name: "Cement", icon: "/cement.png" },
-    { name: "FMCG", icon: "/FMG.png" },
-    { name: "Hospitality", icon: "/hospitality.png" },
-    { name: "Warehousing", icon: "/warehousing.png" },
-    { name: "Trading", icon: "/Trading.png" },
-    { name: "Real Estate", icon: "/Real-estate.png" },
-    { name: "NBFC", icon: "/NBFC.png" },
-    { name: "Highways", icon: "/Highways.png" },
-    { name: "Electronics", icon: "/Electronics.png" },
-    { name: "Manufacturing", icon: "/Manufacturing.png" },
-    { name: "Thermal Power Plants", icon: "/thermal-power.png" },
-    { name: "Infrastructure Projects", icon: "/architecture.png" },
-    { name: " Information Technology", icon: "/Technology.png" },
-    { name: "Electric Vehicles", icon: "/Electronic-vehicle.png" },
-    { name: "Health-Care", icon: "/health-insurance.png" },
+    { name: "Steel", icon: "/steel.png", hoverIcon: "/ste-2.png", },
+    { name: "Cement", icon: "/ce-3.png", hoverIcon: "/cem-3.png", },
+    { name: "FMCG", icon: "/FMG.png", hoverIcon: "/fmc-4.png", },
+    { name: "Hospitality", icon: "/hos-5.png", hoverIcon: "/hosp-5.png", },
+    { name: "Warehousing", icon: "/warehouse.png", hoverIcon: "/warehouse (1).png", },
+    { name: "Trading", icon: "/Trading.png", hoverIcon: "/Tra-7.png", },
+    { name: "Real Estate", icon: "/rea-8.png", hoverIcon: "/real-8.png", },
+    { name: "NBFC", icon: "/nbf-9.png", hoverIcon: "/nbfc-9.png", },
+    { name: "Highways", icon: "/Highways.png", hoverIcon: "/highw-10.png", },
+    { name: "Electronics", icon: "/Electronics.png", hoverIcon: "/tech-11.png", },
+    { name: "Manufacturing", icon: "/Manu-12.png", hoverIcon: "/manuf-12.png", },
+    { name: "Thermal Power Plants", icon: "/thermal-power.png", hoverIcon: "/thermal-13.png", },
+    { name: "Infrastructure Projects", icon: "/infrastructure (1).png", hoverIcon: "/infrastructure (2).png", },
+    { name: " Information Technology", icon: "/in-15.png", hoverIcon: "/infor-15.png", },
+    { name: "Electric Vehicles", icon: "/automation.png", hoverIcon: "/automation (1).png", },
+    { name: "Health-Care", icon: "/health-insurance.png", hoverIcon: "/health-17.png", },
   ];
  return (
     <section className=" bg-white box">
@@ -121,7 +121,7 @@ export default function FocusIndustries() {
         <span className="w-12 h-[1px] bg-[#000000]"></span>
       </div>
 
-      <h2 className="text-center text-4xl md:text-5xl mb-16">
+      <h2 className="text-center text-4xl md:text-4xl mb-16">
       <span className="font-bold text-[#032F60]">
         Focus
       </span>{" "}
@@ -131,7 +131,7 @@ export default function FocusIndustries() {
     </h2>
     
     </div>
-<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
   {industries.map((item, index) => {
     const row = Math.floor(index / 4);
 
@@ -157,41 +157,61 @@ function IndustryCard({ item, direction }) {
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => setAnimate(true), 100);
+    const timer = setTimeout(() => setAnimate(true), 100);
+    return () => clearTimeout(timer);
   }, []);
 
-  return (
-    <div
-      className={`
-        group
-        flex items-center h-[96px] gap-4 px-8 py-4
-        rounded-xl
-        border border-[#cccccc]
-        opacity-90
-        transition-all duration-1000 ease-out
-        hover:opacity-100 hover:border-[#222222]
+ return (
+  <div
+    className={`
+      group
+      flex items-center h-[96px] gap-4 px-8 py-4
+      rounded-xl
+      border border-[#e0e0e0]
+      transition-all duration-500 ease-out
+      hover:border-[#1DA1F2]
 
-        ${
-          !animate
-            ? direction === "left"
-              ? "-translate-x-32 opacity-0"
-              : "translate-x-32 opacity-0"
-            : "translate-x-0 opacity-100"
-        }
-      `}
-    >
+      ${
+        !animate
+          ? direction === "left"
+            ? "-translate-x-32 opacity-0"
+            : "translate-x-32 opacity-0"
+          : "translate-x-0 opacity-100"
+      }
+    `}
+  >
+    {/* ICON WRAPPER */}
+    <div className="relative w-[26px] h-[26px]">
+
+      {/* Default Icon */}
       <Image
         src={item.icon}
         alt={item.name}
-        width={26}
-        height={26}
-        className="object-contain opacity-60 transition group-hover:opacity-100"
+        fill
+        className={`
+          object-cover
+          opacity-60
+          transition-all duration-300
+          ${item.hoverIcon ? "group-hover:opacity-0" : "group-hover:opacity-100"}
+        `}
       />
 
-      <span className="text-[18px] font-medium text-[#5B5B5B] transition group-hover:text-[#222222]">
-        {item.name}
-      </span>
+      {/* Hover Icon */}
+      {item.hoverIcon && (
+        <Image
+          src={item.hoverIcon}
+          alt={`${item.name} hover`}
+          fill
+          className="object-cover opacity-0 transition-all duration-300 group-hover:opacity-100"
+        />
+      )}
     </div>
+
+    {/* TEXT */}
+    <span className="text-[16px] font-medium text-[#9E9E9E] transition-all duration-400 group-hover:text-[#1DA1F2]">
+      {item.name}
+    </span>
+  </div>
   );
 }
 

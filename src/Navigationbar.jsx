@@ -81,7 +81,7 @@ export default function Navigationbar() {
         </nav>
 
         {/* DESKTOP CTA */}
-        <Link href="/contact-us">
+        <Link href="/only-contact">
           <button
             className="hidden lg:flex items-center justify-center
             h-[42px] px-7

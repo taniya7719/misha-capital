@@ -1,7 +1,68 @@
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
+
 export default function ContactUs() {
+  const [errors, setErrors] = useState({});
+    const [formData, setFormData] = useState({
+    Name: "",
+    Last_Name: "",
+    Email: "",
+    Phone: "",
+    Reason: "",
+    Message: ""
+  });
+const validateForm = () => {
+  const newErrors = {};
+
+  if (!formData.Name.trim()) {
+    newErrors.Name = "First Name is required";
+  }
+
+  if (!formData.Email) {
+    newErrors.Email = "Email is required";
+  } else if (!/^\S+@\S+\.\S+$/.test(formData.Email)) {
+    newErrors.Email = "Invalid email format";
+  }
+
+  if (!formData.Phone) {
+    newErrors.Phone = "Phone number is required";
+  } else if (!/^[0-9]{10}$/.test(formData.Phone)) {
+    newErrors.Phone = "Phone must be 10 digits";
+  }
+
+  setErrors(newErrors);
+  return Object.keys(newErrors).length === 0;
+};
+ const handleChange = (e) => {
+  const { name, value } = e.target;
+
+  setFormData({
+    ...formData,
+    [name]: value
+  });
+
+  // remove error while typing
+  setErrors((prev) => ({
+    ...prev,
+    [name]: ""
+  }));
+};
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  if (!validateForm()) return;
+
+  await fetch("https://sheetdb.io/api/v1/v9nplopp6s245", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(formData)
+  });
+
+  alert("Form submitted successfully!");
+};
   
   return (
    <section className="">
@@ -13,8 +74,8 @@ export default function ContactUs() {
 
         <div className="flex items-center gap-3 mb-2">
           <div className="w-10 lg:w-16 h-[1px] bg-black"></div>
-          <p className="text-black lowercase text-sm lg:text-base">
-            Let's start talking
+          <p className="text-black  text-sm lg:text-base">
+            Let's Start Talking
           </p>
           <div className="w-10 lg:w-16 h-[1px] bg-black"></div>
         </div>
@@ -113,78 +174,86 @@ export default function ContactUs() {
 investment banking advisory team is ready to assist.</p>
 
        
-        <form 
-  action="https://sheetdb.io/api/v1/rvzwat1za59zy"
-  method="post"
-  className="space-y-4"
->
+       <form onSubmit={handleSubmit} className="space-y-6">
 
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-    <input 
-      type="text"
-      name="Name"
-      placeholder="First Name*"
-      className="input"
-      required
-    />
-
-    <input 
-      type="text"
-      name="Last Name"
-      placeholder="Last Name*"
-      className="input"
-      required
-    />
-  </div>
-
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-    <input 
-      type="email"
-      name="Email"
-      placeholder="Email Address*"
-      className="input"
-      required
-    />
-
-    <input 
-      type="tel"
-      name="Phone"
-      placeholder="Phone Number*"
-      className="input"
-      required
-    />
-  </div>
-
-  <select 
-    name="Reason"
-    defaultValue=""
-    className="input text-gray-500"
-    required
-  >
-    <option value="" disabled>
-      Why are you reaching out*
-    </option>
-    <option value="Funding Requirement">Funding Requirement</option>
-    <option value="Partnership">Partnership</option>
-    <option value="Investment Opportunity">Investment Opportunity</option>
-    <option value="Other">Other</option>
-  </select>
-
-  <textarea
-    name="Message"
-    placeholder="Additional Message"
-    rows={4}
-    className="input resize-none"
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+       <div>
+  <input
+    type="text"
+    name="Name"
+    placeholder="First Name*"
+    className={`input ${errors.Name ? "border border-red-500" : ""}`}
+    onChange={handleChange}
   />
+  {errors.Name && (
+    <p className="text-red-500 text-sm mt-1">{errors.Name}</p>
+  )}
+</div>
 
-  <button
-    type="submit"
-    className="w-full mt-1 rounded-xl bg-[#1DA1F2] hover:bg-[#D9261E] py-4 font-medium text-white transition hover:scale-[1.02]"
-  >
-    Submit →
-  </button>
+        <input
+          type="text"
+          name="Last_Name"
+          placeholder="Last Name*"
+          className="input"
+          onChange={handleChange}
+        />
+      </div>
 
-</form>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+       <div>
+  <input
+    type="email"
+    name="Email"
+    placeholder="Email Address*"
+    className={`input ${errors.Email ? "border border-red-500" : ""}`}
+    onChange={handleChange}
+  />
+  {errors.Email && (
+    <p className="text-red-500 text-sm mt-1">{errors.Email}</p>
+  )}
+</div>
+
+        <div>
+  <input
+    type="tel"
+    name="Phone"
+    placeholder="Phone Number*"
+    className={`input ${errors.Phone ? "border border-red-500" : ""}`}
+    onChange={handleChange}
+  />
+  {errors.Phone && (
+    <p className="text-red-500 text-sm mt-1">{errors.Phone}</p>
+  )}
+</div>
+      </div>
+
+      <select
+        name="Reason"
+        className="input"
+        onChange={handleChange}
+      >
+        <option value="">Why are you reaching out*</option>
+        <option value="Funding Requirement">Funding Requirement</option>
+        <option value="Partnership">Partnership</option>
+        <option value="Investment Opportunity">Investment Opportunity</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <textarea
+        name="Message"
+        placeholder="Additional Message"
+        rows={4}
+        className="input resize-none"
+        onChange={handleChange}
+      />
+
+      <button
+        type="submit"
+        className="w-full rounded-xl bg-[#1DA1F2] hover:bg-[#D9261E] py-4 text-white"
+      >
+        Submit →
+      </button>
+    </form>
        
       </motion.div>
 

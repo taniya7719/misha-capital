@@ -198,14 +198,14 @@ export default function Footer() {
 </div>
       <div>
         <p className="text-sm">Contact Us</p>
-        <p className="font-semibold">+91 9650553609</p>
+        <p className="font-semibold"> +91 9220468743</p>
       </div>
     </div>
                 </div>
               </div>
 
               {/* RIGHT BUTTON */}
-           <Link href="/contact-us">
+           <Link href="/only-contact">
           <button
             className="hidden lg:flex items-center justify-center
             h-[42px] px-7
@@ -223,7 +223,7 @@ export default function Footer() {
       </section>
 
       {/* ===== MAIN FOOTER ===== */}
-      <div className="mx-auto grid gap-20 lg:grid-cols-1 box ">
+      <div className="mx-auto grid gap-50 lg:grid-cols-1 box px-4">
 
   {/* 1️⃣ BRAND */}
   <div>
@@ -241,8 +241,8 @@ export default function Footer() {
       </span>
     </Link>
 
-    <ul className="mt-4 space-y-3 text-sm text-gray-300 max-w-xs">
-      <li>One-stop platform for all your business needs.</li>
+    <ul className="mt-4 space-y-3 text-sm text-gray-300 ">
+      <li>Misha Capital is a sector-agnostic investment banking advisory firm specializing in structured debt, private equity, and strategic capital raising. Backed by 30+ years of experience and strong institutional relationships, we structure and execute tailored debt and equity solutions with precision and timely closure.</li>
       <li>
         <Link
           href="https://www.linkedin.com/company/misha-capital/"
@@ -256,7 +256,7 @@ export default function Footer() {
   </div>
 
   {/* 2️⃣ QUICK LINKS */}
-  <div className="lg:col-2 flex justify-end gap-16 ">
+  <div className="lg:col-2 flex justify-end gap-18 px-4 ">
      <div className="flex flex-col">
     <h4 className=" text-sm font-semibold text-white mb-4">Quick Links</h4>
     <ul className="space-y-2 text-sm text-gray-300">
@@ -290,7 +290,7 @@ export default function Footer() {
 
   {/* 3️⃣ COMPANY */}
   <div>
-    <h4 className="mb-4 text-sm font-semibold text-white">Company</h4>
+    <h4 className="mb-4 text-sm font-semibold text-white">Legal & Compliance</h4>
     <ul className="space-y-2 text-sm text-gray-300">
       <li>
         <Link href="/terms-conditions" className="hover:text-white transition">
@@ -304,8 +304,10 @@ export default function Footer() {
       </li>
      
     </ul>
+    
   </div>
   </div>
+  
 
   {/* 4️⃣ CONTACT */}
   {/* <div>
