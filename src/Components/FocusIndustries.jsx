@@ -91,7 +91,7 @@ import { useEffect, useState } from "react";
 
 export default function FocusIndustries() {
   const industries = [
-    { name: "Renewable Energy", icon: "/rene-1.png", hoverIcon: "/renew-1.png",
+    { name: "Renewable Energy", icon: "/renewable-energy.png", hoverIcon: "/renewable-new.png",
 },
     { name: "Steel", icon: "/steel.png", hoverIcon: "/ste-2.png", },
     { name: "Cement", icon: "/ce-3.png", hoverIcon: "/cem-3.png", },
@@ -103,7 +103,7 @@ export default function FocusIndustries() {
     { name: "NBFC", icon: "/nbf-9.png", hoverIcon: "/nbfc-9.png", },
     { name: "Highways", icon: "/Highways.png", hoverIcon: "/highw-10.png", },
     { name: "Electronics", icon: "/Electronics.png", hoverIcon: "/tech-11.png", },
-    { name: "Manufacturing", icon: "/Manu-12.png", hoverIcon: "/manuf-12.png", },
+    { name: "Manufacturing", icon: "/manu-12.png", hoverIcon: "/manuf-12.png", },
     { name: "Thermal Power Plants", icon: "/thermal-power.png", hoverIcon: "/thermal-13.png", },
     { name: "Infrastructure Projects", icon: "/infrastructure (1).png", hoverIcon: "/infrastructure (2).png", },
     { name: " Information Technology", icon: "/in-15.png", hoverIcon: "/infor-15.png", },
