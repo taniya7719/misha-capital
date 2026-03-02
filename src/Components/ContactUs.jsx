@@ -66,8 +66,8 @@ const validateForm = () => {
   
   return (
    <section className="">
-  <div className="mx-auto max-w-[1200px] box">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+  <div className="mx-auto  box">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-5 items-start">
 
       {/* LEFT CONTENT */}
       <div className="max-w-[600px]">
@@ -86,15 +86,15 @@ const validateForm = () => {
           </span>
         </h2>
 
-        <p className="text-gray-600 mb-6 text-[15px] lg:text-base">
-         Your trusted investment banking partner — from Seed to Series E and beyond.
+        <p className="text-gray-600 mb-12 text-[15px] lg:text-base">
+         Your trusted investment banking advisory partner — providing strategic debt and equity capital solutions.
         </p>
 
         {/* INFO GRID */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
 
           {/* COMPANY ADDRESS */}
-          <div className="flex gap-4 items-start">
+          <div className="flex gap-6 items-start">
             <div className="h-14 w-14 min-w-[56px] rounded-2xl border border-[#1DA1F2] bg-white flex items-center justify-center shadow-sm">
               <img src="/location-contact.png" alt="Location" className="h-7 w-7 object-contain" />
             </div>
@@ -102,7 +102,7 @@ const validateForm = () => {
               <h4 className="font-semibold text-black text-[17px]">
                 Company Address
               </h4>
-              <p className="text-gray-600 text-sm mt-2 leading-relaxed">
+              <p className="text-gray-600 text-sm mt-2 ">
                 Misha Capital Advisors LLP 
               <br/>
                 L-42, Lajpat Nagar II, New Delhi, Delhi 110024
@@ -111,7 +111,7 @@ const validateForm = () => {
           </div>
 
           {/* PHONE */}
-          <div className="flex gap-4 items-start">
+          <div className="flex gap-6 items-start">
             <div className="h-14 w-14 min-w-[56px] rounded-2xl border border-[#1DA1F2] bg-white flex items-center justify-center shadow-sm">
               <img src="/phone-call.png" alt="Phone" className="h-7 w-7 object-contain" />
             </div>
@@ -126,7 +126,7 @@ const validateForm = () => {
           </div>
 
           {/* OFFICE HOURS */}
-          <div className="flex gap-4 items-start">
+          <div className="flex gap-6 items-start">
             <div className="h-14 w-14 min-w-[56px] rounded-2xl border border-[#1DA1F2] bg-white flex items-center justify-center shadow-sm">
               <img src="/office-location.png" alt="Office Hours" className="h-7 w-7 object-contain" />
             </div>
@@ -142,7 +142,7 @@ const validateForm = () => {
           </div>
 
           {/* EMAIL */}
-          <div className="flex gap-4 items-start">
+          <div className="flex gap-6 items-start">
             <div className="h-14 w-14 min-w-[56px] rounded-2xl border border-[#1DA1F2] bg-white flex items-center justify-center shadow-sm">
               <img src="/read-contact.png" alt="Email" className="h-7 w-7 object-contain" />
             </div>
@@ -231,12 +231,16 @@ investment banking advisory team is ready to assist.</p>
         name="Reason"
         className="input"
         onChange={handleChange}
+       
       >
-        <option value="">Why are you reaching out*</option>
-        <option value="Funding Requirement">Funding Requirement</option>
-        <option value="Partnership">Partnership</option>
-        <option value="Investment Opportunity">Investment Opportunity</option>
-        <option value="Other">Other</option>
+        <option value="Select Your Capital Advisory Requirement"> Select the advisory service you wish to explore
+</option>
+        <option value="Capital Raising Requirement (Debt / Equity)
+">Capital Raising Requirement (Debt / Equity)
+</option>
+        <option value="Mergers & Acquisitions (M&A) Advisory">Mergers & Acquisitions (M&A) Advisory</option>
+        <option value=" Strategic Partnership Inquiry"> Strategic Partnership Inquiry</option>
+        <option value="Other Advisory Inquiry">Other Advisory Inquiry</option>
       </select>
 
       <textarea

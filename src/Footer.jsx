@@ -249,7 +249,11 @@ export default function Footer() {
           target="_blank"
           className="inline-flex items-center gap-2 hover:text-white transition"
         >
-          🔗 LinkedIn
+          <img
+    src="/linkedin-logo.png"
+    alt="LinkedIn"
+    className="w-6 h-6"
+  />
         </Link>
       </li>
     </ul>

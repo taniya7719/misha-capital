@@ -104,26 +104,26 @@ leading-tight md:leading-snug lg:leading-[62px]
   </div>
 
   {/* RIGHT FLOATING TEXT */}
-  <div className="absolute right-6 md:right-16 bottom-10 md:bottom-40 z-20 hidden lg:block">
+  {/* <div className="absolute right-6 md:right-16 bottom-10 md:bottom-40 z-20 hidden lg:block">
 
     <div className="flex items-start gap-3">
       {/* ICON */}
-      <div className="flex flex-col items-start gap-3">
+      {/* <div className="flex flex-col items-start gap-3"> */}
   {/* ICON */}
- <div className=" flex h-15 w-12 items-center ">
+ {/* <div className=" flex h-15 w-12 items-center ">
   <img src="/Frame 57.svg" alt="" className="h-14 w-14" />
-</div>
+</div>  */}
 
 
   {/* TEXT */}
-  <p className="font-ProximaSansRegular text-white leading-2">
+  {/* <p className="font-ProximaSansRegular text-white leading-2">
 
    One-stop platform for all your business needs.
-  </p>
+  </p> */}
 
-  </div>
-</div>
-</div>
+  {/* </div> */}
+{/* </div> */}
+{/* </div> */}
 
 
 

@@ -279,9 +279,9 @@ export default function ExecutionSteps() {
     Email: "",
     Location: "",
     Company: "",
-    PartnershipType: "",
-    DealSize: "",
-    Expertise: "",
+    // PartnershipType: "",
+    // DealSize: "",
+    // Expertise: "",
     Message: "",
   };
 
@@ -485,7 +485,7 @@ export default function ExecutionSteps() {
     </div>
 
     {/* RIGHT CONTENT */}
-    <div className="w-full max-w-[850px]">
+    <div className="w-full max-w-[850px] mt-8">
 
       <h2 className="text-3xl sm:text-4xl lg:text-[48px] font-bold text-[#00365A] mb-2">
         Partner Registration
@@ -572,15 +572,15 @@ export default function ExecutionSteps() {
     className="border rounded-xl px-4 py-3 w-full"
   />
 
-  <input
+  {/* <input
     name="PartnershipType"
     value={formData.PartnershipType}
     onChange={handleChange}
     placeholder="Type of Partnership*"
     className="border rounded-xl px-4 py-3 w-full"
-  />
+  /> */}
 
-  <input
+  {/* <input
     name="DealSize"
     value={formData.DealSize}
     onChange={handleChange}
@@ -594,7 +594,7 @@ export default function ExecutionSteps() {
     onChange={handleChange}
     placeholder="Areas of Expertise*"
     className="border rounded-xl px-4 py-3 w-full"
-  />
+  /> */}
 
   <div className="xl:col-span-3">
     <textarea
