@@ -90,28 +90,56 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function FocusIndustries() {
-  const industries = [
-    { name: "Renewable Energy", icon: "/renewable-energy.png", hoverIcon: "/renewable-new.png",
-},
-    { name: "Steel", icon: "/steel.png", hoverIcon: "/ste-2.png", },
-    { name: "Cement", icon: "/ce-3.png", hoverIcon: "/cem-3.png", },
-    { name: "FMCG", icon: "/FMG.png", hoverIcon: "/fmc-4.png", },
-    { name: "Hospitality", icon: "/hos-5.png", hoverIcon: "/hosp-5.png", },
-    { name: "Warehousing", icon: "/warehouse.png", hoverIcon: "/warehouse (1).png", },
-    { name: "Trading", icon: "/Trading.png", hoverIcon: "/Tra-7.png", },
-    { name: "Real Estate", icon: "/rea-8.png", hoverIcon: "/real-8.png", },
-    { name: "NBFC", icon: "/nbf-9.png", hoverIcon: "/nbfc-9.png", },
-    { name: "Highways", icon: "/Highways.png", hoverIcon: "/highw-10.png", },
-    { name: "Electronics", icon: "/Electronics.png", hoverIcon: "/tech-11.png", },
-    { name: "Manufacturing", icon: "/manu-12.png", hoverIcon: "/manuf-12.png", },
-    { name: "Thermal Power Plants", icon: "/thermal-power.png", hoverIcon: "/thermal-13.png", },
-    { name: "Infrastructure Projects", icon: "/infrastructure (1).png", hoverIcon: "/infrastructure (2).png", },
-    { name: " Information Technology", icon: "/in-15.png", hoverIcon: "/infor-15.png", },
-    { name: "Electric Vehicles", icon: "/automation.png", hoverIcon: "/automation (1).png", },
-    { name: "Health-Care", icon: "/health-insurance.png", hoverIcon: "/health-17.png", },
-  ];
+//   const industries = [
+//     { name: "Renewable Energy", icon: "/renewable-energy.png", hoverIcon: "/renewable-new.png",
+// },
+//     { name: "Steel", icon: "/steel.png", hoverIcon: "/ste-2.png", },
+//     { name: "Cement", icon: "/ce-3.png", hoverIcon: "/cem-3.png", },
+//     { name: "FMCG", icon: "/FMG.png", hoverIcon: "/fmc-4.png", },
+//     { name: "Hospitality", icon: "/hos-5.png", hoverIcon: "/hosp-5.png", },
+//     { name: "Warehousing", icon: "/warehouse.png", hoverIcon: "/warehouse (1).png", },
+//     { name: "Trading", icon: "/Trading.png", hoverIcon: "/Tra-7.png", },
+//     { name: "Real Estate", icon: "/rea-8.png", hoverIcon: "/real-8.png", },
+//     { name: "NBFC", icon: "/nbf-9.png", hoverIcon: "/nbfc-9.png", },
+//     { name: "Highways", icon: "/Highways.png", hoverIcon: "/highw-10.png", },
+//     { name: "Electronics", icon: "/Electronics.png", hoverIcon: "/tech-11.png", },
+//     { name: "Manufacturing", icon: "/manu-12.png", hoverIcon: "/manuf-12.png", },
+//     { name: "Thermal Power Plants", icon: "/thermal-power.png", hoverIcon: "/thermal-13.png", },
+//     { name: "Infrastructure Projects", icon: "/infrastructure (1).png", hoverIcon: "/infrastructure (2).png", },
+//     { name: " Information Technology", icon: "/in-15.png", hoverIcon: "/infor-15.png", },
+//     { name: "Electric Vehicles", icon: "/automation.png", hoverIcon: "/automation (1).png", },
+//     { name: "Health-Care", icon: "/health-insurance.png", hoverIcon: "/health-17.png", },
+//   ];
+//   
+const industries = [
+ { name: "Renewable Energy", icon: "/color-renewable.svg", bg: "/renewal-energy.avif" },
+ {name: "Electric Vehicles", icon: "/color-ev.svg", bg: "/electric.avif" },
+ { name: "Manufacturing", icon: "/color-manufacturing.svg", bg: "/manufacturing.avif" },
+  { name: "Thermal Power Plants", icon: "/color-thermal.svg", bg: "/thermal.avif" },
+   { name: "Infrastructure Projects", icon: "/color-infrastructure.svg", bg: "/infrastructure.avif" },
+   { name: "Highways", icon: "/color-highways.svg", bg: "/highway.avif" },
+   { name: "Information Technology", icon: "/color-it.svg", bg: "/information-tech.avif" },
+  { name: "Electronics", icon: "/color-electronics.svg", bg: "/electronics.avif" },
+   { name: "FMCG", icon: "/color-fmcg.svg", bg: "/fmcg.avif" },
+   { name: "Real Estate", icon: "/color-real.svg", bg: "/real-estate.avif" },
+ { name: "Steel", icon: "/color-steel.svg", bg: "/steel.avif" },
+ { name: "Cement", icon: "/color-cement.svg", bg: "/cement.avif" },
+  { name: "Trading", icon: "/color-trading.svg", bg: "/trading.avif" },
+   { name: "NBFC", icon: "/color-nbfc.svg", bg: "/nbfc.avif" },
+
+ { name: "Hospitality", icon: "/color-hospitality.svg", bg: "/hospitality.avif" },
+ { name: "Warehousing", icon: "/color-warehousing.svg", bg: "/warehouse.avif" },
+  { name: "Health-Care", icon: "/color-hc.svg", bg: "/healthcare.avif" },
+];
  return (
-    <section className=" bg-white box">
+   <section className="bg-white mb-40 mt-10 relative box">
+    <div className=" mx-auto">
+
+  {/* LEFT FADE */}
+  {/* <div className="pointer-events-none absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-white to-transparent z-30"></div> */}
+
+  {/* RIGHT FADE */}
+  {/* <div className="pointer-events-none absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-white to-transparent z-30"></div> */}
       <div className=" mx-auto ">
         
        <div className="text-center mb-8 ">
@@ -131,90 +159,78 @@ export default function FocusIndustries() {
     </h2>
     
     </div>
-<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-  {industries.map((item, index) => {
-    const row = Math.floor(index / 4);
-
-    return (
-      <IndustryCard
-        key={index}
-        item={item}
-        direction={row % 2 === 0 ? "left" : "right"}
-      />
-    );
-  })}
+<div className="grid grid-cols-5 gap-x-10 gap-y-4 justify-center">
+  {industries.map((item, index) => (
+    <IndustryCard key={index} item={item} />
+  ))}
 </div>
+  {/* ROW 1 - LEFT */}
+  {/* <div className="scroll-row">
+    <div className="scroll-track-left gap-6">
+      {[...industries.slice(0,6), ...industries.slice(0,6)].map((item,index)=>(
+        <IndustryCard key={index} item={item} />
+      ))}
+    </div>
+  </div> */}
 
+  {/* ROW 2 - RIGHT */}
+  {/* <div className="scroll-row">
+    <div className="scroll-track-right gap-6">
+      {[...industries.slice(6,12), ...industries.slice(6,12)].map((item,index)=>(
+        <IndustryCard key={index} item={item} />
+      ))}
+    </div>
+  </div> */}
 
+  {/* ROW 3 - LEFT */}
+  {/* <div className="scroll-row">
+    <div className="scroll-track-left gap-6">
+      {[...industries.slice(12,18), ...industries.slice(12,18)].map((item,index)=>(
+        <IndustryCard key={index} item={item} />
+      ))}
+    </div>
+  </div>
 
+</div> */}
+
+</div>
 
       </div>
     </section>
   );
 }
 
-function IndustryCard({ item, direction }) {
-  const [animate, setAnimate] = useState(false);
+function IndustryCard({ item }) {
+  return (
+    <div className="relative w-[210px] h-[96px] rounded-xl overflow-hidden group cursor-pointer">
 
-  useEffect(() => {
-    const timer = setTimeout(() => setAnimate(true), 100);
-    return () => clearTimeout(timer);
-  }, []);
-
- return (
-  <div
-    className={`
-      group
-      flex items-center h-[96px] gap-4 px-8 py-4
-      rounded-xl
-      border border-[#e0e0e0]
-      transition-all duration-500 ease-out
-      hover:border-[#1DA1F2]
-
-      ${
-        !animate
-          ? direction === "left"
-            ? "-translate-x-32 opacity-0"
-            : "translate-x-32 opacity-0"
-          : "translate-x-0 opacity-100"
-      }
-    `}
-  >
-    {/* ICON WRAPPER */}
-    <div className="relative w-[26px] h-[26px]">
-
-      {/* Default Icon */}
       <Image
-        src={item.icon}
+        src={item.bg}
         alt={item.name}
         fill
-        className={`
-          object-cover
-          opacity-60
-          transition-all duration-300
-          ${item.hoverIcon ? "group-hover:opacity-0" : "group-hover:opacity-100"}
-        `}
+        className="object-cover transition-transform duration-500 group-hover:scale-110"
       />
 
-      {/* Hover Icon */}
-      {item.hoverIcon && (
-        <Image
-          src={item.hoverIcon}
-          alt={`${item.name} hover`}
-          fill
-          className="object-cover opacity-0 transition-all duration-300 group-hover:opacity-100"
-        />
-      )}
-    </div>
+      <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60"></div>
 
-    {/* TEXT */}
-    <span className="text-[16px] font-medium text-[#9E9E9E] transition-all duration-400 group-hover:text-[#1DA1F2]">
-      {item.name}
-    </span>
-  </div>
+      <div className="relative z-10 flex items-center gap-3 h-full px-5 text-white">
+
+        <Image
+          src={item.icon}
+          alt={item.name}
+          width={32}
+          height={32}
+        />
+
+        <span className="text-[14px] font-medium">
+          {item.name}
+        </span>
+
+      </div>
+
+    </div>
   );
 }
-
 //   const firstRow = industries.slice(0, 8);
 //   const secondRow = industries.slice(8);
 

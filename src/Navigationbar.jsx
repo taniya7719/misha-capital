@@ -5,28 +5,46 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 
+
 export default function Navigationbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+const [scrolled, setScrolled] = useState(false);
+const [showHeader, setShowHeader] = useState(true);
+const [lastScrollY, setLastScrollY] = useState(0);
+  
 
-  // 👇 SCROLL DETECTION
+ 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
-    };
+  const handleScroll = () => {
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    const currentScroll = window.scrollY;
 
-  // 👇 NAV LINK LOGIC
+    // background change
+    setScrolled(currentScroll > 10);
+
+    // hide / show header
+    if (currentScroll > lastScrollY && currentScroll > 80) {
+      setShowHeader(false); // scroll down
+    } else {
+      setShowHeader(true); // scroll up
+    }
+
+    setLastScrollY(currentScroll);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  return () => window.removeEventListener("scroll", handleScroll);
+}, [lastScrollY]);
+
+  
   const navLink = (href, label) => {
     const isHome = href === "/";
     const isActive = pathname === href;
 
   
-    // ✅ Other pages → active border
+  
     const showBorder =
       (!isHome && isActive) || (isHome && scrolled);
 
@@ -50,7 +68,14 @@ export default function Navigationbar() {
   };
 
   return (
-    <header className="absolute top-0 z-50 w-full">
+  <header
+  className={`fixed top-0 left-0 w-full z-50 transition-all duration-300
+  ${showHeader ? "translate-y-0" : "-translate-y-full"}
+  ${scrolled 
+    ? "bg-[#031229]/80 backdrop-blur-md shadow-md" 
+    : "bg-transparent"}
+`}
+>
       {/* MAIN NAV */}
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-8 text-white">
         

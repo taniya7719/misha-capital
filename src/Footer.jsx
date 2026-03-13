@@ -198,7 +198,7 @@ export default function Footer() {
 </div>
       <div>
         <p className="text-sm">Contact Us</p>
-        <p className="font-semibold"> +91 9220468743</p>
+        <p className="font-semibold"> +91 9220330262</p>
       </div>
     </div>
                 </div>
@@ -265,27 +265,27 @@ export default function Footer() {
     <h4 className=" text-sm font-semibold text-white mb-4">Quick Links</h4>
     <ul className="space-y-2 text-sm text-gray-300">
       <li>
-        <Link href="/" className="hover:text-white transition">
+        <Link href="/" className="hover:text-[#085A93] transition">
           Home
         </Link>
       </li>
       <li>
-        <Link href="/about-us" className="hover:text-white transition">
+        <Link href="/about-us" className="hover:text-[#085A93] transition">
           About Us
         </Link>
       </li>
       <li>
-        <Link href="/our-services" className="hover:text-white transition">
+        <Link href="/our-services" className="hover:text-[#085A93] transition">
           Our Services
         </Link>
       </li>
       <li>
-        <Link href="/partner-with-us" className="hover:text-white transition">
+        <Link href="/partner-with-us" className="hover:text-[#085A93] transition">
           Partner With Us
         </Link>
       </li>
       <li>
-        <Link href="/contact-us" className="hover:text-white transition">
+        <Link href="/contact-us" className="hover:text-[#085A93] transition">
           Contact Us
         </Link>
       </li>

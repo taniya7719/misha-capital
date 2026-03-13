@@ -5,7 +5,7 @@ export default function Service() {
   return (
     <section>
       {/* TOP HEADING */}
-      <div className="text-center mb-4 mt-12">
+      <div className="text-center mb-4 mt-18">
         <div className="flex items-center justify-center gap-2 text-[#000000] text-medium">
           <span className="w-12 h-[1px] bg-[#000000]"></span>
           <span>Bespoke</span>

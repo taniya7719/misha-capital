@@ -38,7 +38,7 @@ function CountUp({ value, prefix = "", suffix = "", start }) {
 export default function ImpactNumbers() {
   const stats = [
     { value: 550, suffix: "+", label: "Businesses Analysed" },
-    { value: 7, prefix: "$", suffix: " Billion", label: "Fund Raised" },
+    { value: 7, prefix: "$", suffix: " Billion", label: "Funds Raised" },
     { value: 375, suffix: "+", label: "Deals Executed" },
     { value: 2000, suffix: "+", label: "VC Firms & Angel Investors" },
     { value: 950, suffix: "+", label: "Lender / Banks / NBFC's" },

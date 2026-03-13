@@ -272,6 +272,14 @@ export default function AboutUs() {
 
 
     },
+     {
+      name: "Mr. Anil Chowdhary",
+      image: "/Anil-Chowdhary.png",
+      role: "Chief Advisor and Mentor",
+      desc: "Mr. Anil Kumar Chaudhary has experience across diverse sectors including oil, steel,mining, infrastructure, etc. He has held key leadership roles such as Group Managing Director & CEO at Essar Group and the Chairman and Director (Finance) of Steel Authority of India Ltd. (SAIL)", 
+
+
+    },
     {
       name: "Mr. Manan Kedia",
        image: "/Mr-manan-kedia.png",
@@ -283,7 +291,7 @@ export default function AboutUs() {
       name: "Ms. Medha Gupta",
         image: "/Ms-medha-gupta.png",
        role: "Partner",
-      desc: "Ms. Medha Gupta is an active investor and comes with an international relations background with experience in equity transactions across industries like Power, Steel, Real Estate, FMCG, EV etc.",
+      desc: "Ms. Medha Gupta is an aluminus of Leeds University, UK and is an active investor and comes with an international relations background with experience in equity transactions across industries like Power, Steel, Real Estate, FMCG, EV etc.",
     },
    
      {
@@ -532,11 +540,11 @@ Tech from VIT
               </div> */}
 
             {/* </div> */}
-           <section className="box py-20 relative">
+           <section className="box py-10 relative mt-10">
       <div className="mx-auto">
 
         {/* Top Label */}
-        <div className="flex items-center justify-center gap-4 mb-2">
+        <div className="flex items-center justify-center gap-4 mb-1">
           <span className="w-10 sm:w-14 h-[1px] bg-[#1E1E1E]"></span>
           <span className="text-[14px] sm:text-[16px] text-[#1E1E1E] tracking-wide">
             Our Leadership
@@ -545,7 +553,7 @@ Tech from VIT
         </div>
 
         {/* Heading */}
-        <h2 className="text-center text-4xl md:text-4xl mb-14 font-bold text-[#032F60]">
+        <h2 className="text-center text-4xl md:text-4xl mb-10 font-bold text-[#032F60]">
           The Foundation of Our Advisory Excellence
         </h2>
 
@@ -560,30 +568,31 @@ Tech from VIT
         {/* Slider */}
        <div
   ref={sliderRef}
-  className="flex gap-20 lg:gap-10 overflow-x-auto scroll-smooth no-scrollbar"
+  className="flex gap-20 lg:gap-6 overflow-x-auto scroll-smooth no-scrollbar"
 >
   {teamMembers.map((member, index) => (
     <div
       key={index}
-      className="bg-[#0E78BE1A]   lg:w-[519.5px] h-auto lg:h-[769px] rounded-3xl p-7 flex-shrink-0"
+      className="bg-[#0E78BE1A]   lg:w-[320.5px] h-auto lg:h-[600px] rounded-3xl p-4 flex-shrink-0"
     >
       <img
   src={member.image}
   alt={member.name}
-  className="rounded-2xl object-cover mb-6 w-full h-[468px] bg-white"
+  className="rounded-2xl object-cover mb-4  bg-white"
 />
-
-      <h3 className="text-[26px] leading-[28px] font-semibold text-[#00365A]">
+<div className="px-2 py-0">
+      <h3 className="text-[16px] leading-[20px] font-bold text-[#00365A]">
         {member.name}
       </h3>
 
-      <p className="text-[16px] leading-[25px] text-[#555555] mb-4">
+      <p className="text-[14px] leading-[20px] text-[#555555] mb-2">
         {member.role}
       </p>
 
-      <p className="text-[16px] leading-[25px] text-[#212121]">
+      <p className="text-[13px] leading-[22px] text-[#212121] ">
         {member.desc}
       </p>
+    </div>
     </div>
   ))}
 </div>

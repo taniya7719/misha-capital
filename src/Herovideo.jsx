@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Herovideo() {
   return (
-   <section className="relative min-h-screen w-full box overflow-hidden">
+   <section className="relative min-h-screen w-full box overflow-hidden ">
   {/* Background Video */}
   <video
     src="/hero.mp4"
@@ -13,7 +13,7 @@ export default function Herovideo() {
     loop
     muted
     playsInline
-    className="absolute inset-0 h-full w-full object-cover"
+    className=" absolute inset-0 h-full w-full object-cover"
   />
 
   {/* Dark Overlay */}

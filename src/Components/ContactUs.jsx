@@ -95,7 +95,7 @@ const validateForm = () => {
 
           {/* COMPANY ADDRESS */}
           <div className="flex gap-6 items-start">
-            <div className="h-14 w-14 min-w-[56px] rounded-2xl border border-[#1DA1F2] bg-white flex items-center justify-center shadow-sm">
+            <div className="h-14 w-14 min-w-[40px] rounded-2xl border border-[#1DA1F2] bg-white flex items-center justify-center shadow-sm">
               <img src="/location-contact.png" alt="Location" className="h-7 w-7 object-contain" />
             </div>
             <div>
@@ -105,7 +105,7 @@ const validateForm = () => {
               <p className="text-gray-600 text-sm mt-2 ">
                 Misha Capital Advisors LLP 
               <br/>
-                L-42, Lajpat Nagar II, New Delhi, Delhi 110024
+                L-42, Lajpat Nagar-II, New Delhi, Delhi 110024
               </p>
             </div>
           </div>

@@ -197,5 +197,59 @@ body {
   -ms-overflow-style: none;  /* IE & Edge */
   scrollbar-width: none;     /* Firefox */
 }
+.marquee-container {
+  overflow: hidden;
+  width: 100%;
+}
 
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marqueeLeft 30s linear infinite;
+}
+
+.marquee-track-right {
+  display: flex;
+  width: max-content;
+  animation: marqueeRight 30s linear infinite;
+}
+/* LEFT MOVING ROW */
+@keyframes scrollLeftLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* RIGHT MOVING ROW */
+@keyframes scrollRightLoop {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* container */
+.scroll-row {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* left animation */
+.scroll-track-left {
+  display: flex;
+  width: max-content;
+  animation: scrollLeftLoop 35s linear infinite;
+}
+
+/* right animation */
+.scroll-track-right {
+  display: flex;
+  width: max-content;
+  animation: scrollRightLoop 35s linear infinite;
+}
 
