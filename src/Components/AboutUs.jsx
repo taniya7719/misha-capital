@@ -404,7 +404,7 @@ export default function AboutUs() {
 
     {/* Content */}
     <p className="text-[16px] leading-relaxed font-inter text-inline">
-  With over 375 transactions executed, Misha Capital has developed strong expertise in debt syndication and capital advisory. We partner with promoters and management teams to raise capital from banks, NBFCs, AIFs, private credit funds, and institutional lenders. Our experience spans working capital financing, project finance, structured credit, and green financing, enabling us to execute complex institutional transactions with speed, precision, and strong lender alignment.
+  With over 250 transactions executed, Misha Capital has developed strong expertise in debt syndication and capital advisory. We partner with promoters and management teams to raise capital from banks, NBFCs, AIFs, private credit funds, and institutional lenders. Our experience spans working capital financing, project finance, structured credit, and green financing, enabling us to execute complex institutional transactions with speed, precision, and strong lender alignment.
 </p>
 
   </div>
@@ -422,7 +422,7 @@ export default function AboutUs() {
 
     {/* Content */}
     <p className="text-[16px] leading-relaxed font-inter text-inline">
-Complementing our debt advisory practice, Misha Capital also provides equity advisory and strategic fundraising support to select growth-stage companies. Our team has advised on over 375 transactions across sectors, delivering solutions across investment banking, valuations, corporate finance, and strategic capital allocation. With deal sizes ranging from $5 million to $500 million, we bring the expertise and institutional relationships required to structure and execute transactions across varying scales and complexities.
+Complementing our debt advisory practice, Misha Capital also provides equity advisory and strategic fundraising support to select growth-stage companies. Our team has advised on over 125 transactions across sectors, delivering solutions across investment banking, valuations, corporate finance, and strategic capital allocation. With deal sizes ranging from $5 million to $500 million, we bring the expertise and institutional relationships required to structure and execute transactions across varying scales and complexities.
 
 </p>
 </div>

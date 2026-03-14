@@ -2,19 +2,19 @@ export default function PartnerWithUs() {
   const cards = [
     {
       icon: "/institution.png",
-      text: "Strong execution capabilities across banks, NBFCs, AIFs, and private credit funds.",
+      text: "Strong execution capabilities across banks, NBFCs, and private credit funds.",
     },
     {
       icon: "/debt.png",
-      text: "Structured debt expertise: Deep expertise in executing large-ticket and structured debt mandates.",
+      text: " Deep expertise in executing large-ticket and structured debt mandates.",
     },
     {
       icon: "/partnership.png",
-      text: " Long-term, outcome-driven partnerships: We focus on building enduring partnerships aligned with long-term client outcomes. ",
+      text: " We focus on building enduring partnerships aligned with long-term client outcomes. ",
     },
     {
       icon: "/referral.png",
-      text: "Transparent and aligned engagement: A transparent referral and engagement framework with clearly defined terms.",
+      text: " A transparent referral and engagement framework with clearly defined terms.",
     },
   ];
 
