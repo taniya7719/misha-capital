@@ -28,7 +28,7 @@ export default function HeroContact() {
     max-w-2xl
     leading-relaxed"
   >
-  From structured debt to equity advisory, we’re here to support your next move.
+  From structured debt to equity advisory, we support your next phase of growth.
   </p>
 </div>
 

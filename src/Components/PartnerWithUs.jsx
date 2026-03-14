@@ -2,19 +2,19 @@ export default function PartnerWithUs() {
   const cards = [
     {
       icon: "/institution.png",
-      text: "Institutional-grade execution across banks, NBFCs, AIFs, private credit funds",
+      text: "Strong execution capabilities across banks, NBFCs, AIFs, and private credit funds.",
     },
     {
       icon: "/debt.png",
-      text: " Expertise in large-ticket and structured debt mandates",
+      text: "Structured debt expertise: Deep expertise in executing large-ticket and structured debt mandates.",
     },
     {
       icon: "/partnership.png",
-      text: " Long-term, outcome-driven partnerships",
+      text: " Long-term, outcome-driven partnerships: We focus on building enduring partnerships aligned with long-term client outcomes. ",
     },
     {
       icon: "/referral.png",
-      text: " Transparent referral process with clear engagement terms",
+      text: "Transparent and aligned engagement: A transparent referral and engagement framework with clearly defined terms.",
     },
   ];
 
@@ -50,19 +50,19 @@ export default function PartnerWithUs() {
 
           {/* RIGHT SIDE */}
           <div className="w-full lg:w-1/2 flex justify-center">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-x-25 lg:gap-y-0 lg:mt-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-x-25 lg:gap-y-0 lg:mt-5">
               {cards.map((item, i) => (
                 <div
                   key={i}
                   className={`
                     w-full max-w-[282px]
-                    lg:w-[304px]
-                    h-auto lg:h-[184px]
+                    lg:w-[310px]
+                    h-auto lg:h-[200px]
                     bg-white
                     rounded-[16px]
                     border
                     border-[#E5E7EB]
-                    p-4 lg:p-[32px]
+                    p-4 lg:p-[20px]
                     flex
                     flex-col
                     justify-start
@@ -75,7 +75,7 @@ export default function PartnerWithUs() {
                   <img
                     src={item.icon}
                     alt="icon"
-                    className="w-[36px] h-[36px] lg:w-[40px] lg:h-[40px] mb-4"
+                    className="w-[36px] h-[36px] lg:w-[36px] lg:h-[36px] mb-4"
                   />
                   <p className="text-[#1F2937] text-[15px] lg:text-[16px] leading-[22px] lg:leading-[24px]">
                     {item.text}

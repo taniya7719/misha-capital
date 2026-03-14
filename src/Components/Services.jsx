@@ -10,7 +10,7 @@ export default function Services() {
       title: "Mezzanine Financing",
       icon: "/mezz.png",
       desc:
-        "Flexible mezzanine capital solutions combining debt and equity characteristics to fund growth, acquisitions, and balance sheet optimization.",
+        "Flexible mezzanine capital solutions combining debt and equity characteristics to support growth, acquisitions, and balance sheet optimization.",
     },
      {
       title: "LBO (Leveraged Buyout) Financing",
@@ -22,25 +22,25 @@ export default function Services() {
       title: "Bridge Financing",
       icon: "/bridge.png",
       desc:
-        "Short-term bridge finance solutions designed to address interim funding requirements ahead of long-term capital arrangements or liquidity events.",
+        "Short-term bridge financing solutions designed to address interim funding requirements ahead of long-term capital arrangements or liquidity events.",
     },
     {
       title: "Acquisition Financing",
       icon: "/acquisition.png",
       desc:
-        "Funding structured to support the purchase of a company or business assets, enabling seamless ownership transition and strategic expansion.",
+        "Structured funding solutions supporting the acquisition of companies or business assets, enabling seamless ownership transitions and strategic expansion.",
     },
     {
       title: "Global Capital Solutions for Offshore Projects",
       icon: "/global.png",
       desc:
-        "Cross-border global capital solutions connecting offshore projects with international lenders, funds, and alternative capital providers.",
+        "Cross-border capital solutions connecting offshore projects with international lenders, funds, and alternative capital providers.",
     },
      {
       title: "Working Capital Loans",
       icon: "/working-capital.png",
       desc:
-        "Customized working capital financing solutions aligned to business cash-flow cycles, ensuring seamless day-to-day operations.",
+        "Customized working capital financing solutions aligned with business cash-flow cycles, ensuring seamless day-to-day operations.",
     },
     {
       title: "Supply Chain Financing",
@@ -58,7 +58,7 @@ export default function Services() {
       title: "Business Loans",
       icon: "/Business-icon.png",
       desc:
-        "Structured secured and unsecured business loan solutions designed to support expansion, operational efficiency, and long-term growth objectives.",
+        "Structured secured and unsecured business loan solutions designed to support expansion, operational efficiency, and long-term growth.",
     },
     {
       title: "Invoice Discounting",
@@ -79,19 +79,17 @@ export default function Services() {
     {/* LEFT – HEADING */}
     <div className="bg-white flex items-center">
       <div className="text-inline mb-4 px-4 sm:px-0">
-        <div className="flex items-center justify-inline gap-2 text-[#000000] text-medium ">
+        {/* <div className="flex items-center justify-inline gap-2 text-[#000000] text-medium ">
           <span className="w-12 h-[1px] bg-[#000000]"></span>
           <span>Our Services</span>
           <span className="w-12 h-[1px] bg-[#000000]"></span>
-        </div>
+        </div> */}
 
         <h2 className="text-inline justify-inline text-3xl sm:text-4xl md:text-4xl mb-4 sm:mb-4">
           <span className="font-bold text-[#032F60]">Corporate</span>{" "}
           <span className="font-bold text-[#032F60]">Debt</span>
         </h2>
-        <p>We structure customized debt solutions across working capital, project finance, 
-acquisition funding, and structured credit, helping businesses optimize liquidity and 
-capital efficiency.
+        <p>Tailored debt solutions designed to enhance liquidity, optimize capital structure, and support sustainable business growth.
 </p>
       </div>
     </div>
@@ -139,18 +137,17 @@ capital efficiency.
 
 <section className=" bg-[#F3F4F6] box lg:mb-55 ">
   <div className="text-center mb-8  sm:px-0 ">
-    <div className="flex items-center justify-center gap-2 text-[#000000] text-medium">
+    {/* <div className="flex items-center justify-center gap-2 text-[#000000] text-medium">
       <span className="w-12 h-[1px] bg-[#000000]"></span>
       <span>Our Services</span>
       <span className="w-12 h-[1px] bg-[#000000]"></span>
-    </div>
+    </div> */}
 
     <h2 className="text-3xl sm:text-4xl md:text-4xl mb-2 sm:mb-2 text-center ">
-      <span className="font-bold text-[#032F60]">Private</span>{" "}
+      <span className="font-bold text-[#032F60]">Corporate</span>{" "}
       <span className="font-bold text-[#032F60]">Equity</span>
     </h2>
-    <p className="pb-10">Misha Capital provides comprehensive private equity advisory services to  growth-oriented<br/> 
-businesses seeking institutional capital, strategic investors, and long-term value creation.</p>
+    <p className="pb-10">Advising growth-oriented businesses on raising institutional capital and <br/>partnering with strategic investors for long-term value creation.</p>
 
     <div className="flex justify-center ">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 bg-[#E5E7EB] gap-px max-w-5xl w-full ">
@@ -160,7 +157,7 @@ businesses seeking institutional capital, strategic investors, and long-term val
             title: "Series A Funding",
             icon: "/Business-icon.png",
             desc:
-              "Strategic Series A funding advisory supporting early growth-stage companies.",
+              "Strategic Series A fundraising advisory supporting early growth-stage companies.",
           }}
         />
 
@@ -170,7 +167,7 @@ businesses seeking institutional capital, strategic investors, and long-term val
             title: "Growth Equity & Pre-IPO Capital",
             icon: "/Business-icon.png",
             desc:
-              "Growth equity and pre-IPO funding advisory for scalable businesses.",
+              "Advisory on growth equity and pre-IPO capital for scalable, high-growth businesses.",
           }}
         />
 
@@ -180,7 +177,7 @@ businesses seeking institutional capital, strategic investors, and long-term val
             title: "Mergers & Acquisitions",
             icon: "/Business-icon.png",
             desc:
-              "End-to-end M&A advisory services across buy-side and sell-side deals.",
+              "End-to-end M&A advisory across buy-side and sell-side transactions.",
           }}
         />
       </div>

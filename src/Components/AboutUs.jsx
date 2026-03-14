@@ -268,7 +268,7 @@ export default function AboutUs() {
       name: "Mr. Manish Gupta",
       image: "/manishhh-sir.jpeg",
       role: "Senior Partner",
-      desc: "Mr. Manish Gupta, IIM Calcutta Alumnus, is a Finance professional with 30 years of experience in investment banking, debt syndication & business advisory services. His experience is in various sectors & is skilled in raising funds through Equity, Project Finance,Working capital, Promoter funding, ECB, IPO, and rights issue.", 
+      desc: "Mr. Manish Gupta, an alumnus of IIM Calcutta, is a seasoned finance professional with over 30 years of experience across investment banking, debt syndication, and strategic financial advisory. He has extensive experience across multiple sectors and specializes in structuring and raising capital through equity, project finance, working capital facilities, promoter funding, ECBs, IPOs, and rights issues.", 
 
 
     },
@@ -276,7 +276,7 @@ export default function AboutUs() {
       name: "Mr. Anil Chowdhary",
       image: "/Anil-Chowdhary.png",
       role: "Chief Advisor and Mentor",
-      desc: "Mr. Anil Kumar Chaudhary has experience across diverse sectors including oil, steel,mining, infrastructure, etc. He has held key leadership roles such as Group Managing Director & CEO at Essar Group and the Chairman and Director (Finance) of Steel Authority of India Ltd. (SAIL)", 
+      desc: "Mr. Anil Kumar Chaudhary brings extensive leadership experience across sectors including oil & gas, steel, mining, and infrastructure. He has held several distinguished leadership roles, including Group Managing Director & CEO at Essar Group and Chairman and Director (Finance) at Steel Authority of India Limited (SAIL), contributing significantly to strategic growth and financial leadership in large-scale enterprises.", 
 
 
     },
@@ -284,27 +284,27 @@ export default function AboutUs() {
       name: "Mr. Manan Kedia",
        image: "/Mr-manan-kedia.png",
       role: "Partner",
-      desc: "Mr. Manan Kedia is an active investor and finance professional, 2x tech founder, 6+ years running diverse businesses, experience in handling equity transactions in diverse industries like Blockchain, Web3, FMCG, Tech etc. MSc from ESADE, MIM from UCD and B.Tech from VIT",
+      desc: "Mr. Manan Kedia is an active investor and finance professional with entrepreneurial experience as a two-time technology founder and over six years of building and operating diverse businesses. He has advised and executed equity transactions across sectors including Blockchain, Web3, FMCG, and technology. He holds an MSc from ESADE Business School, an MIM from University College Dublin, and a B.Tech from VIT.",
     },
   
     {
       name: "Ms. Medha Gupta",
         image: "/Ms-medha-gupta.png",
        role: "Partner",
-      desc: "Ms. Medha Gupta is an aluminus of Leeds University, UK and is an active investor and comes with an international relations background with experience in equity transactions across industries like Power, Steel, Real Estate, FMCG, EV etc.",
+      desc: "Ms. Medha Gupta is an alumna of the University of Leeds, UK, and an active investor with a background in international relations and capital markets. She has experience supporting equity transactions across sectors including power, steel, real estate, FMCG, and electric mobility, bringing a global perspective to strategic investment and advisory initiatives.",
     },
    
      {
       name: "Mr. Sumit Chatterjee ",
       image: "/Mr-sumit-chatterjee.png",
       role: "Senior Partner",
-      desc: "Mr. Sumit Chatterjee is a seasoned C-suite executive and entrepreneur with over two decades of global and local experience in finance and business operations across FMCG, financial and IT services, real estate, and professional services. His expertise spans strategic planning, financial analysis, corporate finance, fund raising, IPOs (NASDAQ & NSE), P&L management, compliance & M&A.",
+      desc: "Mr. Sumit Chatterjee is a seasoned C-suite executive and entrepreneur with over two decades of global and domestic experience across finance and business operations. His expertise spans strategic planning, corporate finance, financial analysis, fundraising, IPOs (NASDAQ & NSE), P&L management, compliance, and M&A across sectors including FMCG, financial services, IT services, real estate, and professional services.",
     },
       {
       name: "Mr. Shanshank Parihar",
         image: "/Mr-shanshank-parihar.png",
       role: "Partner",
-      desc: "Mr. Shashank Parihar is a professional supporting cross border entities, from various sectors, with growth strategy and financial advisory. He has strong relationships with VC's, PE's and has successfully raised funds for different tech, real estate, defence and deep tech companies.",
+      desc: "Mr. Shashank Parihar advises cross-border businesses across multiple sectors on growth strategy and financial advisory. He maintains strong relationships with venture capital and private equity investors and has supported fundraising initiatives for companies across technology, real estate, defence, and deep-tech sectors.",
     },
   ];
 
@@ -345,7 +345,7 @@ export default function AboutUs() {
 
           <p className="text-[16px] leading-[22px] text-[#000000]">
            <span className="font-semibold text-black"> Misha Capital</span> is a sector-agnostic financial advisory firm specializing in <span className="font-semibold text-black"> debt advisory, structured finance, and capital raising solutions </span> for businesses across domestic and international markets.<br></br>
-            We work closely with promoters, founders, and management teams to design and execute tailored debt strategies, ensuring optimal capital structure, competitive pricing, and timely fund closure.
+            We work closely with promoters, founders, and management teams to structure and execute tailored debt strategies, ensuring an optimal capital structure, competitive financing terms, and efficient fund closure.
           </p>
         </div>
 
@@ -382,8 +382,8 @@ export default function AboutUs() {
 
   {/* Transaction Box - Hide on Mobile */}
   <div className="hidden lg:block absolute top-10 right-8 sm:right-[-3] bg-white rounded-2xl shadow-xl px-3 py-7">
-    <div className="text-[30px]  text-center font-bold text-[#0E78BE]">200+</div>
-    <div className="text-[24px] font-bold text-[#0E78BE] mt-1">Transaction</div>
+    <div className="text-[30px]  text-center font-bold text-[#0E78BE]">375+</div>
+    <div className="text-[24px] font-bold text-[#0E78BE] mt-1">Transactions</div>
   </div>
 
 </div>
@@ -404,12 +404,7 @@ export default function AboutUs() {
 
     {/* Content */}
     <p className="text-[16px] leading-relaxed font-inter text-inline">
-     With over 200 transactions executed, our core strength lies in debt syndication and 
-advisory. We assist clients in raising funds through banks, NBFCs, AIFs, private credit 
-funds, and institutional lenders. From working capital finance and project loans to 
-structured debt, green financing, and growth capital, our team has extensive experience in 
-executing complex, large-ticket institutional mandates with precision, speed, and strong 
-lender alignment.
+  With over 375 transactions executed, Misha Capital has developed strong expertise in debt syndication and capital advisory. We partner with promoters and management teams to raise capital from banks, NBFCs, AIFs, private credit funds, and institutional lenders. Our experience spans working capital financing, project finance, structured credit, and green financing, enabling us to execute complex institutional transactions with speed, precision, and strong lender alignment.
 </p>
 
   </div>
@@ -427,12 +422,7 @@ lender alignment.
 
     {/* Content */}
     <p className="text-[16px] leading-relaxed font-inter text-inline">
-   Complementing our debt practice, we also provide equity advisory and strategic 
-fundraising support for select growth-stage companies. Our team has advised on more 
-than 200 transactions across sectors, delivering solutions spanning investment banking, 
-valuations, corporate finance, and strategic capital allocation. Our deal sizes have 
-historically ranged from $5 million to $500 million, reflecting our ability to structure and 
-close transactions across varying scales and complexities.
+Complementing our debt advisory practice, Misha Capital also provides equity advisory and strategic fundraising support to select growth-stage companies. Our team has advised on over 375 transactions across sectors, delivering solutions across investment banking, valuations, corporate finance, and strategic capital allocation. With deal sizes ranging from $5 million to $500 million, we bring the expertise and institutional relationships required to structure and execute transactions across varying scales and complexities.
 
 </p>
 </div>
@@ -469,13 +459,9 @@ close transactions across varying scales and complexities.
               </p>
 
               <p className="text-[18px] leading-[32px] text-[#000000] ">
-               Backed by a team with diverse experience across investment banking, corporate finance, 
-entrepreneurship, and strategic consulting, we leverage deep lender relationships and 
-cross-industry expertise to provide advisory solutions that are efficient, transparent, and 
-execution-driven.
+            Backed by a team with diverse experience across investment banking, corporate finance, entrepreneurship, and strategic advisory, we leverage deep lender relationships and cross-sector expertise to deliver solutions that are disciplined, transparent, and execution-driven.
 <br/>
-Our approach combines strategic insight with disciplined transaction management, 
-ensuring optimal outcomes for every mandate we undertake.
+Our approach combines strategic insight with rigorous transaction management, ensuring optimal outcomes across every mandate we undertake.
               </p>
             </div>
           </div>
@@ -540,11 +526,11 @@ Tech from VIT
               </div> */}
 
             {/* </div> */}
-           <section className="box py-10 relative mt-10">
+           <section className="px-20 py-10 relative mt-10">
       <div className="mx-auto">
 
         {/* Top Label */}
-        <div className="flex items-center justify-center gap-4 mb-1">
+        <div className="flex items-center justify-center gap-4 mb-1 mt-10 ">
           <span className="w-10 sm:w-14 h-[1px] bg-[#1E1E1E]"></span>
           <span className="text-[14px] sm:text-[16px] text-[#1E1E1E] tracking-wide">
             Our Leadership
@@ -573,7 +559,7 @@ Tech from VIT
   {teamMembers.map((member, index) => (
     <div
       key={index}
-      className="bg-[#0E78BE1A]   lg:w-[320.5px] h-auto lg:h-[600px] rounded-3xl p-4 flex-shrink-0"
+      className="bg-[#0E78BE1A]   lg:w-[360.5px] h-auto lg:h-[640px] rounded-3xl p-4 flex-shrink-0"
     >
       <img
   src={member.image}

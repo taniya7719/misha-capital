@@ -113,45 +113,46 @@ export default function Service() {
 >
   <li className="flex items-start gap-3 p-4 border-r border-b border-gray-200">
     <span className="mt-[6px] w-1.5 h-1.5 bg-[#0A6ED1] rounded-full flex-shrink-0"></span>
-    <span>Corporate Debt: Structured business loans and working capital solutions.</span>
+    <span>Corporate Debt: Structured business loans and working capital financing solutions.</span>
     
   </li>
 
   <li className="flex items-start gap-3 p-4 border-r border-b border-gray-200">
    <span className="mt-[6px] w-1.5 h-1.5 bg-[#0A6ED1] rounded-full flex-shrink-0"></span>
-   <span>M&A Advisory: End-to-end buy-side and sell-side strategic deals.</span>
+   <span>M&A Advisory: End-to-end advisory for strategic buy-side and sell-side transactions
+.</span>
   
     
   </li>
 
   <li className="flex items-start gap-3 p-4 border-r border-b border-gray-200">
    <span className="mt-[6px] w-1.5 h-1.5 bg-[#0A6ED1] rounded-full flex-shrink-0"></span>
-    <span>Project & Global Capital: Project finance and cross-border offshore solutions.</span>
+    <span>Project & Global Capital: Project finance, offshore funding, and cross-border capital solutions for global expansion.</span>
     
   </li>
 
   <li className="flex items-start gap-3 p-4 border-r border-b border-gray-200">
     <span className="mt-[6px] w-1.5 h-1.5 bg-[#0A6ED1] rounded-full flex-shrink-0"></span>
-    <span>Real Estate Finance: Funding for residential and commercial developments.</span>
+    <span>Real Estate Finance: Capital solutions for residential and commercial real estate developments.</span>
     
   </li>
 
   <li className="flex items-start gap-3 p-4 border-r border-b border-gray-200">
     <span className="mt-[6px] w-1.5 h-1.5 bg-[#0A6ED1] rounded-full flex-shrink-0"></span>
-    <span>Structured Finance: Mezzanine, LBO, and Bridge financing.</span>
+    <span>Structured Finance: Mezzanine financing, leveraged buyouts (LBOs), and bridge funding.</span>
     
     
   </li>
 
   <li className="flex items-start gap-3 p-4 border-r border-b border-gray-200">
     <span className="mt-[6px] w-1.5 h-1.5 bg-[#0A6ED1] rounded-full flex-shrink-0"></span>
-    <span>Supply Chain Finance: Invoice discounting and liquidity management.</span>
+    <span>Supply Chain Finance: Invoice discounting and working capital solutions to improve liquidity and cash flow.</span>
   </li>
 
   <li className="flex items-start gap-3 p-4 border-r border-b border-gray-200">
     <span className="mt-[6px] w-1.5 h-1.5 bg-[#0A6ED1] rounded-full flex-shrink-0"></span>
     
-     <span>Equity Capital: Series A, Growth Equity, and Pre-IPO funding.</span>
+     <span>Equity Capital: Series A, growth equity, and pre-IPO fundraising support.</span>
   </li>
    <Link
     href="/our-services"

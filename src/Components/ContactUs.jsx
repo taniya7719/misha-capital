@@ -80,9 +80,9 @@ const validateForm = () => {
           <div className="w-10 lg:w-16 h-[1px] bg-black"></div>
         </div>
 
-        <h2 className="text-3xl sm:text-4xl lg:text-[45px] mb-2">
+        <h2 className="text-3xl sm:text-4xl lg:text-[40px] mb-2">
           <span className="font-bold text-[#00365A]">
-            Send Us Your Query
+            Connect with our team
           </span>
         </h2>
 
@@ -91,11 +91,11 @@ const validateForm = () => {
         </p>
 
         {/* INFO GRID */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
 
           {/* COMPANY ADDRESS */}
           <div className="flex gap-6 items-start">
-            <div className="h-14 w-14 min-w-[40px] rounded-2xl border border-[#1DA1F2] bg-white flex items-center justify-center shadow-sm">
+            <div className="h-14 w-14 min-w-[56px] rounded-2xl border border-[#1DA1F2] bg-white flex items-center justify-center shadow-sm">
               <img src="/location-contact.png" alt="Location" className="h-7 w-7 object-contain" />
             </div>
             <div>
@@ -103,9 +103,9 @@ const validateForm = () => {
                 Company Address
               </h4>
               <p className="text-gray-600 text-sm mt-2 ">
-                Misha Capital Advisors LLP 
+            Misha Capital Advisors LLP 
               <br/>
-                L-42, Lajpat Nagar-II, New Delhi, Delhi 110024
+                L-42, Lajpat Nagar-2, New Delhi – 110024, India
               </p>
             </div>
           </div>
@@ -132,7 +132,7 @@ const validateForm = () => {
             </div>
             <div>
               <h4 className="font-semibold text-black text-[17px]">
-                Office Days
+                Office Hours
               </h4>
               <p className="text-gray-600 text-sm mt-2 leading-relaxed">
                 Mon–Sat: 09:00am–07:00pm <br />
@@ -170,8 +170,7 @@ const validateForm = () => {
         <h3 className="text-2xl sm:text-4xl font-bold text-black mb-2 text-center">
           Contact Us
         </h3>
-        <p className="mb-4 text-[12px] text-center">Whether you're exploring debt advisory, capital raising, or equity fundraising, our 
-investment banking advisory team is ready to assist.</p>
+        <p className="mb-4 text-[12px] text-center">Whether you are exploring debt advisory, capital raising, or equity fundraising, our investment banking advisory team is ready to assist.</p>
 
        
        <form onSubmit={handleSubmit} className="space-y-6">

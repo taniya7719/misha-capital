@@ -84,7 +84,7 @@ export default function ContentSection() {
       <div className="flex-1">
 
         <h2 className="text-2xl sm:text-3xl lg:text-[34px] leading-snug lg:leading-[40px] font-medium text-[#222] mt-5">
-          3 Decade of <br />
+          3 Decades of <br />
           Experience in <br />
           Investment Banking <br />
           and Capital Advisory
@@ -95,13 +95,13 @@ export default function ContentSection() {
       {/* RIGHT CONTENT */}
       <div className="max-w-[380px] text-black text-base sm:text-[16px] leading-7 lg:leading-[25px]">
         <p>
-          Misha Capital is a multi-disciplinary Investment Banking Advisory firm based out of
-          <span className="font-semibold"> Delhi, India</span> having its presence in <span className="font-semibold"> Mumbai, Kolkata, Bangalore, Chennai, Hyderabad </span>
-          <span className="font-semibold"> over 3 decades of collective experience</span>.
+        Misha Capital is a multi-disciplinary investment banking advisory firm based in 
+          <span className="font-semibold"> Delhi, India,</span> with a presence across <span className="font-semibold"> Mumbai, Kolkata, Bangalore, Chennai, and Hyderabad. </span>
+          {/* <span className="font-semibold"> over 3 decades of collective experience</span>. */}
           <br />
-          We work closely with founders, promoters, and corporates to deliver
-          <span className="font-semibold"> fast, transparent, and result-driven advisory services</span>
-          — from early-stage fundraising to large-scale project financing.
+         Backed by over three decades of deep industry experience, we work closely with founders,
+          <span className="font-semibold"> promoters, and corporates to deliver transparent, execution-focused advisory—</span>
+          from strategic capital raising and structured financing to debt restructuring and institutional transactions.
         </p>
       </div>
 

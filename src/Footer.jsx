@@ -164,15 +164,15 @@ export default function Footer() {
 " />
 
             {/* CONTENT */}
-            <div className="relative z-10 px-10 py-14 flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
+            <div className="relative z-10 px-10 py-10 flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
               
               {/* LEFT */}
               <div className="max-w-2xl text-white">
                 
 
-                <h2 className="mt-4 text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight">
+                <h2 className="mt-4 text-2xl sm:text-3xl lg:text-3xl font-semibold leading-tight">
 
-                  Get all the guidance & growth you need through Misha Capital
+              	Access the guidance and capital solutions your business needs with Misha Capital.
                 </h2>
 
                 <div className="mt-6 flex flex-col sm:flex-row gap-6">
@@ -242,7 +242,7 @@ export default function Footer() {
     </Link>
 
     <ul className="mt-4 space-y-3 text-sm text-gray-300 ">
-      <li>Misha Capital is a sector-agnostic investment banking advisory firm specializing in structured debt, private equity, and strategic capital raising. Backed by 30+ years of experience and strong institutional relationships, we structure and execute tailored debt and equity solutions with precision and timely closure.</li>
+      <li>Misha Capital is a sector-agnostic investment banking advisory firm specializing in debt restructuring, structured debt advisory, private equity, and strategic capital raising. With over 30 years of financial advisory experience and strong institutional relationships, we help business’s structure and execute tailored debt and equity solutions with precision and efficient deal execution.</li>
       <li>
         <Link
           href="https://www.linkedin.com/company/misha-capital/"

@@ -40,8 +40,8 @@ export default function ImpactNumbers() {
     { value: 550, suffix: "+", label: "Businesses Analysed" },
     { value: 7, prefix: "$", suffix: " Billion", label: "Funds Raised" },
     { value: 375, suffix: "+", label: "Deals Executed" },
-    { value: 2000, suffix: "+", label: "VC Firms & Angel Investors" },
-    { value: 950, suffix: "+", label: "Lender / Banks / NBFC's" },
+    { value: 2000, suffix: "+", label: "PE & VC Funds and Angel Investors" },
+    { value: 250, suffix: "+", label: "Banks, NBFCs & Funds" },
   ];
 
   const [animate, setAnimate] = useState(false);
