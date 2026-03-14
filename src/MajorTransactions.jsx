@@ -306,16 +306,16 @@ import Link from "next/link";
 
 export default function MajorTransactions() {
   const transactions = [
-    { title: "Wind", amount: "$30.3 M" },
-    { title: "Wind", amount: "$26.8 M" },
-    { title: "Solar", amount: "$112.5 M" },
-    { title: "Manufacturing", amount: "$21.8 M" },
-    { title: "Wind", amount: "$62.5 M" },
-    { title: "Hydro", amount: "$14.6 M" },
-    { title: "Solar", amount: "$5 M" },
-    { title: "Electronic Vehicle", amount: "$100 M" },
-    { title: "Hydro", amount: "$17.5 M" },
-    { title: "Electronic Vehicle", amount: "$14 M" },
+    { title: "Steel", subtitle: "Growth Funding", amount: "$278.15 M", icon: "/G2.png" },
+  { title: "Solar", subtitle: "Business Expansion", amount: "$112.5 M", icon: "/G3.png" },
+  { title: "Automobile Industry", subtitle: "Working Capital", amount: "$68.75 M", icon: "/G3.png" },
+  { title: "Wind", subtitle: "Project Finance", amount: "$62.5 M", icon: "/G5.png" },
+  { title: "Electric Vehicle", subtitle: " Acquisition Funding", amount: "$50 M", icon: "/G8.png" },
+  { title: "EPC", subtitle: "Working Capital", amount: "$40.6 M", icon: "/G5.png" },
+  { title: "Manufacturing", subtitle: "Business Expansion", amount: "$37.5 M", icon: "/G6.png" },
+  { title: "NBFC", subtitle: "Acquisition Funding", amount: "$37.5 M", icon: "/G4.png" },
+  { title: "Wind", subtitle: "Business Expansion", amount: "$30.3 M", icon: "/G1.png" },
+  { title: "Wind", subtitle: "Equity Funding", amount: "$26.8 M", icon: "/G2.png" },
   ];
 
   return (
