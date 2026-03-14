@@ -26,7 +26,7 @@ export default function Majortransaction() {
   ];
 
   return (
-<section className="relative py-20 overflow-hidden px-10 mb-50">
+<section className="relative py-15 overflow-hidden px-10 mb-50">
   {/* Background */}
   <div
     className="absolute inset-0 bg-cover bg-center"
