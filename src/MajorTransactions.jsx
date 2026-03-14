@@ -404,9 +404,8 @@ export default function MajorTransactions() {
 
 
               {/* SUBTEXT */}
-              <p className="  w-[208px]  h-[40px]  font-proxima  font-medium  text-[16px] leading-[20px] tracking-[-0.01em] text-[#212121] "
->
-  Business <br /> Expansion
+              <p className="w-[208px] h-[40px] font-proxima font-medium text-[16px] leading-[20px] tracking-[-0.01em] text-[#212121]">
+  {item.subtitle}
 </p>
 
 
