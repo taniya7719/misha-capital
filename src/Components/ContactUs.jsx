@@ -120,7 +120,7 @@ const validateForm = () => {
                 Talk To Us
               </h4>
               <p className="text-gray-600 text-sm mt-2">
-                +91 9220468743
+                +91 9220330262
               </p>
             </div>
           </div>

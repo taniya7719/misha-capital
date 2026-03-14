@@ -2,13 +2,13 @@
 
 export default function Majortransaction() {
   const transactions = [
-  { title: "Steel", subtitle: "Growth Funding", amount: "$278.15 M", icon: "/G2.png" },
-  { title: "Solar", subtitle: "Business Expansion", amount: "$112.5 M", icon: "/G3.png" },
+  { title: "Steel", subtitle: "Growth Funding", amount: "₹6500 Crs", icon: "/G2.png" },
+  { title: "Solar", subtitle: "Business Expansion", amount: "₹7500 Crs", icon: "/G3.png" },
   { title: "Automobile Industry", subtitle: "Working Capital", amount: "$68.75 M", icon: "/G3.png" },
-  { title: "Wind", subtitle: "Project Finance", amount: "$62.5 M", icon: "/G5.png" },
+  { title: "Wind", subtitle: "Project Finance", amount: "₹12,500 Crs", icon: "/G5.png" },
   { title: "Electric Vehicle", subtitle: " Acquisition Funding", amount: "$50 M", icon: "/G8.png" },
   { title: "EPC", subtitle: "Working Capital", amount: "$40.6 M", icon: "/G5.png" },
-  { title: "Manufacturing", subtitle: "Business Expansion", amount: "$37.5 M", icon: "/G6.png" },
+  { title: "Solar Manufacturing", subtitle: "Business Expansion", amount: "₹1600 Crs", icon: "/G6.png" },
   { title: "NBFC", subtitle: "Acquisition Funding", amount: "$37.5 M", icon: "/G4.png" },
   { title: "Wind", subtitle: "Business Expansion", amount: "$30.3 M", icon: "/G1.png" },
   { title: "Wind", subtitle: "Equity Funding", amount: "$26.8 M", icon: "/G2.png" },
@@ -16,7 +16,7 @@ export default function Majortransaction() {
   { title: "Thermal Power", subtitle: "Business Expansion", amount: "$17.5 M", icon: "/G1.png" },
   { title: "FMCG", subtitle: "Channel Financing", amount: "$15.6 M", icon: "/G3.png" },
   { title: "Hydro Energy", subtitle: "Business Expansion", amount: "$14.6 M", icon: "/G6.png" },
-  { title: "Real Estate Funding", subtitle: "Construction Finance", amount: "$14 M", icon: "/G2.png" },
+  { title: "Real Estate Funding", subtitle: "Construction Finance", amount: "₹400 Crs", icon: "/G2.png" },
   { title: "NBFC", subtitle: "Business Expansion", amount: "$12.5 M", icon: "/G7.png" },
   { title: "Hydro Project", subtitle: "Stress Funding", amount: "$8.75 M", icon: "/G1.png" },
   { title: "Manufacturing", subtitle: "Equipment Financing", amount: "$6.25 M", icon: "/G8.png" },

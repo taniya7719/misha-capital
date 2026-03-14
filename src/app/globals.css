@@ -158,11 +158,20 @@ body {
 /* Mobile */
 @media (max-width: 640px) {
   .box {
-    padding-top: 48px;
-    padding-right: 20px;
-    padding-bottom: 48px;
-    padding-left: 20px;
+  padding: 84px 96px;
+}
+
+@media (max-width: 1024px) {
+  .box {
+    padding: 64px 48px;
   }
+}
+
+@media (max-width: 640px) {
+  .box {
+    padding: 48px 16px;
+  }
+}
 }
 @keyframes moveLeft {
   0% {
@@ -202,10 +211,10 @@ body {
   width: 100%;
 }
 
-.marquee-track {
-  display: flex;
-  width: max-content;
-  animation: marqueeLeft 30s linear infinite;
+.marquee-container {
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 .marquee-track-right {
@@ -234,6 +243,9 @@ body {
 }
 
 /* container */
+* {
+  box-sizing: border-box;
+}
 .scroll-row {
   overflow: hidden;
   width: 100%;

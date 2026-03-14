@@ -77,7 +77,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
 `}
 >
       {/* MAIN NAV */}
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-8 text-white">
+      <div className="mx-auto flex h-16 sm:h-18 lg:h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 text-white">
         
         {/* LOGO */}
         <Link href="/" className="flex items-center gap-4">
@@ -91,13 +91,13 @@ const [lastScrollY, setLastScrollY] = useState(0);
 
           <span className="h-6 w-px bg-white/30" />
 
-          <span className="text-base sm:text-lg font-semibold tracking-wide">
+          <span className="text-sm sm:text-base lg:text-lg font-semibold tracking-wide">
             Misha Capital
           </span>
         </Link>
 
         {/* DESKTOP NAV */}
-        <nav className="hidden md:flex gap-6 lg:gap-10">
+        <nav className="hidden md:flex gap-4 lg:gap-8 ">
           {navLink("/", "HOME")}
           {navLink("/about-us", "ABOUT US")}
           {navLink("/our-services", "OUR SERVICES")}
@@ -135,7 +135,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
 
       {/* MOBILE MENU */}
       <div
-        className={`md:hidden absolute top-20 w-full bg-black/90 backdrop-blur-lg transition-all duration-300 ${
+        className={`md:hidden absolute top-16 sm:top-18 lg:top-20 left-0 w-full bg-black/90 backdrop-blur-lg transition-all duration-300 ${
           open
             ? "opacity-100 translate-y-0"
             : "pointer-events-none opacity-0 -translate-y-4"
@@ -144,7 +144,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
         <div className="flex flex-col items-center gap-6 py-8 text-white">
           {navLink("/", "Home")}
           {navLink("/about-us", "About Us")}
-          {navLink("/OurServices", "Our Services")}
+          {navLink("/our-services", "Our Services")}
           {navLink("/partner-with-us", "Partner With Us")}
           {navLink("/contact-us", "Contact Us")}
         </div>

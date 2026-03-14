@@ -280,6 +280,12 @@ export default function AboutUs() {
 
 
     },
+      {
+      name: "Mr. Sumit Chatterjee ",
+      image: "/Mr-sumit-chatterjee.png",
+      role: "Senior Partner",
+      desc: "Mr. Sumit Chatterjee is a seasoned C-suite executive and entrepreneur with over two decades of global and domestic experience across finance and business operations. His expertise spans strategic planning, corporate finance, financial analysis, fundraising, IPOs (NASDAQ & NSE), P&L management, compliance, and M&A across sectors including FMCG, financial services, IT services, real estate, and professional services.",
+    },
     {
       name: "Mr. Manan Kedia",
        image: "/Mr-manan-kedia.png",
@@ -294,12 +300,7 @@ export default function AboutUs() {
       desc: "Ms. Medha Gupta is an alumna of the University of Leeds, UK, and an active investor with a background in international relations and capital markets. She has experience supporting equity transactions across sectors including power, steel, real estate, FMCG, and electric mobility, bringing a global perspective to strategic investment and advisory initiatives.",
     },
    
-     {
-      name: "Mr. Sumit Chatterjee ",
-      image: "/Mr-sumit-chatterjee.png",
-      role: "Senior Partner",
-      desc: "Mr. Sumit Chatterjee is a seasoned C-suite executive and entrepreneur with over two decades of global and domestic experience across finance and business operations. His expertise spans strategic planning, corporate finance, financial analysis, fundraising, IPOs (NASDAQ & NSE), P&L management, compliance, and M&A across sectors including FMCG, financial services, IT services, real estate, and professional services.",
-    },
+   
       {
       name: "Mr. Shanshank Parihar",
         image: "/Mr-shanshank-parihar.png",
