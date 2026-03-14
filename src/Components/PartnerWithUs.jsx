@@ -2,7 +2,7 @@ export default function PartnerWithUs() {
   const cards = [
     {
       icon: "/institution.png",
-      text: "Strong execution capabilities across banks, NBFCs, and private credit funds.",
+      text: "Strong execution capabilities across banks, NBFCs, AIFs, and private credit funds.",
     },
     {
       icon: "/debt.png",
