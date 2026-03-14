@@ -284,7 +284,7 @@ export default function AboutUs() {
       name: "Mr. Manan Kedia",
        image: "/Mr-manan-kedia.png",
       role: "Partner",
-      desc: "Mr. Manan Kedia is an active investor and finance professional with entrepreneurial experience as a two-time technology founder and over six years of building and operating diverse businesses. He has advised and executed equity transactions across sectors including Blockchain, Web3, FMCG, and technology. He holds an MSc from ESADE Business School, an MIM from University College Dublin, and a B.Tech from VIT.",
+      desc: "Mr. Manan Kedia is an active investor and finance professional with entrepreneurial experience as a 2x technology founder and over six years of building and operating diverse businesses. He has advised and executed equity transactions across sectors including Blockchain, Web3, FMCG, and technology. He holds an MSc from ESADE Business School, an MIM from University College Dublin, and a B.Tech from VIT.",
     },
   
     {
