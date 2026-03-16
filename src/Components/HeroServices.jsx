@@ -6,7 +6,7 @@ import Navigationbar from "@/Navigationbar";
 
 export default function HeroServices() {
   return (
-   <section className="relative h-[70vh] sm:h-[65vh] md:h-[60vh] w-full overflow-hidden rounded-b-[40px] sm:rounded-b-[60px] md:rounded-b-[80px]">
+   <section className="relative h-[60vh] w-full overflow-hidden rounded-b-[80px]">
   
       {/* Background Image */}
       <div className="absolute inset-0 bg-[url('/banner-service.webp')] bg-cover bg-center bg-no-repeat" />

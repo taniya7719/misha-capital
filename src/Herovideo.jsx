@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Herovideo() {
   return (
-   <section className="relative min-h-screen w-full box overflow-hidden ">
+   <section className="relative min-h-screen w-full  overflow-hidden ">
   {/* Background Video */}
   <video
     src="/hero.mp4"
@@ -20,7 +20,7 @@ export default function Herovideo() {
   <div className="absolute inset-0 bg-[#050023]/60" />
 
   {/* CONTENT */}
-  <div className="relative z-10 pt-10 ">
+  <div className="relative z-10 pt-20 pl-20">
 
     
     {/* HEADING */}
@@ -73,7 +73,7 @@ leading-tight md:leading-snug lg:leading-[62px]
       <div
   className="
     mt-16 md:mt-16 lg:mt-25
-
+  
     inline-flex
     items-center
     justify-center

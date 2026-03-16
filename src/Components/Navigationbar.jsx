@@ -10,7 +10,6 @@ export default function Navigationbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // 👇 SCROLL DETECTION
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
