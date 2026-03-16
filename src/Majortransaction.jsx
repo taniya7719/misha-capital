@@ -3,9 +3,9 @@
 export default function Majortransaction() {
   const transactions = [
   { title: "Wind", subtitle: "Project Finance", amount: "₹12,500 Crs", icon: "/G5.png" },
-  { title: "Solar", subtitle: "Business Expansion", amount: "₹7500 Crs", icon: "/G3.png" },
-  { title: "Steel", subtitle: "Growth Funding", amount: "₹6500 Crs", icon: "/G2.png" },
-  { title: "Solar Manufacturing", subtitle: "Business Expansion", amount: "₹1600 Crs", icon: "/G6.png" },
+  { title: "Solar", subtitle: "Business Expansion", amount: "₹7,500 Crs", icon: "/G3.png" },
+  { title: "Steel", subtitle: "Growth Funding", amount: "₹6,500 Crs", icon: "/G2.png" },
+  { title: "Solar Manufacturing", subtitle: "Business Expansion", amount: "₹1,600 Crs", icon: "/G6.png" },
   { title: "Real Estate Funding", subtitle: "Construction Finance", amount: "₹600 Crs", icon: "/G2.png" },
   { title: "Automobile Industry", subtitle: "Working Capital", amount: "₹575 Crs", icon: "/G3.png" },
   { title: "Electric Vehicle", subtitle: "Acquisition Funding", amount: "₹420 Crs", icon: "/G8.png" },

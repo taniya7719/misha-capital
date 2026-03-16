@@ -68,11 +68,11 @@ export default function ContentSection() {
 <section className="box">
   <div className="mx-auto max-w-[1200px]">
 
-    <div className="flex flex-col lg:flex-row items-start gap-10">
+    <div className="flex flex-col  lg:flex-row items-start gap-10">
 
       {/* LOGO */}
       <div className="relative 
-        w-[70px] h-[70px] 
+        w-[90px] h-[90px] 
         sm:w-[100px] sm:h-[100px] 
         lg:w-[160px] lg:h-[160px] 
         mt-5 flex-shrink-0">

@@ -159,7 +159,7 @@ const industries = [
     </h2>
     
     </div>
-<div className="grid grid-cols-5 gap-x-10 gap-y-4 justify-center">
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
   {industries.map((item, index) => (
     <IndustryCard key={index} item={item} />
   ))}
@@ -202,8 +202,18 @@ const industries = [
 
 function IndustryCard({ item }) {
   return (
-    <div className="relative w-[210px] h-[96px] rounded-xl overflow-hidden group cursor-pointer">
-
+    <div
+      className="
+        relative
+        w-full
+        sm:w-[210px]
+        h-[96px]
+        rounded-xl
+        overflow-hidden
+        group
+        cursor-pointer
+      "
+    >
       <Image
         src={item.bg}
         alt={item.name}
@@ -214,7 +224,6 @@ function IndustryCard({ item }) {
       <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60"></div>
 
       <div className="relative z-10 flex items-center gap-3 h-full px-5 text-white">
-
         <Image
           src={item.icon}
           alt={item.name}
@@ -225,9 +234,7 @@ function IndustryCard({ item }) {
         <span className="text-[14px] font-medium">
           {item.name}
         </span>
-
       </div>
-
     </div>
   );
 }

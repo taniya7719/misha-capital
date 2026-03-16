@@ -251,10 +251,32 @@
 //     </div>
 //   </div>
 "use client";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
+
 export default function AboutUs() {
   const sliderRef = useRef(null);
+  const [showLeft, setShowLeft] = useState(false);
+const [showRight, setShowRight] = useState(true);
+  
+const checkScroll = () => {
+  const el = sliderRef.current;
+  if (!el) return;
 
+  setShowLeft(el.scrollLeft > 0);
+  setShowRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 5);
+};
+useEffect(() => {
+  const el = sliderRef.current;
+  checkScroll();
+
+  el.addEventListener("scroll", checkScroll);
+  window.addEventListener("resize", checkScroll);
+
+  return () => {
+    el.removeEventListener("scroll", checkScroll);
+    window.removeEventListener("resize", checkScroll);
+  };
+}, []);
   const scrollLeft = () => {
     sliderRef.current.scrollBy({ left: -620, behavior: "smooth" });
   };
@@ -527,8 +549,8 @@ Tech from VIT
               </div> */}
 
             {/* </div> */}
-           <section className="px-20 py-10 relative mt-10">
-      <div className="mx-auto">
+           <section className="px-6 md:px-10 lg:px-20 py-10 relative mt-10">
+      <div className="mx-auto max-w-[1400px]">
 
         {/* Top Label */}
         <div className="flex items-center justify-center gap-4 mb-1 mt-10 ">
@@ -545,22 +567,25 @@ Tech from VIT
         </h2>
 
         {/* Left Arrow */}
+        {showLeft && (
         <button
           onClick={scrollLeft}
-          className="absolute left-4 top-[60%] -translate-y-1/2 z-10 bg-white shadow-md rounded-full w-12 h-12 flex items-center justify-center hover:bg-gray-100"
+          className="hidden md:flex absolute left-4 top-[60%] -translate-y-1/2 z-10 bg-white shadow-md rounded-full w-12 h-12 flex items-center justify-center hover:bg-gray-100"
         >
           ◀
+       
         </button>
+)}
 
         {/* Slider */}
        <div
   ref={sliderRef}
-  className="flex gap-20 lg:gap-6 overflow-x-auto scroll-smooth no-scrollbar"
+ className="flex gap-6 overflow-x-auto scroll-smooth no-scrollbar"
 >
   {teamMembers.map((member, index) => (
     <div
       key={index}
-      className="bg-[#0E78BE1A]   lg:w-[360.5px] h-auto lg:h-[640px] rounded-3xl p-4 flex-shrink-0"
+      className="bg-[#0E78BE1A]  w-[280px] sm:w-[320px] lg:w-[360.5px] h-auto lg:h-[640px] rounded-3xl p-4 flex-shrink-0"
     >
       <img
   src={member.image}
@@ -586,12 +611,14 @@ Tech from VIT
 
 
         {/* Right Arrow */}
+         {showLeft && (
         <button
           onClick={scrollRight}
           className="absolute right-4 top-[60%] -translate-y-1/2 z-10 bg-white shadow-md rounded-full w-12 h-12 flex items-center justify-center hover:bg-gray-100"
         >
           ▶
         </button>
+        )}
 
       </div>
     </section>
