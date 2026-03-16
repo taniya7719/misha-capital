@@ -118,7 +118,7 @@ export default function Navigationbar() {
       >
         <div className="flex flex-col items-center gap-6 py-8 text-white">
           {navLink("/", "Home")}
-          {navLink("/About", "About Us")}
+          {navLink("/about-us", "About Us")}
           {navLink("/our-services", "Our Services")}
           {navLink("/partner-with-us", "Partner With Us")}
           {navLink("/contact-us", "Contact Us")}
